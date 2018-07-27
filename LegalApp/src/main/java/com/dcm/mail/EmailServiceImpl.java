@@ -79,7 +79,7 @@ public class EmailServiceImpl {
 					
       MimeMessageHelper helper = new MimeMessageHelper(message, true);      
       helper.setTo(to);
-      helper.setSubject("Today's reminder from Legal Management Software");     
+      helper.setSubject("Today's reminder from Legal Software");     
       helper.setText("Hi from text plain value", m);
            
       FileSystemResource file = new FileSystemResource(new File("E:\\temp\\day.jpeg"));
