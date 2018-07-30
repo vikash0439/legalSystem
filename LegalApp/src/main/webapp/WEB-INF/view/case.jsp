@@ -238,7 +238,7 @@
 										<!--/.row-->
 										<div class="row">
 											<div class="form-group col-sm-6">
-												<label for="ccmonth">Connected Cases, if any</label> <select
+												<label for="ccmonth">Connected Cases, if any<span style="color:  red; font-weight:  bolder;">*</span></label> <select
 													multiple="multiple"
 													class="form-control multiselect-ui form-control"
 													id="ccmonth" name="connected" value="${c.connected }">
@@ -250,7 +250,7 @@
 											</div>
 
 											<div class="form-group col-sm-6">
-												<label for="ccmonth">Acts Applicable, if any</label> <select
+												<label for="ccmonth">Acts Applicable, if any<span style="color:  red; font-weight:  bolder;">*</span></label> <select
 													multiple="multiple"
 													class="form-control multiselect-ui form-control"
 													id="ccmonth" name="act" value="${c.act }">
@@ -262,6 +262,7 @@
 											</div>
 
 										</div>
+                                       <p style="color:  #dc3545;">  <span style="color:  red; font-weight:  bolder;">*</span>Click [CTRL + VALUE] to select multiple value</p>
 
 										<!--/.row-->
 									</div>
@@ -286,6 +287,7 @@
 												<div class="form-group">
 													<label for="date">Designation</label> <input type="text"
 														class="form-control" id="ccnumber" name="designation"
+														placeholder="Enter Judge's designation"
 														value="${c.designation }">
 												</div>
 											</div>
@@ -293,6 +295,7 @@
 												<div class="form-group">
 													<label for="time">Court </label> <input type="text"
 														class="form-control" id="court" name="state"
+														placeholder="Enter the court "
 														value="${c.state }">
 												</div>
 											</div>
@@ -311,7 +314,7 @@
 									</div>
 									<div class="card-body">
 										<div class="form-group">
-											<label for="company">Name</label> <select
+											<label for="company">Name<span style="color:  red; font-weight:  bolder;">*</span></label> <select
 												class="form-control multiselect-ui form-control"
 												id="ccmonth" name="advocate">
 												<option>--SELECT--</option>
@@ -322,6 +325,7 @@
 
 
 										</div>
+                                       <p style="color:  #dc3545;">  <span style="color:  red; font-weight:  bolder;">*</span>Select the lawyer from the dropdown, if not found kindly add lawyer from the menu.</p>
 
 									</div>
 								</div>
@@ -337,7 +341,7 @@
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">
-													<label for="ccnumber">Total Fees</label>
+													<label for="ccnumber">Total Fees<span style="color:  red; font-weight:  bolder;">*</span></label>
 													<div class="input-group">
 														<div class="input-group-prepend">
 															<span class="input-group-text"><i
@@ -351,14 +355,14 @@
 											</div>
 											<div class="col-sm-6">
 												<div class="form-group">
-													<label for="ccnumber">Fee Paid</label>
+													<label for="ccnumber">Fee Paid<span style="color:  red; font-weight:  bolder;">*</span></label>
 													<div class="input-group">
 														<div class="input-group-prepend">
 															<span class="input-group-text"><i
 																class="fa fa-inr"></i></span>
 														</div>
 														<input type="number" class="form-control" id="paid"
-															name="paid" value="${payment.paid }">
+															name="paid" placeholder="Amount Paid" value="${payment.paid }">
 													</div>
 												</div>
 											</div>
@@ -401,7 +405,7 @@
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="form-group">
-													<label for="ccnumber">Remarks, if any</label>
+													<label for="ccnumber">Remarks or Contracts, if any</label>
 													<textarea id="textarea-input" name="remarks" rows="6"
 														class="form-control"
 														placeholder="Remark about the payment related"
@@ -409,8 +413,10 @@
 												</div>
 											</div>
 										</div>
+                                       <p style="color:  #dc3545;">  <span style="color:  red; font-weight:  bolder;">*</span>Enter '0' whereever NA</p>
 
 									</div>
+									
 								</div>
 								<br>
 								<div class="card">

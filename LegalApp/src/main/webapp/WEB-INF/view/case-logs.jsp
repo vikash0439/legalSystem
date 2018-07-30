@@ -22,6 +22,10 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
 <link rel="stylesheet" type="text/css"
 	href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+	
+<!-- Include Editor style. -->
+<link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/css/froala_style.min.css' rel='stylesheet' type='text/css' />	
 
 <title>Case Logs</title>
 </head>
@@ -204,9 +208,8 @@
 											<label class="col-md-2 col-form-label" for="textarea-input">Brief about Log:
 											</label>
 											<div class="col-md-10">
-												<textarea id="textarea-input" name="brief" rows="9"
-													class="form-control"
-													placeholder="Enter brief about log here..."
+												<textarea id="froala-editor"  name="brief" 
+													class="form-control"												
 													value="${logs.brief }"></textarea>
 											</div>
 										</div>
@@ -297,5 +300,14 @@
 			$('#example').DataTable();
 		});
 	</script>
+	
+	<!-- Include JS file. -->
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/js/froala_editor.min.js'></script>
+  
+   <script>
+  $(function() {
+    $('textarea#froala-editor').froalaEditor();
+  });
+</script>
 </body>
 </html>
