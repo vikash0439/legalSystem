@@ -33,9 +33,12 @@ public class UserService{
 		 return user;
 	 }
 
-	public void saveUser(Users user) {
-		
-		usersRepository.save(user);
-		
+	public void saveUser(Users user) {		
+		usersRepository.save(user);		
+	}
+	
+	public String[] getEmail(){
+		String[] email = usersRepository.findUsername();
+		return email;
 	}
 }

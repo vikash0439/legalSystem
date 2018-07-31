@@ -9,6 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 
 import com.dcm.mail.EmailServiceImpl;
+import com.dcm.service.UserService;
 
 @SpringBootApplication
 @EnableScheduling
@@ -16,15 +17,19 @@ public class LegalAppApplication {
 	
 	@Autowired
 	private EmailServiceImpl emailService;
+	
+	@Autowired
+	private UserService userservice;
 
 	public static void main(String[] args) {
 		SpringApplication.run(LegalAppApplication.class, args);
 	}
 	
 	
-	@Scheduled(cron = "0 0 9,15 * * *")
+	
+	@Scheduled(cron = "0 0 10,15 * * *")
 	public void scheduleFixedRateTask() throws MessagingException {
-	    String[] to = {"vikash0439@gmail.com", "vikash.k@dcmtech.com"};
+	    String[] to = userservice.getEmail();
 		emailService.sendMailWithAttachement(to);
 		System.out.println("Reminder Send");
 		

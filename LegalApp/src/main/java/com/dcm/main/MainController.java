@@ -2,6 +2,7 @@ package com.dcm.main;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -12,11 +13,16 @@ import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.UrlResource;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -38,6 +44,7 @@ import com.dcm.modal.Reminder;
 import com.dcm.modal.Test;
 import com.dcm.service.ActsService;
 import com.dcm.service.CaseService;
+import com.dcm.service.CasesTriggerService;
 import com.dcm.service.DocumentService;
 import com.dcm.service.LawyerService;
 import com.dcm.service.LogsService;
@@ -86,7 +93,12 @@ public class MainController {
 	private LogsService logsService;
 	
 	@Autowired
+	private CasesTriggerService casesTriggerService;
+	
+	@Autowired
 	private TestService testService;
+	
+
 	
 	//Save the uploaded file to this folder
 	private static String UPLOADED_FOLDER = "E:\\temp\\";
@@ -95,8 +107,10 @@ public class MainController {
 	@ResponseBody
 	@RequestMapping("/mail")
 	public String mail() throws MessagingException {
-		String[] to = {"vikash0439@gmail.com"};
-		emailService.sendMailWithAttachement(to);
+		String[] a=userservice.getEmail();
+		System.out.println(a);
+		String[] to = {"vikash0439@gmail.com", "vikash.k@dcmtech.com"};
+		emailService.sendMailWithAttachement(a);
 		return "Mail sent Successfully";		
 	}
 	
@@ -170,6 +184,7 @@ public class MainController {
 	
 	
 	     /** Test Controller  */
+	
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
     public String test() {
         return "test";
@@ -177,7 +192,7 @@ public class MainController {
  
     
     @RequestMapping(value = "/caseno", method = RequestMethod.GET)
-    public @ResponseBody List<Case> caseno() {
+    public @ResponseBody List<com.dcm.modal.Case> caseno() {
         return caseService.AllCases();
     }
     
@@ -236,7 +251,8 @@ public class MainController {
 	}
 	
 	@RequestMapping("/case-submit")
-	public String SaveCase(@ModelAttribute com.dcm.modal.Case c, @ModelAttribute Payment payment, @RequestParam String advocate, @RequestParam String act, BindingResult bindingResult) {
+	public String SaveCase(@ModelAttribute com.dcm.modal.Case c, @ModelAttribute com.dcm.modal.UpdateCase updatecase, @ModelAttribute Payment payment, @RequestParam String advocate, @RequestParam String act, BindingResult bindingResult) {
+		c.setUpdatecase(updatecase);
 		c.setPayment(payment);	
 		System.out.println(advocate);
 	    Lawyer lawyer1=lawyerService.findLawyer(advocate);
@@ -271,6 +287,8 @@ public class MainController {
 		request.setAttribute("updatecase", updatecaseService.getBycaseno(caseService.getCaseDetail(id).getCaseno()));
 		int paymentid=caseService.getCaseDetail(id).getPayment().getPaymentid();
 		request.setAttribute("pay", payservice.getPay(paymentid));
+		System.out.println("Update Id: "+caseService.getCaseDetail(id).getUpdatecase().getUpdateid());
+		request.setAttribute("casesTrigger", casesTriggerService.getCasesTrigger(caseService.getCaseDetail(id).getUpdatecase().getUpdateid()));
 		request.setAttribute("mode", "View_Cases");
 		return "case";
 		
@@ -389,7 +407,7 @@ public class MainController {
 	}
 	
 	@PostMapping("/upload-document") // //new annotation since 4.3
-    public String singleFileUpload(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes, @ModelAttribute Document document,  BindingResult bindingResult) {
+    public String singleFileUpload(@RequestParam("file") MultipartFile file, @RequestParam String caseno, RedirectAttributes redirectAttributes, @ModelAttribute Document document,  BindingResult bindingResult) {
         System.out.println("Check 1");
 		document.setFile(file.getOriginalFilename());
 		System.out.println("Check 1");
@@ -401,18 +419,42 @@ public class MainController {
 
         try {
             // Get the file and save it somewhere
+        	 File files = new File(caseno);
+             if (!files.exists()) {
+                 if (files.mkdir()) {
+                     System.out.println("Directory is created!");
+                 } else {
+                     System.out.println("Failed to create directory!");
+                 }
+             }
             byte[] bytes = file.getBytes();
-            Path path = Paths.get(UPLOADED_FOLDER + file.getOriginalFilename());
+            Path path = Paths.get(caseno, file.getOriginalFilename());
             Files.write(path, bytes);
-
-            redirectAttributes.addFlashAttribute("message",
-                    "You successfully uploaded '" + file.getOriginalFilename() + "'");
+            redirectAttributes.addFlashAttribute("message", "You successfully uploaded '" + file.getOriginalFilename() + "'");
 
         } catch (IOException e) {
             e.printStackTrace();
         }       
         return "redirect:/document";
     }
+	
+	@GetMapping("/{c.caseno}/{document.file}")
+	public Resource downloadFile(@PathVariable String file, @PathVariable String caseno) {
+		try {
+			Path path = Paths.get(caseno);
+            Path f = path.resolve(file);
+            Resource resource = new UrlResource(f.toUri());
+            if(resource.exists() || resource.isReadable()) {
+                return resource;
+            }else{
+            	throw new RuntimeException("FAIL!");
+            }
+        } catch (MalformedURLException e) {
+        	throw new RuntimeException("Error! -> message = " + e.getMessage());
+        }
+	
+			
+	}
 	
 	@PreAuthorize("hasAnyRole('ADMIN')")
 	@RequestMapping("/newdocument")

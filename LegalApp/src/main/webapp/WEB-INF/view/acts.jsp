@@ -118,10 +118,10 @@
 
 
 									<div class="form-group row">
-										<label class="col-md-3 col-form-label" for="textarea-input">Rules</label>
+										<label class="col-md-3 col-form-label" for="textarea-input">Brief</label>
 										<div class="col-md-9">
 											<textarea id="textarea-input" name="rules" rows="9"
-												class="form-control" placeholder="Enter Acts rules here..."
+												class="form-control" placeholder="Brief about this act..."
 												value="${act.rules }"></textarea>
 										</div>
 									</div>

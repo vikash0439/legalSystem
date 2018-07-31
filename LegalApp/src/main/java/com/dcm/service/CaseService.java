@@ -26,6 +26,7 @@ private final CaseRepository caseRepository;
 	public List<Case> AllCases(){
 		List<Case> cases = new ArrayList<Case>();
 		caseRepository.findAll().forEach(cases :: add);
+		System.out.println(cases);
 		return cases;
 	}
 
@@ -41,10 +42,15 @@ private final CaseRepository caseRepository;
 	
 	
 	
-	public List<String> CaseTitle(){
-		
+	public List<String> CaseTitle(){		
 		return caseRepository.findTitle();
 		
+	}
+
+	public List<String> findCaseno() {
+		List<String> caseno = caseRepository.findCaseno();
+		System.out.println(caseno);
+		return caseno;
 	}
 
 }

@@ -16,7 +16,8 @@ public interface CaseRepository extends CrudRepository<Case, Integer>{
 	@Query(value = "select caseno from cases;", nativeQuery = true)
 	public List<String> findTitle();
 
-	
+	@Query(value = "select caseno from cases;", nativeQuery = true)
+	public List<String> findCaseno();
 	
 
 }

@@ -31,7 +31,7 @@
 	</script>
     <br><br><br>
 	<span>Case No: </span>
-	<input type="text" id="caseno" name="caseno" />
+	<input id="caseno" />
 
 	<script>
 		var options = {

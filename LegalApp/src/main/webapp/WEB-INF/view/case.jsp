@@ -91,16 +91,16 @@
 											<td>${cases.caseno }</td>
 											<td>${cases.fileno }</td>
 											<td>${cases.state }</td>
-											<td>${cases.title }&nbsp;&nbsp;<span style="color: red;">VS</span>&nbsp;&nbsp;${cases.versus }
-											</td>
+											<td>${cases.title }	</td>
 											<td>${cases.description }</td>
 											<td><a
 												href="/viewlawyer?lawyerid=${cases.lawyer.lawyerid }"
 												target="_blank">${cases.lawyer.name } </a></td>
-											<td></td>	
-											<td>${cases.nexthearing }</td>
+											
+											<td>${cases.updatecase.lasthearing }</td>
+											<td>${cases.updatecase.nexthearing }</td>
 											<td>${cases.cateogry }</td>
-											<td>${cases.status }</td>
+											<td>${cases.updatecase.status }</td>
 										</tr>
 
 									</c:forEach>
@@ -114,11 +114,11 @@
 										<th>Title</th>
 										<th>Description</th>
 										<th>Lawyer</th>
+										<th>Last Date of Hearing</th>
 										<th>Next Date of Hearing</th>
 										<th>Cateogry</th>
 										<th>Current Status</th>
 									</tr>
-
 								</tfoot>
 
 							</table>
@@ -229,7 +229,7 @@
 													<label for="ccnumber">Details of Caveat</label> <input
 														type="text" class="form-control" id="ccnumber"
 														placeholder="Date of Caveat, if any" name="cavet"
-														value="${c.cavet }">
+														value="${updatecase.cavet }">
 												</div>
 											</div>
 										</div>
@@ -456,7 +456,36 @@
 								<div class="row">
 									<div class="col-md-12">
 										<div class="card">
-											
+									<div class="card-header">
+										<strong>Case Status</strong> Details
+									</div>
+									<div class="card-body">
+									      <div class="row">
+											<div class="col-md-4">
+												<label  for="textarea-input">Last
+													 Hearing :</label>
+												<div >
+													<input type="date" class="form-control" id="lasthearing"
+														name="lasthearing" value="${updatecase.lasthearing }">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<label  for="textarea-input">Next
+													Hearing :</label>
+												<div >
+													<input type="date" class="form-control" id="ccnumber"
+														name="nexthearing" value="${updatecase.nexthearing }">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<label  for="textarea-input">Case Status :</label>
+												<div >
+													<input type="text" class="form-control" id="status"
+														name="status" value="${updatecase.status }">
+												</div>
+											</div>
+											 </div>
+											</div>
 											<div class="card-footer">
 												<center>
 													<button type="submit" class="btn btn-sm btn-primary">
@@ -492,60 +521,73 @@
 										<div class="card-body">
 
 											<div class="row">
-												<div class="col-sm-3">
+												<div class="col-sm-2">
 													<label for="ccmonth"><b>Case Cateogry:</b>
 														${c.cateogry }</label>
 
 												</div>
 												<div class="col-sm-3">
-													<label for="ccnumber"><b>Next date Of Hearing:
-													</b>${updatecase.nexthearing } </label>
+													<div class="form-group">
+														<label for="date"><b>Date of Institution: </b>${c.dateinstitution }</label>
+													</div>
 												</div>
-												<div class="col-sm-3">
+												<div class="col-sm-2">
 													<div class="form-group">
 														<label for="ccnumber"><b>Case Number:</b>
 															${c.caseno }</label>
 													</div>
 												</div>
-												<div class="col-sm-3">
+												<div class="col-sm-2">
 													<div class="form-group">
 														<label for="ccnumber"><b>File No: </b>${ c.fileno}</label>
 													</div>
 												</div>
-
-
-											</div>
-											<div class="row">
-
-												<div class="col-sm-6">
-													<div class="form-group">
-														<label for="date"><b>Date of Institution: </b>${c.dateinstitution }</label>
-													</div>
-												</div>
-												<div class="col-sm-6">
+												
+												
+												<div class="col-sm-3">
 													<div class="form-group">
 														<label for="time"><b>Date of Summon: </b>${c.datesummon }
 														</label>
 													</div>
 												</div>
 
+
+											</div>
+											<div class="row">
+											<div class="col-sm-6">
+													<div class="form-group">
+														<label for="ccnumber"><b>Case Title: </b>${c.title }
+															&nbsp;&nbsp;</label>
+													</div>
+												</div>
+												<div class="col-sm-6">
+											<div class="form-group">
+												<label for="company"><b>Lawyers's Name:</b> &nbsp;
+													${c.lawyer.name}</label>
+											</div>
+											</div>	
+
 											</div>
 
 
 											<!--/.row-->
 											<div class="row">
-												<div class="col-sm-12">
-													<div class="form-group">
-														<label for="ccnumber"><b>Case Title: </b>${c.title }
-															&nbsp;&nbsp;<b>VS </b>&nbsp;&nbsp;${c.versus }</label>
-													</div>
+											
+											<div class="col-sm-6">
+											<div class="form-group">
+													<label for="ccnumber"><b>Last date Of Hearing:
+													</b>${c.updatecase.lasthearing } </label>
+												</div>
+											</div>
+											<div class="col-sm-6">
+											<div class="form-group">
+													<label for="ccnumber"><b>Next date Of Hearing:
+													</b>${c.updatecase.nexthearing } </label>
+												</div>
 												</div>
 											</div>
 
-											<div class="form-group">
-												<label for="company"><b>Lawyers's Name:</b> &nbsp;
-													${c.lawyer.name}</label>
-											</div>
+											
 
 											<!--/.row-->
 											<div class="row">
@@ -557,16 +599,21 @@
 												</div>
 											</div>
 											<div class="row">
+												<div class="form-group col-sm-6">
+													<label for="ccmonth"><b>Current case Status: </b>${c.updatecase.status }</label>
+												</div>
+											</div>
+											<div class="row">
 												<div class="col-sm-12">
 													<div class="form-group">
-														<label for="ccnumber"><b>Details of Caveat: </b>${c.cavet }</label>
+														<label for="ccnumber"><b>Details of Caveat: </b>${c.updatecase.cavet }</label>
 													</div>
 												</div>
 											</div>
 											<!--/.row-->
 											<div class="row">
 												<div class="form-group col-sm-6">
-													<label for="ccmonth"><b>Connected-cases No: </b>${c.connected }</label>
+													<label for="ccmonth"><b>Connected-cases No: </b>${c.updatecase.connected }</label>
 												</div>
 											</div>
 											<div class="row">
@@ -575,11 +622,7 @@
 												</div>
 											</div>
 
-											<div class="row">
-												<div class="form-group col-sm-6">
-													<label for="ccmonth"><b>Case Status: </b>${updatecase.status }</label>
-												</div>
-											</div>
+											
 											
 											<div class="row">										
 										   <security:authorize access="hasAnyRole('ADMIN')">
@@ -589,6 +632,7 @@
                                             </security:authorize>	
 											<!--/.row-->
 										</div>
+										
 									</div>
 								</div>
 								<div class="card">
@@ -877,7 +921,7 @@
 														<tbody>
 															<tr>
 																<td>${document.type }</td>
-																<td>${document.file}</td>
+																<td><a href ="${c.caseno}/${document.file}" target="_blank">${document.file}</</a></td>
 																<td>${document.brief }</td>
 															</tr>
 															<tr>
@@ -887,11 +931,12 @@
 												</table>
 											</div>
 										</div>
+										
 										<br>
 									</div>
 								</div>
 								<div class="card">
-									<div class="card-header" id="headingFour">
+									<div class="card-header" id="headingFive">
 										<h5 class="mb-0">
 											<button class="btn btn-link nav-link" data-toggle="collapse"
 												data-target="#collapseFive" aria-expanded="true"
@@ -901,89 +946,43 @@
 
 									<div id="collapseFive" class="collapse"
 										aria-labelledby="headingFive" data-parent="#accordion">
+										<div class="card-body">
+											<table id="" class="table table-striped table-bordered">
 
-										<div class="row">
-											<!--/.col-->
-
-											<div class="card-body">
-												<table class="table responsive">
-													<thead>
-														<tr class="card-header">
-															<th>Type</th>
-															<th>Date</th>
-															<th>Time</th>
-															<th>Brief</th>
+												<thead>
+													<tr class="card-header">													
+														<th>Last Date of Hearing</th>
+														<th>Connected Cases</th>
+														<th>Cavet</th>
+														<th>Next Date of Hearing</th>
+														<th>Current Status</th>
+													</tr>
+												</thead>
+												<tbody>
+													<c:forEach var="trigger" items="${ casesTrigger}">
+														<tr>
+                                                            <td>${trigger.lasthearing }</td>
+															<td>${trigger.connected }</td>
+															<td>${trigger.cavet }</td>															
+															<td>${trigger.nexthearing }</td>
+															<td>${trigger.status }</td>
 														</tr>
-													</thead>
-													<c:forEach var="reminder" items="${reminder }">
-														<tbody>
-															<tr>
-																<td style="color: #212529;"><strong>${reminder.type }</strong></td>
-																<td>${reminder.date }</td>
-																<td>${reminder.time }</td>
-																<td>${reminder.brief }</td>
-															</tr>
-														</tbody>
+
 													</c:forEach>
-												</table>
-											</div>
-										</div>
-										<!--/.row-->
+												</tbody>
+												
+
+											</table>
+
+                                         </div>
+
+											<!--/.row-->
 										<br>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="modal fade" id="caseModal" tabindex="-1" role="dialog"
-							aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLabel">Update
-											Case Log</h5>
-										<button type="button" class="close" data-dismiss="modal"
-											aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<form id="case-update" action="case-update" method="POST">
-										<div class="modal-body">
-										<div class="form-group row">
-										
-											<input type="hidden" class="form-control" id="ccnumber"
-												name="caseno" placeholder="Eg: CC101514H45"
-												value="${c.caseno }" readonly>
-											</div>	
-											<div class="col-sm-12">
-												<div class="form-group">
-													<label for="ccnumber">Case Status</label>
-													<textarea id="textarea-input" name="status" rows="3"
-														class="form-control"
-														placeholder="Case remark and status.... " name="remark"
-														value="${updatecase.status }"></textarea>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-md-5 col-form-label" for="textarea-input">Next
-													date of Hearing :</label>
-												<div class="col-md-7">
-													<input type="date" class="form-control" id="ccnumber"
-														name="nexthearing" value="${updatecase.nexthearing }">
-												</div>
-											</div>
-
-
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary"
-												data-dismiss="modal">Cancel</button>
-											<button type="submit" class="btn btn-primary">Update</button>
-										</div>
-									</form>
-
-								</div>
-							</div>
-						</div>
+						
 						<div class="modal fade" id="exampleModal" tabindex="-1"
 							role="dialog" aria-labelledby="exampleModalLabel"
 							aria-hidden="true">
@@ -1085,6 +1084,100 @@
 
 								</div>
 							</div>
+						</div>
+						<div class="modal fade" id="caseModal" tabindex="-1" role="dialog"
+							aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Update
+											Case Log</h5>
+										<button type="button" class="close" data-dismiss="modal"
+											aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<form id="case-update" action="case-update" method="POST">
+										<div class="modal-body">
+										<div class="form-group row">
+										  <input type="hidden" class="form-control" id="ccnumber"
+													name="updateid" value="${c.updatecase.updateid }">
+												
+											<div class="col-sm-12">
+												<div class="form-group">
+													<label for="ccnumber"><b>Current-case Status</b></label>
+													<textarea id="textarea-input" name="status" rows="3"
+														class="form-control"
+														placeholder="Case remark and status.... " name="remark"
+														value="${updatecase.status }"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+													<div class="form-group">
+														<label for="ccnumber"><b>Details of Caveat: </b></label>
+														<div class="input-group">
+															<div class="input-group-prepend">
+																
+															</div>
+															<input type="text" class="form-control" id="dues"
+																 name="cavet"
+																value="${updatecase.cavet }" >
+														</div>
+													</div>
+												</div>
+											<div class="col-md-12">
+													<div class="form-group">
+														<label for="ccnumber"><b>Connected-cases No: </b></label>
+														<div class="input-group">
+															<div class="input-group-prepend">
+																
+															</div>
+															<input type="text" class="form-control" id="connected"
+																 name="connected"
+																value="${updatecase.connected }" >
+														</div>
+													</div>
+												</div>
+											<!--/.row-->
+											<div class="col-md-6">
+													<div class="form-group">
+														<label for="ccnumber"><b>Last Hearing :</b></label>
+														<div class="input-group">
+															<div class="input-group-prepend">
+																
+															</div>
+															<input type="date" class="form-control" id="lasthearing"
+																 name="lasthearing"
+																value="${updatecase.lasthearing }" >
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="ccnumber"><b>Next Hearing :</b></label>
+														<div class="input-group">
+															<div class="input-group-prepend">
+																
+															</div>
+															<input type="date" class="form-control" id="nexthearing"
+																 name="nexthearing"
+																value="${updatecase.nexthearing }" >
+														</div>
+													</div>
+												</div>
+											
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary"
+												data-dismiss="modal">Cancel</button>
+											<button type="submit" class="btn btn-primary">Update</button>
+										</div>
+									</form>
+
+								</div>
+							</div>
+						</div>
+						</div>
 						</div>
 				</c:when>
 

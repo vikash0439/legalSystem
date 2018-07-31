@@ -25,7 +25,7 @@
 	
 <!-- Include Editor style. -->
 <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
-<link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/css/froala_style.min.css' rel='stylesheet' type='text/css' />	
+<link href='//www.tinymce.com/css/codepen.min.css' rel='stylesheet' type='text/css' />	
 
 <title>Case Logs</title>
 </head>
@@ -302,12 +302,23 @@
 	</script>
 	
 	<!-- Include JS file. -->
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/js/froala_editor.min.js'></script>
+<script type='text/javascript' src='https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=1ay4l6nnkq400z4l517qz00jo26utxa8lblww09mpoooteni'></script>
   
    <script>
-  $(function() {
-    $('textarea#froala-editor').froalaEditor();
-  });
+   tinymce.init({
+	   selector: 'textarea',
+	   height: 500,
+	   menubar: false,
+	   plugins: [
+	     'advlist autolink lists link image charmap print preview anchor textcolor',
+	     'searchreplace visualblocks code fullscreen',
+	     'insertdatetime media table contextmenu paste code help wordcount'
+	   ],
+	   toolbar: 'insert | undo redo |  formatselect | bold italic backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help',
+	   content_css: [
+	     '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+	     '//www.tinymce.com/css/codepen.min.css']
+	 });
 </script>
 </body>
 </html>

@@ -13,10 +13,27 @@ public class UpdateCase {
 	@GeneratedValue
 	private int updateid;
 	private String caseno;
+	private String connected;
+	private String cavet;
+	private String lasthearing;
 	private String nexthearing;
 	private String status;
 	
+	public UpdateCase() {
+		
+	}
 	
+	public UpdateCase(int updateid, String caseno, String connected, String cavet, String lasthearing,
+			String nexthearing, String status) {
+		super();
+		this.updateid = updateid;
+		this.caseno = caseno;
+		this.connected = connected;
+		this.cavet = cavet;
+		this.lasthearing = lasthearing;
+		this.nexthearing = nexthearing;
+		this.status = status;
+	}
 	public int getUpdateid() {
 		return updateid;
 	}
@@ -29,6 +46,24 @@ public class UpdateCase {
 	}
 	public void setCaseno(String caseno) {
 		this.caseno = caseno;
+	}
+	public String getConnected() {
+		return connected;
+	}
+	public void setConnected(String connected) {
+		this.connected = connected;
+	}
+	public String getCavet() {
+		return cavet;
+	}
+	public void setCavet(String cavet) {
+		this.cavet = cavet;
+	}
+	public String getLasthearing() {
+		return lasthearing;
+	}
+	public void setLasthearing(String lasthearing) {
+		this.lasthearing = lasthearing;
 	}
 	public String getNexthearing() {
 		return nexthearing;
