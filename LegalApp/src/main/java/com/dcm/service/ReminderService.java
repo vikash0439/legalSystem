@@ -15,8 +15,11 @@ public class ReminderService {
 	
 private final ReminderRepository reminderRepository;
 
-	LocalDate date= java.time.LocalDate.now();	
+	LocalDate date= java.time.LocalDate.now().plusDays(1);	
 	String d=date.toString();
+	
+	LocalDate dash= java.time.LocalDate.now();	
+	String da=dash.toString();
 	
 	public ReminderService(ReminderRepository reminderRepository) {
 		this.reminderRepository = reminderRepository;
@@ -34,7 +37,12 @@ private final ReminderRepository reminderRepository;
 	
 	public List<Reminder> AllReminder(){
 		List<Reminder> reminder=new ArrayList<Reminder>();
-		System.out.println(d);
+		reminderRepository.findByDate(da).forEach(reminder:: add);
+		return reminder;
+	}
+	
+	public List<Reminder> MailReminder(){
+		List<Reminder> reminder=new ArrayList<Reminder>();
 		reminderRepository.findByDate(d).forEach(reminder:: add);
 		return reminder;
 	}

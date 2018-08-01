@@ -40,8 +40,8 @@ public class EmailServiceImpl {
     public void sendMailWithAttachement( String[] to) throws MessagingException {
      
   	MimeMessage message = emailSender.createMimeMessage();
-      List<Reminder> reminder = reminderService.AllReminder();  
-      String m = "<html><h3><b>Namaste!</b></h3><p>Reminders for today are : </p><br><br><table style=\"\r\n" + 
+      List<Reminder> reminder = reminderService.MailReminder();  
+      String m = "<html><h3><b>Namaste!</b></h3><p>Reminders for tomorrow's are : </p><br><br><table style=\"\r\n" + 
       		 
       		"    text-align:  center;     border: 1px solid #ddd; font-family: arial, sans-serif; border-collapse: collapse;\r\n" + 
       		"\">\r\n" + 
@@ -79,7 +79,7 @@ public class EmailServiceImpl {
 					
       MimeMessageHelper helper = new MimeMessageHelper(message, true);      
       helper.setTo(to);
-      helper.setSubject("Today's reminder from Legal Software");     
+      helper.setSubject("Tomorrow's reminder from Legal Software");     
       helper.setText("Hi from text plain value", m);
            
       FileSystemResource file = new FileSystemResource(new File("E:\\temp\\day.jpeg"));

@@ -49,9 +49,8 @@
 			<div class="col-md-8">
 				<div class="card-group">
 					<div class="card p-4">
-						<div class="card-body">
-							<h1>Login</h1>
-							<p></p>
+					    <h5 class="card-header" style="text-align:  center;background-color:  #343a40;color:  #fff;">Login here !</h5>
+						<div class="card-body"><p></p>
 							<form class="form-horizontal" name='f' action="login"
 								method='POST'>
 								<c:if test="${not empty error}">
@@ -119,7 +118,7 @@
 	<!-- Image and text -->
 	<span class="d-block p-2 bg-dark text-white"><i id="best" style="color: #ff0000;">&nbsp;&nbsp;&nbsp; * Best Viewed in Google Chrome</i>
 		<p style="display: inline; margin: 0 20% 0 30%;">&copy; 2018, DCM Textiles</p> 
-		<i id="ver" style="color: #ff0000; float: right;">Ver 1.0.0&nbsp;&nbsp;&nbsp;</i></span>
+		<i id="ver" style="color: #ff0000; float: right;">Ver 1.0&nbsp;&nbsp;&nbsp;</i></span>
 
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

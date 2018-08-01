@@ -65,8 +65,8 @@
 						<div class="row">
 							<div class="col-sm-6 col-md-12">
 								<div class="card">
-									<div class="card-header"><b>${act.section }</b>
-										&nbsp;&nbsp;${act.name }&nbsp;&nbsp;</div>
+									<div class="card-header"><b>${act.section }
+										&nbsp;&nbsp;${act.name }&nbsp;&nbsp;</b></div>
 									<div class="card-body">${act.rules }
 										
 									</div>

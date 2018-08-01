@@ -77,11 +77,10 @@
 							<div class="col-sm-6 col-md-4">
 								<div class="card-header" style="margin-bottom: 2%;">
 									<div class="card-header">
-										<b>${document.id }. </b>${document.file }<span
-											style="float: right;">Type: ${document.type }</span>
+										<b>${document.id }. </b><a href ="/${document.caseno}/${document.file}" target="_blank">${document.file}</a>
 									</div>
 									<div class="card-body">
-										<b>Case No:</b> ${document.caseno }<br> <br>${document.brief }</div>
+										<b>Case No:</b> ${document.caseno }<br> <b>Type:</b> ${document.type }<br><br>${document.brief }</div>
 								</div>
 							</div>
 						</c:forEach>
@@ -124,6 +123,11 @@
 												<select class="form-control" id="ccyear" name="type"
 													value="${document.type }">
 													<option>--SELECT--</option>
+													<option>Petition</option>
+													<option>Reply(Written Statement)</option>
+													<option>Interim Order</option>
+													<option>Affidavit</option>
+													<option>Evidence</option>
 													<option>Pleadings</option>
 													<option>Contracts</option>
 													<option>Judgements</option>

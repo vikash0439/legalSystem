@@ -192,7 +192,7 @@
 												<div class="form-group">
 													<label for="ccnumber">Case Title</label> <input type="text"
 														class="form-control" id="title"
-														placeholder=" Appellants V/S Defenders"
+														placeholder="Plaintiff VS Defenders"
 														name="title" value="${c.title }">
 
 												</div>
@@ -421,12 +421,12 @@
 								<br>
 								<div class="card">
 									<div class="card-header">
-										<strong>Counter-Party</strong> Details
+										<strong>Counter-Party's Lawyer</strong> Details
 									</div>
 									<div class="card-body">
 
 										<div class="form-group">
-											<label for="company">Name of Counter-Party</label> <input
+											<label for="company">Name of the Lawyer</label> <input
 												type="text" class="form-control" id="company"
 												placeholder="Enter Name" name="counter"
 												value="${c.counter }">
@@ -820,7 +820,7 @@
 											</div>
 											<hr>
 											<div align="center">
-												<h4>Last Payment</h4>
+												<h4>Latest Payment</h4>
 											</div>
 											<div class="row">
 
@@ -886,10 +886,11 @@
 													</div>
 												</div>
 											</div>
+											<security:authorize access="hasAnyRole('ADMIN')">
 											<button type="button" class="btn btn-primary"
 												data-toggle="modal" data-target="#exampleModal"
 												data-whatever="@fat">Update</button>
-
+                                           </security:authorize>
 										</div>
 									</div>
 								</div>
@@ -921,7 +922,7 @@
 														<tbody>
 															<tr>
 																<td>${document.type }</td>
-																<td><a href ="${c.caseno}/${document.file}" target="_blank">${document.file}</</a></td>
+																<td><a href ="/${c.caseno}/${document.file}" target="_blank">${document.file}</</a></td>
 																<td>${document.brief }</td>
 															</tr>
 															<tr>
@@ -1128,14 +1129,15 @@
 											<div class="col-md-12">
 													<div class="form-group">
 														<label for="ccnumber"><b>Connected-cases No: </b></label>
-														<div class="input-group">
-															<div class="input-group-prepend">
-																
-															</div>
-															<input type="text" class="form-control" id="connected"
-																 name="connected"
-																value="${updatecase.connected }" >
-														</div>
+														<select
+													multiple="multiple"
+													class="form-control multiselect-ui form-control"
+													id="ccmonth" name="connected" value="${updatecase.connected }">
+
+													<c:forEach var="title" items="${title }">
+														<option>${title }</option>
+													</c:forEach>
+												</select>
 													</div>
 												</div>
 											<!--/.row-->

@@ -1,8 +1,11 @@
 package com.dcm.main;
 
+import java.io.BufferedInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.net.MalformedURLException;
+import java.io.InputStream;
+import java.net.URLConnection;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -11,16 +14,14 @@ import java.security.Principal;
 import java.util.List;
 import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.UrlResource;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.FileCopyUtils;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,7 +36,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.dcm.mail.EmailServiceImpl;
 import com.dcm.modal.Acts;
-import com.dcm.modal.Case;
 import com.dcm.modal.Document;
 import com.dcm.modal.Lawyer;
 import com.dcm.modal.Logs;
@@ -109,7 +109,7 @@ public class MainController {
 	public String mail() throws MessagingException {
 		String[] a=userservice.getEmail();
 		System.out.println(a);
-		String[] to = {"vikash0439@gmail.com", "vikash.k@dcmtech.com"};
+//		String[] to = {"vikash0439@gmail.com", "vikash.k@dcmtech.com"};
 		emailService.sendMailWithAttachement(a);
 		return "Mail sent Successfully";		
 	}
@@ -213,7 +213,7 @@ public class MainController {
 		
 	}
 	                   /* Users controller */
-	@PreAuthorize("hasAnyRole('ADMIN')")
+	@PreAuthorize("hasAnyRole('SYSTEM')")
 	@RequestMapping("/user")
 	public String Users(HttpServletRequest request) {	
 		request.setAttribute("users", userservice.showAllUsers());
@@ -289,6 +289,7 @@ public class MainController {
 		request.setAttribute("pay", payservice.getPay(paymentid));
 		System.out.println("Update Id: "+caseService.getCaseDetail(id).getUpdatecase().getUpdateid());
 		request.setAttribute("casesTrigger", casesTriggerService.getCasesTrigger(caseService.getCaseDetail(id).getUpdatecase().getUpdateid()));
+		request.setAttribute("title", caseService.CaseTitle());
 		request.setAttribute("mode", "View_Cases");
 		return "case";
 		
@@ -438,22 +439,40 @@ public class MainController {
         return "redirect:/document";
     }
 	
-	@GetMapping("/{c.caseno}/{document.file}")
-	public Resource downloadFile(@PathVariable String file, @PathVariable String caseno) {
-		try {
-			Path path = Paths.get(caseno);
-            Path f = path.resolve(file);
-            Resource resource = new UrlResource(f.toUri());
-            if(resource.exists() || resource.isReadable()) {
-                return resource;
-            }else{
-            	throw new RuntimeException("FAIL!");
-            }
-        } catch (MalformedURLException e) {
-        	throw new RuntimeException("Error! -> message = " + e.getMessage());
-        }
-	
-			
+	@ResponseBody
+	@RequestMapping(value = "/{caseno}/{file}", method = RequestMethod.GET)
+	public void loadFile( @PathVariable("file") String file,  @PathVariable("caseno") String caseno, HttpServletResponse response) throws IOException {
+		System.out.println(file);
+		System.out.println(caseno);
+		final Path rootLocation = Paths.get(caseno);
+		Path filename = rootLocation.resolve(file);
+		System.out.println(filename);
+		File f = new File(filename.toString());
+
+		String mimeType = URLConnection.guessContentTypeFromName(f.getName());
+		if (mimeType == null) {
+			System.out.println("mimetype is not detectable, will take default");
+			mimeType = "application/octet-stream";
+		}
+
+		System.out.println("mimetype : " + mimeType);
+
+		response.setContentType(mimeType);
+
+		/*
+		 * "Content-Disposition : inline" will show viewable types [like
+		 * images/text/pdf/anything viewable by browser] right on browser while
+		 * others(zip e.g) will be directly downloaded [may provide save as popup, based
+		 * on your browser setting.]
+		 */
+		response.setHeader("Content-Disposition", String.format("inline; filename=\"" + f.getName() + "\""));
+
+		InputStream inputStream = new BufferedInputStream(new FileInputStream(f));
+
+		// Copy bytes from source to destination(outputstream in this example), closes
+		// both streams.
+		FileCopyUtils.copy(inputStream, response.getOutputStream());
+
 	}
 	
 	@PreAuthorize("hasAnyRole('ADMIN')")

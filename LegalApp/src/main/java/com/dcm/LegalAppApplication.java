@@ -27,7 +27,7 @@ public class LegalAppApplication {
 	
 	
 	
-	@Scheduled(cron = "0 0 10,15 * * *")
+	@Scheduled(cron = "0 0 9,17 * * *")
 	public void scheduleFixedRateTask() throws MessagingException {
 	    String[] to = userservice.getEmail();
 		emailService.sendMailWithAttachement(to);
