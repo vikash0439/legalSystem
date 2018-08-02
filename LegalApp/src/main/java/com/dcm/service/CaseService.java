@@ -26,7 +26,6 @@ private final CaseRepository caseRepository;
 	public List<Case> AllCases(){
 		List<Case> cases = new ArrayList<Case>();
 		caseRepository.findAll().forEach(cases :: add);
-		System.out.println(cases);
 		return cases;
 	}
 
@@ -35,9 +34,9 @@ private final CaseRepository caseRepository;
 		return caseRepository.count();
 	}
 
-	public Case getCaseDetail(int id) {
+	public Case getCaseDetail(String caseno) {
 		// TODO Auto-generated method stub
-		return caseRepository.findById(id);
+		return caseRepository.findByCaseno(caseno);
 	}
 	
 	

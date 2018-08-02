@@ -44,9 +44,7 @@ public class Case{
 	
 	@ManyToOne(cascade = CascadeType.ALL)
 	private Lawyer lawyer;
-	
-	@ManyToOne(cascade = CascadeType.ALL)
-	private Acts acts;
+
 	
 	
 	/* Constructors */
@@ -57,7 +55,7 @@ public class Case{
 	
 	public Case(int id, String caseno, String fileno, String dateinstitution, String datesummon, String title, String act,
 			String versus, String description, String judgename, String designation, String state,
-			String counter, String address,String status, Payment payment, Lawyer lawyer, Acts acts, UpdateCase updatecase) {
+			String counter, String address,String status, Payment payment, Lawyer lawyer, UpdateCase updatecase) {
 		super();
 		this.id = id;
 		this.caseno = caseno;
@@ -78,7 +76,6 @@ public class Case{
 		this.status = status;
 		this.payment = payment;
 		this.lawyer = lawyer;
-		this.acts = acts;
 		this.updatecase = updatecase;
 	}
 	
@@ -222,17 +219,10 @@ public class Case{
 		this.status = status;
 	}
 
-	public Acts getActs() {
-		return acts;
-	}
-
-	public void setActs(Acts acts) {
-		this.acts = acts;
-	}
 
 	@Override
 	public String toString() {
-		return "Case Id= '<a href=\"/view-cases?id=" + id + "\">" + id +", Title=" + title +" ";
+		return "Case No= <a href=\"/view-cases?caseno=" + caseno + "\">" + caseno+", Title=" + title +" ";
 	}
 
 	

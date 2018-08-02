@@ -20,10 +20,9 @@
 
 <link
 	href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css"
-	rel="stylesheet" type="text/css">
+	rel="stylesheet" type="text/css">		
 
 <title>Documents</title>
-
 </head>
 <body>
 	<!-- Image and text -->
@@ -77,10 +76,13 @@
 							<div class="col-sm-6 col-md-4">
 								<div class="card-header" style="margin-bottom: 2%;">
 									<div class="card-header">
-										<b>${document.id }. </b><a href ="/${document.caseno}/${document.file}" target="_blank">${document.file}</a>
+										<b>${document.id }. </b><a
+											href="/${document.caseno}/${document.file}" target="_blank">${document.file}</a>
 									</div>
 									<div class="card-body">
-										<b>Case No:</b> ${document.caseno }<br> <b>Type:</b> ${document.type }<br><br>${document.brief }</div>
+										<b>Case No:</b> ${document.caseno }<br> <b>Type:</b>
+										${document.type }<br>
+										<br>${document.brief }</div>
 								</div>
 							</div>
 						</c:forEach>
@@ -102,20 +104,17 @@
 											<label class="col-md-3 col-form-label" for="text-input">Document
 												for Case No:</label>
 											<div class="col-md-9">
-											
+												
 												<select class="form-control multiselect-ui form-control"
 													id="caseno" name="caseno" value="${document.caseno }">
-													 <option>--SELECT--</option>
+													<option>--SELECT--</option>
 													<c:forEach var="title" items="${title }">
 														<option>${title }</option>
 													</c:forEach>
 												</select>
 											</div>
 										</div>
-										<div>
-											
-
-										</div>
+										<div></div>
 										<div class="form-group row">
 											<label class="col-md-3 col-form-label" for="text-input">Type
 												Of Dcouments</label>
@@ -225,9 +224,10 @@
 		integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
 		crossorigin="anonymous"></script>
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"
-	type="text/javascript"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"
+		type="text/javascript"></script>
+	
 
 
 </body>

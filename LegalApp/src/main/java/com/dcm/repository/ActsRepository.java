@@ -12,6 +12,6 @@ public interface ActsRepository extends CrudRepository<Acts, Integer>{
 	@Query(value = "select name from acts;", nativeQuery = true)
 	public List<String> findName();
 
-	public Acts findBySection(String section);
+	public Acts findByName(String name);
 
 }

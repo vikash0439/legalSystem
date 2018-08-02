@@ -65,10 +65,8 @@
 						<div class="row">
 							<div class="col-sm-6 col-md-12">
 								<div class="card">
-									<div class="card-header"><b>${act.section }
-										&nbsp;&nbsp;${act.name }&nbsp;&nbsp;</b></div>
-									<div class="card-body">${act.rules }
-										
+									<div class="card-header"><b>${act.name }</b></div>
+									<div class="card-body">${act.rules }										
 									</div>
 								</div>
 							</div>
@@ -97,25 +95,7 @@
 
 										</div>
 									</div>
-									<div class="form-group row">
-										<label class="col-md-3 col-form-label" for="text-input">Section</label>
-										<div class="col-md-9">
-											<input type="text" id="text-input" name="section"
-												class="form-control" placeholder="Eg: 302, 301, etc"
-												value="${act.section }">
-
-										</div>
-									</div>
-									<div class="form-group row">
-										<label class="col-md-3 col-form-label" for="text-input">Sub
-											Section</label>
-										<div class="col-md-9">
-											<input type="text" id="text-input" name="subsection"
-												class="form-control" placeholder="Enter Sub Section"
-												value="${act.subsection }">
-										</div>
-									</div>
-
+									
 
 									<div class="form-group row">
 										<label class="col-md-3 col-form-label" for="textarea-input">Brief</label>

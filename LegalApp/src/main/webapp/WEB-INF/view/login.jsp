@@ -32,12 +32,13 @@
 	<!-- Image and text -->
 	<span class="d-block p-2 bg-dark text-white"><center>Welocme to Legal Management System</center></span>
 	<nav class="navbar navbar-dark bg-primary">
-		<a class="navbar-brand" href="#"> <marquee>This Software
+	<marquee style="color:  white; font-size:20px;">This Software
 				is a comprehensive legal case management application featuring all
 				the essential elements of a quality Law Practice Management
 				Solution.</marquee>
-		</a>
+		
 	</nav>
+	<br>
 	<br>
 	<br>
 	<br>
@@ -49,8 +50,8 @@
 			<div class="col-md-8">
 				<div class="card-group">
 					<div class="card p-4">
-					    <h5 class="card-header" style="text-align:  center;background-color:  #343a40;color:  #fff;">Login here !</h5>
-						<div class="card-body"><p></p>
+					    <h5 class="card-header" style="text-align:  center;background-color:  #007bff; color:  #fff;">Login here !</h5>
+						<div class="card-body">
 							<form class="form-horizontal" name='f' action="login"
 								method='POST'>
 								<c:if test="${not empty error}">
@@ -78,16 +79,18 @@
 										placeholder="Password" name="password">
 								</div>
 								<div class="row">
-									<div class="col-6">
+								
+								<div class="col-6">
+										
+											<label for="remember"> Remember me?</label> 
+											<input type="checkbox" id="remember" name="remember-me" value="true"/>
+										
+									</div>
+									<div class="col-6 text-right">
 										<button type="submit" class="btn btn-primary px-4">Login</button>
 									</div>
 
-									<div class="col-6 text-right">
-										
-											<label for="remember"> Remember me</label> 
-											<input type="checkbox" name="remember" />
-										
-									</div>
+									
 								</div>
 							</form>
 						</div>
@@ -113,11 +116,9 @@
 	<br>
 	<br>
 	
-	
-
 	<!-- Image and text -->
-	<span class="d-block p-2 bg-dark text-white"><i id="best" style="color: #ff0000;">&nbsp;&nbsp;&nbsp; * Best Viewed in Google Chrome</i>
-		<p style="display: inline; margin: 0 20% 0 30%;">&copy; 2018, DCM Textiles</p> 
+	<span class="d-block p-2 bg-dark text-white"><i id="best" style="color: #ff0000;">&nbsp;&nbsp;&nbsp; * Best Viewed in Google chrome on all devices.</i>
+		
 		<i id="ver" style="color: #ff0000; float: right;">Ver 1.0&nbsp;&nbsp;&nbsp;</i></span>
 
 

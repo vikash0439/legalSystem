@@ -26,7 +26,6 @@ public class TestService {
 	public List<Test> showAllTest(){
 		List<Test> test=new ArrayList<Test>();
 		testRepository.findAll().forEach(test :: add);
-		System.out.println(test);
 		return test;
 	}
 

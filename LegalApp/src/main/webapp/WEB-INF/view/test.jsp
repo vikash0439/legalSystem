@@ -15,6 +15,38 @@
 
 </head>
 <body>
+<span>Case No: </span>
+	<input id="id" />
+
+	<script>
+		var options = {
+			url : "${pageContext.request.contextPath}/id",
+			getValue : "id",
+			list : {
+				match : {
+					enabled : true
+				}
+			}
+		};
+		$("#id").easyAutocomplete(options);
+	</script>
+	
+	<br><br><br>
+	<input id="name" />
+
+	<script>
+		var options = {
+			url : "${pageContext.request.contextPath}/name",
+			getValue : "name",
+			list : {
+				match : {
+					enabled : true
+				}
+			}
+		};
+		$("#name").easyAutocomplete(options);
+	</script>
+<br><br><br>
 	<input id="field1" />
 
 	<script>
@@ -30,21 +62,7 @@
 		$("#field1").easyAutocomplete(options);
 	</script>
     <br><br><br>
-	<span>Case No: </span>
-	<input id="caseno" />
-
-	<script>
-		var options = {
-			url : "${pageContext.request.contextPath}/caseno",
-			getValue : "caseno",
-			list : {
-				match : {
-					enabled : true
-				}
-			}
-		};
-		$("#caseno").easyAutocomplete(options);
-	</script>
+	
 
 </body>
 </html>

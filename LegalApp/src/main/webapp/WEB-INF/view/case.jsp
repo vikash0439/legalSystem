@@ -87,8 +87,8 @@
 								<tbody>
 									<c:forEach var="cases" items="${ cases}">
 										<tr>
-											<td><a href="/view-cases?id=${cases.id }">${cases.id }</a></td>
-											<td>${cases.caseno }</td>
+											<td>${cases.id }</td>
+											<td><a href="/view-cases?caseno=${cases.caseno }">${cases.caseno }</a></td>
 											<td>${cases.fileno }</td>
 											<td>${cases.state }</td>
 											<td>${cases.title }	</td>
@@ -286,7 +286,7 @@
 											<div class="col-sm-6">
 												<div class="form-group">
 													<label for="date">Designation</label> <input type="text"
-														class="form-control" id="ccnumber" name="designation"
+														class="form-control" id="designation" name="designation"
 														placeholder="Enter Judge's designation"
 														value="${c.designation }">
 												</div>
@@ -294,7 +294,7 @@
 											<div class="col-sm-6">
 												<div class="form-group">
 													<label for="time">Court </label> <input type="text"
-														class="form-control" id="court" name="state"
+														class="form-control" id="state" name="state"
 														placeholder="Enter the court "
 														value="${c.state }">
 												</div>
@@ -348,8 +348,8 @@
 																class="fa fa-inr"></i></span>
 														</div>
 														<input type="number" class="form-control" id="total"
-															placeholder="Amount Payable" name="total"
-															value="${payment.total }">
+															name="total"
+															value="0">
 													</div>
 												</div>
 											</div>
@@ -362,7 +362,7 @@
 																class="fa fa-inr"></i></span>
 														</div>
 														<input type="number" class="form-control" id="paid"
-															name="paid" placeholder="Amount Paid" value="${payment.paid }">
+															name="paid" value="0">
 													</div>
 												</div>
 											</div>
@@ -386,8 +386,8 @@
 														<span class="input-group-text"><i class="fa fa-inr"></i></span>
 													</div>
 													<input type="number" class="form-control" id="balance"
-														placeholder="INR" name="balance"
-														value="${payment.balance }" readonly>
+														
+														value="0" readonly>
 												</div>
 											</div>
 										</div>
@@ -533,7 +533,7 @@
 												</div>
 												<div class="col-sm-2">
 													<div class="form-group">
-														<label for="ccnumber"><b>Case Number:</b>
+														<label for="ccnumber"><b>Case No:</b>
 															${c.caseno }</label>
 													</div>
 												</div>
@@ -613,7 +613,7 @@
 											<!--/.row-->
 											<div class="row">
 												<div class="form-group col-sm-6">
-													<label for="ccmonth"><b>Connected-cases No: </b>${c.updatecase.connected }</label>
+													<label for="ccmonth"><b>Connected-cases No: </b><a href="${c.updatecase.connected }">${c.updatecase.connected }</a></label>
 												</div>
 											</div>
 											<div class="row">
@@ -765,7 +765,10 @@
 										aria-labelledby="headingThree" data-parent="#accordion">
 										<div class="card-body">
 											<div align="center">
-												<h5>Payments History</h5>
+												<h5><u>Previous Payments</u></h5>
+												<c:if test="${empty pay}">
+														 <br> <h5 style=" text-align:  center; color: #dc3545; font-size: 20px;">No payment history found</h5><br>
+												</c:if>	
 											</div>
 											<div class="row">
 
@@ -817,10 +820,12 @@
 														</div>
 													</div>
 												</c:forEach>
+												
+												 
 											</div>
 											<hr>
 											<div align="center">
-												<h4>Latest Payment</h4>
+												<h4><u>Latest Payment</u></h4>
 											</div>
 											<div class="row">
 
@@ -930,6 +935,9 @@
 														</tbody>
 													</c:forEach>
 												</table>
+												 <c:if test="${empty document}">
+							 <br> <h5 style=" text-align:  center; color: #dc3545; font-size: 20px;">No Document found for this case</h5><br>
+					</c:if>	
 											</div>
 										</div>
 										
@@ -954,7 +962,7 @@
 													<tr class="card-header">													
 														<th>Last Date of Hearing</th>
 														<th>Connected Cases</th>
-														<th>Cavet</th>
+														<th>Caveat</th>
 														<th>Next Date of Hearing</th>
 														<th>Current Status</th>
 													</tr>
@@ -974,6 +982,9 @@
 												
 
 											</table>
+											 <c:if test="${empty casesTrigger}">
+							 <br> <h5 style=" text-align:  center; color: #dc3545; font-size: 20px;">No history yet</h5><br>
+					</c:if>	
 
                                          </div>
 
@@ -1257,7 +1268,7 @@
 	    $('#example').DataTable( {
 	        dom: 'Bfrtip',
 	        buttons: [
-	             'excel', 'pdf', 'print'
+	             'copy', 'excel', 'print'
 	        ]
 	    } );
 	} );

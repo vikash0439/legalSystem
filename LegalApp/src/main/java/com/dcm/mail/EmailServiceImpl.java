@@ -23,10 +23,7 @@ public class EmailServiceImpl {
 	private ReminderService reminderService;
   
     @Autowired
-    public JavaMailSender emailSender;
-    
-    
-    
+    public JavaMailSender emailSender; 
  
     public void sendSimpleMessage(String to){
     	
@@ -41,6 +38,9 @@ public class EmailServiceImpl {
      
   	MimeMessage message = emailSender.createMimeMessage();
       List<Reminder> reminder = reminderService.MailReminder();  
+      if(reminder.isEmpty()) {
+    	  System.out.println("No reminders");
+      }else {
       String m = "<html><h3><b>Namaste!</b></h3><p>Reminders for tomorrow's are : </p><br><br><table style=\"\r\n" + 
       		 
       		"    text-align:  center;     border: 1px solid #ddd; font-family: arial, sans-serif; border-collapse: collapse;\r\n" + 
@@ -85,6 +85,6 @@ public class EmailServiceImpl {
       FileSystemResource file = new FileSystemResource(new File("E:\\temp\\day.jpeg"));
       helper.addAttachment("dcm.jpeg", file);  
       emailSender.send(message);
-      
+      } 
   }
 }

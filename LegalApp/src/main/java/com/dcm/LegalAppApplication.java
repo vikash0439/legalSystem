@@ -25,13 +25,11 @@ public class LegalAppApplication {
 		SpringApplication.run(LegalAppApplication.class, args);
 	}
 	
-	
-	
+
 	@Scheduled(cron = "0 0 9,17 * * *")
 	public void scheduleFixedRateTask() throws MessagingException {
 	    String[] to = userservice.getEmail();
 		emailService.sendMailWithAttachement(to);
-		System.out.println("Reminder Send");
 		
 	}
 }

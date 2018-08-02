@@ -42,8 +42,8 @@ public class ActsService {
 		
 	}
 	
-	public Acts findAct(String section) {
-		return actsRepository.findBySection(section);
+	public Acts findAct(String name) {
+		return actsRepository.findByName(name);
 	}
 
 }

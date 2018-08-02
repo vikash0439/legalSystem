@@ -59,11 +59,18 @@ function goBack() {
 	<br><br>
 	
 <div class="container" id="homediv">
+				<br>
+				<br>
+				<br>
+				<br>
 				<div class="jumbotron text-center">
 					<h1>Sorry!</h1>
 					<p>you are not authorized to access this page</p>
 					<button type="submit" onclick="goBack()" class="btn btn-primary">Go Back</button>
-				</div>
+				</div>	
+				<br>
+				<br>
+				<br>
 			</div>
  <br><br>
 <!-- Image and text -->

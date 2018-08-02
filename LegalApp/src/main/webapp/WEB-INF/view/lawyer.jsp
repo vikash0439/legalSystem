@@ -126,19 +126,19 @@
 									<div class="card-body">
 										<div class="form-group">
 											<label for="company">Name of Lawyer</label> <input
-												type="text" class="form-control" id="company" name="name"
+												type="text" class="form-control" id="name" name="name"
 												placeholder="Enter name of the Lawyer"
 												value="${lawyer.name }">
 										</div>
 										<div class="form-group">
 											<label for="vat">Address</label> <input type="text"
-												class="form-control" id="vat"
+												class="form-control" id="address"
 												placeholder="H.No/Flat No/Building No" name="address"
 												value="${lawyer.address }">
 										</div>
 										<div class="form-group">
 											<label for="street"></label> <input type="text"
-												class="form-control" id="street" placeholder="Area/Locality"
+												class="form-control" id="line2" placeholder="Area/Locality"
 												name="line2" value="${lawyer.line2 }">
 										</div>
 										<div class="row">
@@ -163,7 +163,7 @@
 											</div>
 											<div class="form-group col-sm-4">
 												<label for="postal-code"></label> <input type="text"
-													class="form-control" id="postal-code"
+													class="form-control" id="pin"
 													placeholder="Postal Code" name="pin" value="${lawyer.pin }">
 											</div>
 										</div>
@@ -172,7 +172,7 @@
 											<div class="col-sm-6">
 												<div class="form-group">
 													<label for="ccnumber">Contact No.</label> <input
-														type="text" class="form-control" id="ccnumber"
+														type="text" class="form-control" id="phone"
 														placeholder="Eg: 99999999" name="phone"
 														value="${lawyer.phone }">
 												</div>
@@ -180,7 +180,7 @@
 											<div class="col-sm-6">
 												<div class="form-group">
 													<label for="ccnumber">Email-ID</label> <input type="text"
-														class="form-control" id="ccnumber"
+														class="form-control" id="email"
 														placeholder="Eg: abcdef@ghiljkl.com" name="email"
 														value="${lawyer.email }">
 												</div>
@@ -203,8 +203,8 @@
 														class="fa fa-user"></i>
 													</span>
 												</div>
-												<input type="text" id="username3" class="form-control"
-													name="jname" value="${lawyer.jname }">
+												<input type="text" id="jname" class="form-control"
+													name="jname" placeholder="Junior's Name" value="${lawyer.jname }">
 
 											</div>
 										</div>
@@ -216,8 +216,8 @@
 														class="fa fa-phone"></i>
 													</span>
 												</div>
-												<input type="tel" id="email3" class="form-control"
-													name="jphone" value="${lawyer.jphone }">
+												<input type="tel" id="jphone" class="form-control"
+													name="jphone" placeholder="Junior's Phone" value="${lawyer.jphone }">
 												<div class="input-group-append"></div>
 											</div>
 										</div>
@@ -228,8 +228,8 @@
 														class="fa fa-envelope"></i>
 													</span>
 												</div>
-												<input type="email" id="email3" class="form-control"
-													name="jemail" value="${lawyer.jemail }">
+												<input type="email" id="jemail" class="form-control"
+													name="jemail" placeholder="Junior's Email" value="${lawyer.jemail }">
 												<div class="input-group-append"></div>
 											</div>
 										</div>
@@ -247,8 +247,8 @@
 														class="fa fa-user"></i>
 													</span>
 												</div>
-												<input type="text" id="username3" class="form-control"
-													name="cname" value="${lawyer.cname }">
+												<input type="text" id="cname" class="form-control"
+													name="cname" placeholder="Clerk's Name" value="${lawyer.cname }">
 
 											</div>
 										</div>
@@ -260,8 +260,8 @@
 														class="fa fa-phone"></i>
 													</span>
 												</div>
-												<input type="tel" id="email3" class="form-control"
-													name="cphone" value="${lawyer.cphone }">
+												<input type="tel" id="cphone" class="form-control"
+													name="cphone" placeholder="Clerk's Phone" value="${lawyer.cphone }">
 												<div class="input-group-append"></div>
 											</div>
 										</div>
@@ -272,8 +272,8 @@
 														class="fa fa-envelope"></i>
 													</span>
 												</div>
-												<input type="email" id="email3" class="form-control"
-													name="cemail" value="${lawyer.cemail }">
+												<input type="email" id="cemail" class="form-control"
+													name="cemail" placeholder="Clerk's Email" value="${lawyer.cemail }">
 												<div class="input-group-append"></div>
 											</div>
 										</div>

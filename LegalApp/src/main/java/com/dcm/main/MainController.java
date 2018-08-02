@@ -116,7 +116,8 @@ public class MainController {
 	
 	                     /* Spring Security */
 	@RequestMapping("/")
-	public String login() {	
+	public String login( RedirectAttributes redirectAttributes) {	
+        redirectAttributes.addFlashAttribute("msg", "Authentication Successfull ");
 		return "redirect:/home";		
 	}
 	
@@ -191,13 +192,18 @@ public class MainController {
     }
  
     
-    @RequestMapping(value = "/caseno", method = RequestMethod.GET)
-    public @ResponseBody List<com.dcm.modal.Case> caseno() {
+    @RequestMapping(value = "/id", method = RequestMethod.GET)
+    public @ResponseBody List<com.dcm.modal.Case> id() {
         return caseService.AllCases();
     }
     
     @RequestMapping(value = "/field1", method = RequestMethod.GET)
     public @ResponseBody List<Test> field1() {
+        return testService.showAllTest();
+    }
+    
+    @RequestMapping(value = "/name", method = RequestMethod.GET)
+    public @ResponseBody List<Test> name() {
         return testService.showAllTest();
     }
 
@@ -251,15 +257,12 @@ public class MainController {
 	}
 	
 	@RequestMapping("/case-submit")
-	public String SaveCase(@ModelAttribute com.dcm.modal.Case c, @ModelAttribute com.dcm.modal.UpdateCase updatecase, @ModelAttribute Payment payment, @RequestParam String advocate, @RequestParam String act, BindingResult bindingResult) {
+	public String SaveCase(@ModelAttribute com.dcm.modal.Case c, @ModelAttribute com.dcm.modal.UpdateCase updatecase, @ModelAttribute Payment payment, @RequestParam String advocate, BindingResult bindingResult) {
 		c.setUpdatecase(updatecase);
 		c.setPayment(payment);	
 		System.out.println(advocate);
 	    Lawyer lawyer1=lawyerService.findLawyer(advocate);
 		c.setLawyer(lawyer1);	
-		System.out.println(act);
-		Acts acts1= actsService.findAct(act);
-		c.setActs(acts1);
 		caseService.SaveCase(c);
 		return "redirect:/case";
 		
@@ -279,16 +282,15 @@ public class MainController {
 	
 	
 	@RequestMapping("/view-cases")
-	public String ViewCase(HttpServletRequest request, @RequestParam int id) {
-		request.setAttribute("c", caseService.getCaseDetail(id));		
-		System.out.println("hi "+caseService.getCaseDetail(id).getCaseno());
-		request.setAttribute("document", documentService.showByCaseno(caseService.getCaseDetail(id).getCaseno()));
-		request.setAttribute("reminder", reminderService.showByCaseno(caseService.getCaseDetail(id).getCaseno()));
-		request.setAttribute("updatecase", updatecaseService.getBycaseno(caseService.getCaseDetail(id).getCaseno()));
-		int paymentid=caseService.getCaseDetail(id).getPayment().getPaymentid();
+	public String ViewCase(HttpServletRequest request, @RequestParam String caseno) {
+		request.setAttribute("c", caseService.getCaseDetail(caseno));		
+		request.setAttribute("document", documentService.showByCaseno(caseno));
+		request.setAttribute("reminder", reminderService.showByCaseno(caseno));
+		request.setAttribute("updatecase", updatecaseService.getBycaseno(caseno));
+		int paymentid=caseService.getCaseDetail(caseno).getPayment().getPaymentid();
 		request.setAttribute("pay", payservice.getPay(paymentid));
-		System.out.println("Update Id: "+caseService.getCaseDetail(id).getUpdatecase().getUpdateid());
-		request.setAttribute("casesTrigger", casesTriggerService.getCasesTrigger(caseService.getCaseDetail(id).getUpdatecase().getUpdateid()));
+		System.out.println("Update Id: "+caseService.getCaseDetail(caseno).getUpdatecase().getUpdateid());
+		request.setAttribute("casesTrigger", casesTriggerService.getCasesTrigger(caseService.getCaseDetail(caseno).getUpdatecase().getUpdateid()));
 		request.setAttribute("title", caseService.CaseTitle());
 		request.setAttribute("mode", "View_Cases");
 		return "case";

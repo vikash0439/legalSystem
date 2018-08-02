@@ -20,7 +20,28 @@
 <title>Dashboard</title>
 
 </head>
-<body>
+<body >
+
+
+    <!-- Modal -->
+<div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color: #dc3545;">&times;</span>
+        </button>
+      <center style=" text-align:  center; color: #17a2b8; font-size: 20px;">
+        ${msg} <br><br>
+        <img src="<c:url value='../../static/img/check-icon.png'/>" alt="Checked">
+        <br><br> ${name}
+        </center>
+      </div>
+
+    </div>
+  </div>
+</div> 	
 
 	<!-- Image and text -->
 	<span class="d-block p-2 bg-dark text-white"><center>Welocme to Legal Managament System</center></span>
@@ -131,24 +152,30 @@
                     <table class="table table-responsive-sm table-hover table-outline mb-0">
                       <thead class="thead-light">
                         <tr style=" text-align: ;">
-                            <th width="10%">Case</th>
-							<th width="10%">Time</th>
-							<th width="60%">Brief</th>
-							<th width="15%">Type</th>
+                            <th>Case</th>
+							<th>Time</th>
+							<th>Brief</th>
+							<th>Type</th>
                           
                         </tr>
                       </thead>
-                      <c:forEach var="reminder" items="${reminder }">
+                      
+                     
 					<tbody>
-						<tr>
+					
+						 <c:forEach var="reminder" items="${reminder }">
+						 <tr>
 							<td style="color: #212529;"><strong>${reminder.caseno }</strong></td>
 							<td>${reminder.time }</td>
 							<td>${reminder.brief }</td>
 							<td>${reminder.type }</td>
-						</tr>						
-					</tbody>
-					</c:forEach>
+						</tr>
+						</c:forEach>						
+					</tbody>				
                     </table>
+                    <c:if test="${empty reminder}">
+							 <br> <h5 style=" text-align:  center; color: #dc3545; font-size: 20px;">No Reminders today</h5><br>
+					</c:if>	
                   </div>
                 </div>
               </div>
@@ -184,6 +211,7 @@
     </div>
   </div>
 </div> 	
+
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -193,13 +221,10 @@
 		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 		crossorigin="anonymous"></script>
 	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-		integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-		crossorigin="anonymous"></script>
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <script>
-        $(document).ready(function(){
-        
+        $(document).ready(function(){      
         $.ajax({
         	url: "/count",
         	
@@ -247,7 +272,13 @@
         	});
 
         </script>
-		
-
+        <c:if test="${not empty msg}">
+<script>
+jQuery(function(){
+   jQuery('#m').click();
+});
+</script>
+    <p href="" id="m" data-toggle="modal" data-target="#welcomeModal"></p>
+</c:if>	
 </body>
 </html>
