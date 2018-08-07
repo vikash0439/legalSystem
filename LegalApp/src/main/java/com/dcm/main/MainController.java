@@ -10,7 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.Principal;
-
+import java.text.SimpleDateFormat;
 import java.util.List;
 import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
@@ -391,6 +391,11 @@ public class MainController {
 	
 	@PostMapping("/save-reminder")
 	public String saveReminder(@ModelAttribute Reminder reminder, BindingResult bindingResult) {
+//		System.out.println(date);
+//		SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-yyyy");
+//		String d = sdf.format(date);
+//		reminder.setDate(d);
+//		System.out.println(d);
 		reminderService.saveReminder(reminder);
 		return "redirect:/reminder";
 		

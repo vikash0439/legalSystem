@@ -8,6 +8,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "cases")
 public class Case{
@@ -31,17 +33,17 @@ public class Case{
 	private String nexthearing;
 	private String status;
 	
-	
+	@JsonIgnore 
 //	@OneToOne(fetch = FetchType.LAZY, mappedBy = "Case", cascade = CascadeType.ALL)
 	@OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "paymentid")
 	private Payment payment;
-	
+	@JsonIgnore 
 	@OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "updateid")
 	private UpdateCase updatecase;
 	
-	
+	@JsonIgnore 
 	@ManyToOne(cascade = CascadeType.ALL)
 	private Lawyer lawyer;
 

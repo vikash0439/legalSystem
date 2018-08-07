@@ -7,9 +7,7 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Service;
 
-import com.dcm.modal.Acts;
 import com.dcm.modal.Test;
-import com.dcm.repository.ActsRepository;
 import com.dcm.repository.TestRepository;
 
 @Service

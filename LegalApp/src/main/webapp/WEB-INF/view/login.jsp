@@ -82,8 +82,7 @@
 								
 								<div class="col-6">
 										
-											<label for="remember"> Remember me?</label> 
-											<input type="checkbox" id="remember" name="remember-me" value="true"/>
+<!-- 											<a type="" href="">Forgot Password?</a> -->
 										
 									</div>
 									<div class="col-6 text-right">

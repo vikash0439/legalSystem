@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<%@ page import="java.text.*,java.util.*" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -22,7 +23,7 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
 <link rel="stylesheet" type="text/css"
 	href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-<title>All Cases</title>
+<title>Cases</title>
 </head>
 <body>
 	<!-- Image and text -->
@@ -84,11 +85,12 @@
 										<th>Current Status</th>
 									</tr>
 								</thead>
+								
 								<tbody>
 									<c:forEach var="cases" items="${ cases}">
 										<tr>
 											<td>${cases.id }</td>
-											<td><a href="/view-cases?caseno=${cases.caseno }">${cases.caseno }</a></td>
+											<td><a href="${pageContext.request.contextPath}/view-cases?caseno=${cases.caseno }">${cases.caseno }</a></td>
 											<td>${cases.fileno }</td>
 											<td>${cases.state }</td>
 											<td>${cases.title }	</td>
@@ -192,7 +194,7 @@
 												<div class="form-group">
 													<label for="ccnumber">Case Title</label> <input type="text"
 														class="form-control" id="title"
-														placeholder="Plaintiff VS Defenders"
+														placeholder="Plaintiff VS Defendent"
 														name="title" value="${c.title }">
 
 												</div>
@@ -250,15 +252,20 @@
 											</div>
 
 											<div class="form-group col-sm-6">
-												<label for="ccmonth">Acts Applicable, if any<span style="color:  red; font-weight:  bolder;">*</span></label> <select
-													multiple="multiple"
-													class="form-control multiselect-ui form-control"
-													id="ccmonth" name="act" value="${c.act }">
+												<label for="ccmonth">Acts Applicable, if any<span style="color:  red; font-weight:  bolder;">*</span></label>
+<!-- 												 <select -->
+<!-- 													multiple="multiple" -->
+<!-- 													class="form-control multiselect-ui form-control" -->
+<%-- 													id="ccmonth" name="act" value="${c.act }"> --%>
 
-													<c:forEach var="section" items="${section }">
-														<option>${section }</option>
-													</c:forEach>
-												</select>
+<%-- 													<c:forEach var="section" items="${section }"> --%>
+<%-- 														<option>${section }</option> --%>
+<%-- 													</c:forEach> --%>
+<!-- 												</select> -->
+                                                  <textarea id="textarea-input"
+														rows="4" class="form-control"
+														placeholder="Enter acts applicable to this case.... "
+														name="act" value="${c.act }"></textarea>
 											</div>
 
 										</div>
@@ -278,7 +285,7 @@
 
 										<div class="form-group">
 											<label for="court">Judge Name</label> <input type="text"
-												class="form-control" id="name"
+												class="form-control" id="judgename"
 												placeholder="Enter Judge Name" name="judgename"
 												value="${c.judgename }">
 										</div>
@@ -927,7 +934,7 @@
 														<tbody>
 															<tr>
 																<td>${document.type }</td>
-																<td><a href ="/${c.caseno}/${document.file}" target="_blank">${document.file}</</a></td>
+																<td><a href ="${pageContext.request.contextPath}/${c.caseno}/${document.file}" target="_blank">${document.file}</</a></td>
 																<td>${document.brief }</td>
 															</tr>
 															<tr>
@@ -1278,7 +1285,7 @@
 			e.preventDefault();
 			$.ajax({
 
-				url : "/case-update",
+				url : "${pageContext.request.contextPath}/case-update",
 				type : "POST",
 				data : $('#case-update').serialize(),
 				success : function(data) {
@@ -1300,7 +1307,7 @@
 			e.preventDefault();
 			$.ajax({
 
-				url : "/payment-update",
+				url : "${pageContext.request.contextPath}/payment-update",
 				type : "POST",
 				data : $('#paysubmit').serialize(),
 				success : function(data) {

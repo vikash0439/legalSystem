@@ -83,7 +83,7 @@
 								<tbody>
 									<tr>
 										
-										<td><a href="/viewlawyer?lawyerid=${lawyer.lawyerid }">${lawyer.name }</a></td>
+										<td><a href="${pageContext.request.contextPath}/viewlawyer?lawyerid=${lawyer.lawyerid }">${lawyer.name }</a></td>
 										<td>${lawyer.state }</td>
 										<td>${lawyer.phone }</td>
 										<td>${lawyer.email }</td>

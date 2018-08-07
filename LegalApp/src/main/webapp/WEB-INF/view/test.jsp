@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="java.text.*,java.util.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,13 +16,18 @@
 
 </head>
 <body>
+
+<% SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-yyyy"); %>
+    Date:     <%= sdf.format(new Date()) %>
+    
+    <br><br><br>
 <span>Case No: </span>
 	<input id="id" />
 
 	<script>
 		var options = {
 			url : "${pageContext.request.contextPath}/id",
-			getValue : "id",
+			getValue : "caseno",
 			list : {
 				match : {
 					enabled : true
@@ -32,7 +38,7 @@
 	</script>
 	
 	<br><br><br>
-	<input id="name" />
+	<h4>Name: </h4><input id="name" />
 
 	<script>
 		var options = {
@@ -46,8 +52,7 @@
 		};
 		$("#name").easyAutocomplete(options);
 	</script>
-<br><br><br>
-	<input id="field1" />
+	<h4>Field: </h4><input id="field1" />
 
 	<script>
 		var options = {

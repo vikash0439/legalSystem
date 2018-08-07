@@ -77,7 +77,7 @@
 								<div class="card-header" style="margin-bottom: 2%;">
 									<div class="card-header">
 										<b>${document.id }. </b><a
-											href="/${document.caseno}/${document.file}" target="_blank">${document.file}</a>
+											href="${pageContext.request.contextPath}/${document.caseno}/${document.file}" target="_blank">${document.file}</a>
 									</div>
 									<div class="card-body">
 										<b>Case No:</b> ${document.caseno }<br> <b>Type:</b>

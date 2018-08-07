@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -34,7 +35,12 @@
         </button>
       <center style=" text-align:  center; color: #17a2b8; font-size: 20px;">
         ${msg} <br><br>
-        <img src="<c:url value='../../static/img/check-icon.png'/>" alt="Checked">
+            <img src="<c:url value='../../static/img/check-icon.png'/>" alt="Checked">
+            <img src="${pageContext.request.contextPath}/../../static/img/check-icon.png" alt="Checked1">
+            <img src="${pageContext.servletContext.contextPath}/../../static/img/check-icon.png" alt="Checked2">
+            <img src="${pageContext.request.contextPath}../../static/img/check-icon.png" alt="Checked3">
+            <img src="<c:url value='${pageContext.request.contextPath}../../static/img/check-icon.png'/>" alt="Checked4">
+
         <br><br> ${name}
         </center>
       </div>
@@ -76,7 +82,7 @@
           </li>
           
           <!-- Breadcrumb Menu-->
-         
+          
         </ol>
         <div class="container-fluid">
           <div class="animated fadeIn">
@@ -226,7 +232,7 @@
  <script>
         $(document).ready(function(){      
         $.ajax({
-        	url: "/count",
+        	url: "${pageContext.request.contextPath}/count",
         	
         	
         	success: function(data) {
@@ -238,7 +244,7 @@
         
         
         $.ajax({
-        	url: "/countacts",
+        	url: "${pageContext.request.contextPath}/countacts",
         	
         	
         	success: function(data) {
@@ -249,7 +255,7 @@
         	});
         
         $.ajax({
-        	url: "/countusers",
+        	url: "${pageContext.request.contextPath}/countusers",
         	
         	
         	success: function(data) {
@@ -260,7 +266,7 @@
         	});
         
         $.ajax({
-        	url: "/countcases",
+        	url: "${pageContext.request.contextPath}/countcases",
         	
         	
         	success: function(data) {

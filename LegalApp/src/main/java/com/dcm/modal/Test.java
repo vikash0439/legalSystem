@@ -8,9 +8,10 @@ import javax.persistence.Table;
 @Table(name = "test")
 public class Test{
  
-    @Id
+    
     public String field1;
     
+    @Id
     public String name;
  
     public String getName() {

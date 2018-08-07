@@ -169,7 +169,7 @@
 												<div class="form-group form-group col-sm-6">
 												
 													<label for="date">Role</label> <div >
-												<select class="form-control" id="ccyear" name="type"
+												<select class="form-control" id="role" name="role"
 													>
 													<option>--SELECT--</option>
 													<option>User</option>
