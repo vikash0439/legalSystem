@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -39,9 +40,10 @@
 			<li class="nav-item"><a class="nav-link" href="document">Documents</a></li>
 			<li class="nav-item"><a class="nav-link" href="reminder">Reminder</a></li>
 			<li class="nav-item active"><a class="nav-link" href="lawyer">Lawyer</a></li>
-			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>
 			<li class="nav-item"><a class="nav-link" href="case-logs">Logs</a></li>
+			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>
 			<li class="nav-item"><a class="nav-link" href="user">Users</a></li>
+			<li class="nav-item"><a class="nav-link" href="updates">Updates</a></li>
 		</ul>
 		<span class="navbar-text"> <i class="fa fa-user-circle" style="font-size:1.2rem;color:#17a2b8">&nbsp; ${name}</i></span> &nbsp;&nbsp;&nbsp;
 		 <a href="" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-sign-out" style="font-size:30px;color:red" ></i></a>
@@ -54,7 +56,12 @@
 		<li class="breadcrumb-item"><a href="home">Dashboard</a></li>
 		<li class="breadcrumb-item"><a href="lawyer">All Lawyer</a></li>
 		<li class="breadcrumb-item"><a href="newlawyer">Add New</a></li>
-
+        <%@ page import="java.text.*,java.util.*" %>
+           <div align="right" style="margin-left:60%;font-weight: bold; color:  #343a40;"">
+             <% SimpleDateFormat d=new SimpleDateFormat("dd-MM-yyyy"); %>
+             <% SimpleDateFormat t=new SimpleDateFormat(" HH:mm aa"); %>
+           Date:  <%= d.format(new Date()) %> &nbsp;&nbsp;Time: <%= t.format(new Date()) %>
+        </div>
 	</ol>
 	<div class="container-fluid">
 		<div class="animated fadeIn">
@@ -76,23 +83,20 @@
 									<th scope="col">Contact No.</th>
 									<th scope="col">Email-ID</th>
 									<th scope="col">Clerk's Name & Contact No.</th>
-									<th scope="col">Junior's Name & Contact No.</th>								
+									<th scope="col">Junior's Name & Contact No.</th>	
+									<security:authorize access="hasAnyRole('ADMIN')"><th scope="col">Edit</th>	 </security:authorize>							
 								</tr>
 							</thead>
 							<c:forEach var="lawyer" items="${lawyer }">
 								<tbody>
-									<tr>
-										
+									<tr>									
 										<td><a href="${pageContext.request.contextPath}/viewlawyer?lawyerid=${lawyer.lawyerid }">${lawyer.name }</a></td>
 										<td>${lawyer.state }</td>
 										<td>${lawyer.phone }</td>
 										<td>${lawyer.email }</td>
 										<td>${lawyer.cname }  &  ${lawyer.cphone }</td>
 										<td>${lawyer.jname }  &  ${lawyer.jphone }</td>
-<!-- 										<td><a class="fa fa-edit" -->
-<%-- 											href="/edit-lawyer?lawyerid=${lawyer.lawyerid }"></a>&nbsp;&nbsp;/&nbsp;&nbsp;<a --%>
-<%-- 											href="/delete-lawyer?lawyerid=${lawyer.lawyerid }" --%>
-<!-- 											class="fa fa-archive"></a></td> -->
+										<security:authorize access="hasAnyRole('ADMIN')"><td><a class="fa fa-edit" href="${pageContext.request.contextPath}/edit-lawyer?lawyerid=${lawyer.lawyerid }"></a></td></security:authorize>
 									</tr>
 								</tbody>
 							</c:forEach>
@@ -104,7 +108,8 @@
 									<th scope="col">Contact No.</th>
 									<th scope="col">Email-ID</th>
 									<th scope="col">Clerk's Name & Contact No.</th>
-									<th scope="col">Junior's Name & Contact No.</th>								
+									<th scope="col">Junior's Name & Contact No.</th>
+									<security:authorize access="hasAnyRole('ADMIN')"><th scope="col">Edit</th>	 </security:authorize>							
 								</tr>
 							</tfoot>
 						</table>
@@ -115,6 +120,188 @@
 			</div>
 		</c:when>
 				<c:when test="${mode == 'Add_Lawyer' }">
+					<form action="save-lawyer" method="POST">
+						<!--/.row-->
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="card">
+									<div class="card-header">
+										<strong>Assign lawyer</strong> <small>Form</small>
+									</div>
+									<input
+												type="hidden" class="form-control" id="lawyerid" name="lawyerid"
+												
+												value="${lawyer.lawyerid }">
+									<div class="card-body">
+										<div class="form-group">
+											<label for="company">Name of Lawyer</label> <input
+												type="text" class="form-control" id="name" name="name"
+												placeholder="Enter name of the Lawyer"
+												value="${lawyer.name }">
+										</div>
+										<div class="form-group">
+											<label for="vat">Address</label> <input type="text"
+												class="form-control" id="address"
+												placeholder="H.No/Flat No/Building No" name="address"
+												value="${lawyer.address }">
+										</div>
+										<div class="form-group">
+											<label for="street"></label> <input type="text"
+												class="form-control" id="line2" placeholder="Area/Locality"
+												name="line2" value="${lawyer.line2 }">
+										</div>
+										<div class="row">
+											<div class="form-group col-sm-6">
+												<label for="city"></label> <input type="text"
+													class="form-control" id="city" placeholder="Enter city"
+													name="city" value="${lawyer.city }">
+											</div>
+											<div class="form-group col-sm-6">
+												<label for="state"></label> <input type="text"
+													class="form-control" id="state" placeholder="Enter State"
+													name="state" value="${lawyer.state }">
+											</div>
+										</div>
+										<!--/.row-->
+										<div class="row">
+											<div class="form-group col-sm-8">
+												<label for="country"></label> <input type="text"
+													class="form-control" id="country"
+													placeholder="Country name" name="country"
+													value="${lawyer.country }">
+											</div>
+											<div class="form-group col-sm-4">
+												<label for="postal-code"></label> <input type="text"
+													class="form-control" id="pin"
+													placeholder="Postal Code" name="pin" value="${lawyer.pin }">
+											</div>
+										</div>
+										<!--/.row-->
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="form-group">
+													<label for="ccnumber">Contact No.</label> <input
+														type="text" class="form-control" id="phone"
+														placeholder="Eg: 99999999" name="phone"
+														value="${lawyer.phone }">
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="form-group">
+													<label for="ccnumber">Email-ID</label> <input type="text"
+														class="form-control" id="email"
+														placeholder="Eg: abcdef@ghiljkl.com" name="email"
+														value="${lawyer.email }">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="col-sm-6">
+								<div class="card">
+									<div class="card-header">Add Junior Form</div>
+									<div class="card-body">
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-prepend">
+													<span class="input-group-text"> <i
+														class="fa fa-user"></i>
+													</span>
+												</div>
+												<input type="text" id="jname" class="form-control"
+													name="jname" placeholder="Junior's Name" value="${lawyer.jname }">
+
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-prepend">
+													<span class="input-group-text"> <i
+														class="fa fa-phone"></i>
+													</span>
+												</div>
+												<input type="tel" id="jphone" class="form-control"
+													name="jphone" placeholder="Junior's Phone" value="${lawyer.jphone }">
+												<div class="input-group-append"></div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-prepend">
+													<span class="input-group-text"> <i
+														class="fa fa-envelope"></i>
+													</span>
+												</div>
+												<input type="email" id="jemail" class="form-control"
+													name="jemail" placeholder="Junior's Email" value="${lawyer.jemail }">
+												<div class="input-group-append"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<br>
+								<div class="card">
+									<div class="card-header">Clerk Form</div>
+									<div class="card-body">
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-prepend">
+													<span class="input-group-text"> <i
+														class="fa fa-user"></i>
+													</span>
+												</div>
+												<input type="text" id="cname" class="form-control"
+													name="cname" placeholder="Clerk's Name" value="${lawyer.cname }">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-prepend">
+													<span class="input-group-text"> <i
+														class="fa fa-phone"></i>
+													</span>
+												</div>
+												<input type="tel" id="cphone" class="form-control"
+													name="cphone" placeholder="Clerk's Phone" value="${lawyer.cphone }">
+												<div class="input-group-append"></div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-prepend">
+													<span class="input-group-text"> <i
+														class="fa fa-envelope"></i>
+													</span>
+												</div>
+												<input type="email" id="cemail" class="form-control"
+													name="cemail" placeholder="Clerk's Email" value="${lawyer.cemail }">
+												<div class="input-group-append"></div>
+											</div>
+										</div>
+										<div class="card-footer">
+											<button type="submit" class="btn btn-sm btn-primary">
+												<i class="fa fa-dot-circle-o"></i> Submit
+											</button>
+											<button type="reset" class="btn btn-sm btn-danger">
+												<i class="fa fa-ban"></i> Reset
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<!--/.row-->
+				</c:when>
+				
+				<c:when test="${mode == 'Edit_Lawyer' }">
 					<form action="save-lawyer" method="POST">
 						<!--/.row-->
 						<div class="row">
@@ -405,8 +592,8 @@
 						  <div class="card-body">						   
 						  <c:forEach var="caseno" items="${lawyer.cases }">
 						  <div class="form-group">
-										<label for="company"> &nbsp;
-										 ${caseno }
+										<label for="company"> Case No: &nbsp;
+										<a target="_blank" href="${pageContext.request.contextPath}/view-cases?caseno=${caseno}">${caseno }</a>
 											</label>
 									</div>
 						  

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -45,6 +46,7 @@
 			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>
 			<li class="nav-item"><a class="nav-link" href="case-logs">Logs</a></li>
 			<li class="nav-item active"><a class="nav-link" href="user">Users</a></li>
+			<li class="nav-item"><a class="nav-link" href="updates">Updates</a></li>
 		</ul>
 		<span class="navbar-text"> <i class="fa fa-user-circle" style="font-size:1.2rem;color:#17a2b8">&nbsp; ${name}</i></span> &nbsp;&nbsp;&nbsp;
 		 <a	href="" data-toggle="modal" data-target="#exampleModalCenter"><i
@@ -61,7 +63,12 @@
 		<li class="breadcrumb-item"><a href="home">Dashboard</a></li>
 		<li class="breadcrumb-item"><a href="user">All User</a></li>
 		<li class="breadcrumb-item"><a href="newuser">Add New</a></li>
-
+        <%@ page import="java.text.*,java.util.*" %>
+           <div align="right" style="margin-left:60%;font-weight: bold; color:  #343a40;"">
+             <% SimpleDateFormat d=new SimpleDateFormat("dd-MM-yyyy"); %>
+             <% SimpleDateFormat t=new SimpleDateFormat(" HH:mm aa"); %>
+           Date:  <%= d.format(new Date()) %> &nbsp;&nbsp;Time: <%= t.format(new Date()) %>
+        </div>
 	</ol>
 	<div class="container-fluid">
 		<div class="animated fadeIn">
@@ -75,10 +82,10 @@
 								<tr style="text-align: center;">
 									<th scope="col">#Id</th>
 									<th scope="col">Name</th>
-									<th scope="col">Username</th>
-									<th scope="col">Password</th>								
+									<th scope="col">Email-ID</th>
+									<security:authorize access="hasAnyRole('SYSTEM')"><th scope="col">Password</th>	</security:authorize>							
 									<th scope="col">Status</th>
-									<th scope="col">Role</th>
+<!-- 									<th scope="col">Role</th> -->
 									
 								</tr>
 							</thead>
@@ -88,11 +95,11 @@
 									<tr>
 
 										<td>${user.id }</td>
-										<td><a href="/viewuser?name=${user.name }">${user.name }</a></td>
+										<td><security:authorize access="hasAnyRole('SYSTEM')"><a href="/viewuser?name=${user.name }"></security:authorize>${user.name }<security:authorize access="hasAnyRole('ADMIN')"></a></security:authorize></td>
 										<td>${user.email }</td>
-										<td>${user.password }</td>
+										<security:authorize access="hasAnyRole('SYSTEM')"><td>${user.password }</td></security:authorize>
 										<td>${user.active }</td>
-										<td></td>
+									
 									</tr>
 								</c:forEach>
 
@@ -102,10 +109,10 @@
 								<tr style="text-align: center;">
 									<th scope="col">#Id</th>
 									<th scope="col">Name</th>
-									<th scope="col">Username</th>
-									<th scope="col">Password</th>
+									<th scope="col">Email-ID</th>
+									<security:authorize access="hasAnyRole('SYSTEM')"><th scope="col">Password</th></security:authorize>
 									<th scope="col">Status</th>
-									<th scope="col">Role</th>
+<!-- 									<th scope="col">Role</th> -->
 									
 								</tr>
 							</tfoot>

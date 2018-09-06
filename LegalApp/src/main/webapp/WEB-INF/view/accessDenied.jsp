@@ -42,9 +42,10 @@ function goBack() {
 			<li class="nav-item"><a class="nav-link" href="document">Documents</a></li>
 			<li class="nav-item"><a class="nav-link" href="reminder">Reminder</a></li>
 			<li class="nav-item"><a class="nav-link" href="lawyer">Lawyer</a></li>
-			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>
 			<li class="nav-item"><a class="nav-link" href="case-logs">Logs</a></li>
+			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>			
 			<li class="nav-item"><a class="nav-link" href="user">Users</a></li>
+			<li class="nav-item"><a class="nav-link" href="updates">Updates</a></li>
 		</ul>
 		<span class="navbar-text"> <i class="fa fa-user-circle" style="font-size:1.2rem;color:#17a2b8">&nbsp; ${name}</i></span> &nbsp;&nbsp;&nbsp;
 		<a href="" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-sign-out" style="font-size:30px;color:red" ></i></a>
@@ -52,7 +53,12 @@ function goBack() {
 	</nav>
 	<ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="home">Dashboard</a></li>
-        
+        <%@ page import="java.text.*,java.util.*" %>
+           <div align="right" style="margin-left:60%;font-weight: bold; color:  #343a40;"">
+             <% SimpleDateFormat d=new SimpleDateFormat("dd-MM-yyyy"); %>
+             <% SimpleDateFormat t=new SimpleDateFormat(" HH:mm aa"); %>
+           Date:  <%= d.format(new Date()) %> &nbsp;&nbsp;Time: <%= t.format(new Date()) %>
+        </div>
           <!-- Breadcrumb Menu-->
          
         </ol>

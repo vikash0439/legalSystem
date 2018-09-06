@@ -1,8 +1,10 @@
 package com.dcm.main;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URLConnection;
@@ -10,12 +12,13 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.Principal;
-import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.List;
-import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -34,7 +37,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.dcm.mail.EmailServiceImpl;
+import com.dcm.LegalAppApplication;
 import com.dcm.modal.Acts;
 import com.dcm.modal.Document;
 import com.dcm.modal.Lawyer;
@@ -53,11 +56,14 @@ import com.dcm.service.PaymentService;
 import com.dcm.service.ReminderService;
 import com.dcm.service.TestService;
 import com.dcm.service.UpdatecaseService;
+import com.dcm.service.UpdatesService;
 import com.dcm.service.UserService;
 
 @Controller
 @SessionAttributes("name")
 public class MainController {
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger(LegalAppApplication.class);
 	
 	@Autowired
 	private ActsService actsService;
@@ -67,9 +73,6 @@ public class MainController {
 	
 	@Autowired
 	private ReminderService reminderService;
-	
-	@Autowired
-	private EmailServiceImpl emailService;
 	
 	@Autowired
 	private DocumentService documentService;
@@ -96,24 +99,12 @@ public class MainController {
 	private CasesTriggerService casesTriggerService;
 	
 	@Autowired
+	private UpdatesService updatesService;
+	
+	@Autowired
 	private TestService testService;
 	
 
-	
-	//Save the uploaded file to this folder
-	private static String UPLOADED_FOLDER = "E:\\temp\\";
-
-
-	@ResponseBody
-	@RequestMapping("/mail")
-	public String mail() throws MessagingException {
-		String[] a=userservice.getEmail();
-		System.out.println(a);
-//		String[] to = {"vikash0439@gmail.com", "vikash.k@dcmtech.com"};
-		emailService.sendMailWithAttachement(a);
-		return "Mail sent Successfully";		
-	}
-	
 	                     /* Spring Security */
 	@RequestMapping("/")
 	public String login( RedirectAttributes redirectAttributes) {	
@@ -128,10 +119,12 @@ public class MainController {
 	  ModelAndView model = new ModelAndView();
 	  if (error != null) {
 		model.addObject("error", "Invalid username and password!");
+		LOGGER.info("Login error!");
 	  }
 
 	  if (logout != null) {
 		model.addObject("msg", "Logged out successfully.");
+		LOGGER.info("Logged out!");
 	  }
 	  model.setViewName("login");
 	  return model;
@@ -215,11 +208,12 @@ public class MainController {
 		 String name = principal.getName();
 		 model.addAttribute("name", name);
 		request.setAttribute("reminder", reminderService.AllReminder());
+		LOGGER.info("Logged in by: " +name);
 		return "home";
 		
 	}
 	                   /* Users controller */
-	@PreAuthorize("hasAnyRole('SYSTEM')")
+	
 	@RequestMapping("/user")
 	public String Users(HttpServletRequest request) {	
 		request.setAttribute("users", userservice.showAllUsers());
@@ -227,6 +221,7 @@ public class MainController {
 		return "user";		
 	}
 	
+	@PreAuthorize("hasAnyRole('SYSTEM')")
 	@RequestMapping("/newuser")
 	public String NewUsers(HttpServletRequest request) {	
 		request.setAttribute("mode", "New_User");
@@ -243,6 +238,7 @@ public class MainController {
 	@RequestMapping("/save-user")
 	public String saveUsers(@ModelAttribute com.dcm.modal.Users user, BindingResult bindingResult) {
 		userservice.saveUser(user);
+		LOGGER.info("Event: New User Added");
 		return "redirect:/user";		
 	}
 	
@@ -264,6 +260,7 @@ public class MainController {
 	    Lawyer lawyer1=lawyerService.findLawyer(advocate);
 		c.setLawyer(lawyer1);	
 		caseService.SaveCase(c);
+		LOGGER.info("Event: New Case Added");
 		return "redirect:/case";
 		
 	}
@@ -303,6 +300,7 @@ public class MainController {
 	public void UpdateCase(@ModelAttribute com.dcm.modal.UpdateCase updatecase, BindingResult bindingResult, HttpServletRequest request) {
 		
 		updatecaseService.saveMyUpdateCaseDetail(updatecase);
+		LOGGER.info("Event: Case Status Updated");
 		
 	}
 	
@@ -333,13 +331,21 @@ public class MainController {
 	@PostMapping("/save-lawyer")
 	public String saveLawyer(@ModelAttribute Lawyer lawyer, BindingResult bindingResult) {
 		lawyerService.saveMyLawyer(lawyer);
+		LOGGER.info("Event: New Lawyer Added");
 		return "redirect:/lawyer";
 		
 	}
 	
+	@RequestMapping("/edit-lawyer")
+	public String editLawyer(@RequestParam int lawyerid, HttpServletRequest request) {
+		request.setAttribute("lawyer", lawyerService.editMyLawyer(lawyerid));			
+		request.setAttribute("mode", "Add_Lawyer");	
+		return "lawyer";
+	}
+	
 	
 	@RequestMapping("/viewlawyer")
-	public String editLawyer(@RequestParam int lawyerid, HttpServletRequest request) {
+	public String viewLawyer(@RequestParam int lawyerid, HttpServletRequest request) {
 		request.setAttribute("lawyer", lawyerService.editMyLawyer(lawyerid));	
 		System.out.println("Hi " +lawyerService.editMyLawyer(lawyerid).getCases().toString());	
 		request.setAttribute("mode", "View_Lawyer");	
@@ -359,8 +365,7 @@ public class MainController {
 	public String NewActs(HttpServletRequest request) {
 		request.setAttribute("title", caseService.CaseTitle());
 		request.setAttribute("mode", "New_Act");
-		return "acts";
-		
+		return "acts";		
 	}
 	
 	
@@ -391,31 +396,30 @@ public class MainController {
 	
 	@PostMapping("/save-reminder")
 	public String saveReminder(@ModelAttribute Reminder reminder, BindingResult bindingResult) {
-//		System.out.println(date);
-//		SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-yyyy");
-//		String d = sdf.format(date);
-//		reminder.setDate(d);
-//		System.out.println(d);
 		reminderService.saveReminder(reminder);
+		LOGGER.info("Event: New Reminder created");
 		return "redirect:/reminder";
 		
+	}
+	
+	@PreAuthorize("hasAnyRole('ADMIN')")
+	@ResponseBody
+	@RequestMapping(path="/set-reminder", method=RequestMethod.POST)
+	public void setReminder(HttpServletRequest request,  @ModelAttribute Reminder r) {
+		reminderService.saveReminder(r);
+		LOGGER.info("Event: New Reminder set");
 	}
 	
 	                 /* Documents controller */
 	@RequestMapping("/document")
 	public String document(HttpServletRequest request) {
-		request.setAttribute("reminder", reminderService.showAllReminder());
-		 File directory = new File(UPLOADED_FOLDER);
-	        //get all the files from a directory
-	        File[] fList = directory.listFiles();
-	        request.setAttribute("documents", fList);
 	        request.setAttribute("document",documentService.showAllDocument());
 	        request.setAttribute("mode", "All_Document");
 		return "document";	
 	}
 	
 	@PostMapping("/upload-document") // //new annotation since 4.3
-    public String singleFileUpload(@RequestParam("file") MultipartFile file, @RequestParam String caseno, RedirectAttributes redirectAttributes, @ModelAttribute Document document,  BindingResult bindingResult) {
+    public String singleFileUpload(@RequestParam("file") MultipartFile file, @RequestParam String type, RedirectAttributes redirectAttributes, @ModelAttribute Document document,  BindingResult bindingResult) {
         System.out.println("Check 1");
 		document.setFile(file.getOriginalFilename());
 		System.out.println("Check 1");
@@ -427,7 +431,7 @@ public class MainController {
 
         try {
             // Get the file and save it somewhere
-        	 File files = new File(caseno);
+        	 File files = new File(type);
              if (!files.exists()) {
                  if (files.mkdir()) {
                      System.out.println("Directory is created!");
@@ -436,10 +440,10 @@ public class MainController {
                  }
              }
             byte[] bytes = file.getBytes();
-            Path path = Paths.get(caseno, file.getOriginalFilename());
+            Path path = Paths.get(type, file.getOriginalFilename());
             Files.write(path, bytes);
             redirectAttributes.addFlashAttribute("message", "You successfully uploaded '" + file.getOriginalFilename() + "'");
-
+            LOGGER.info("Event: Document Uploaded {}"+ file.getOriginalFilename());
         } catch (IOException e) {
             e.printStackTrace();
         }       
@@ -447,11 +451,11 @@ public class MainController {
     }
 	
 	@ResponseBody
-	@RequestMapping(value = "/{caseno}/{file}", method = RequestMethod.GET)
-	public void loadFile( @PathVariable("file") String file,  @PathVariable("caseno") String caseno, HttpServletResponse response) throws IOException {
+	@RequestMapping(value = "/{type}/{file}", method = RequestMethod.GET)
+	public void loadFile( @PathVariable("file") String file,  @PathVariable("type") String type, HttpServletResponse response) throws IOException {
 		System.out.println(file);
-		System.out.println(caseno);
-		final Path rootLocation = Paths.get(caseno);
+		System.out.println(type);
+		final Path rootLocation = Paths.get(type);
 		Path filename = rootLocation.resolve(file);
 		System.out.println(filename);
 		File f = new File(filename.toString());
@@ -491,6 +495,36 @@ public class MainController {
 		
 	}
 	
+	@PreAuthorize("hasAnyRole('ADMIN')")
+	@ResponseBody
+	@RequestMapping(value="/case-upload", method=RequestMethod.POST)
+	 public void caseFileUpload(@RequestParam("file") MultipartFile file, @RequestParam String type,  @ModelAttribute Document d,  BindingResult bindingResult) {
+        System.out.println("Check 1");
+		d.setFile(file.getOriginalFilename());
+		System.out.println("Check 1");
+        documentService.saveMyDocument(d);
+        if (file.isEmpty()) {
+            
+        }
+        try {
+            // Get the file and save it somewhere
+        	 File files = new File(type);
+             if (!files.exists()) {
+                 if (files.mkdir()) {
+                     System.out.println("Directory is created!");
+                 } else {
+                     System.out.println("Failed to create directory!");
+                 }
+             }
+            byte[] bytes = file.getBytes();
+            Path path = Paths.get(type, file.getOriginalFilename());
+            Files.write(path, bytes);
+            LOGGER.info("Event: Document Uploaded {}"+ file.getOriginalFilename());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }       
+        
+    }
 	
 	           /*  Case-logs controller */
 	
@@ -519,11 +553,22 @@ public class MainController {
 	}
 	
 	@PostMapping("/save-logs")
-	public String saveLogs(@ModelAttribute Logs logs, @RequestParam String date, BindingResult bindingResult, HttpServletRequest request) {
-		System.out.println("From log input "+date);
+	public String saveLogs(@ModelAttribute Logs logs, BindingResult bindingResult, HttpServletRequest request) {
 		request.setAttribute("msg", "Logs Entries Updated Seccessfully");
 		logsService.saveLogs(logs);
+		LOGGER.info("Event: New Log entered");
 		return "redirect:/add-logs";
+		
+	}
+	
+	@PreAuthorize("hasAnyRole('ADMIN')")
+	@ResponseBody
+	@PostMapping("/set-log")
+	public void setLogs(@ModelAttribute Logs logs, @RequestParam String date, BindingResult bindingResult, HttpServletRequest request) {
+		System.out.println("From log input "+date);
+		request.setAttribute("msg", "Logs Entries Updated Seccessfully");
+		LOGGER.info("Event: New Log entered");
+		logsService.saveLogs(logs);	
 		
 	}
 	
@@ -532,10 +577,40 @@ public class MainController {
 	@PreAuthorize("hasAnyRole('ADMIN')")
 	@ResponseBody
 	@RequestMapping(path="/payment-update", method=RequestMethod.POST)
-	public void PaymentUpdate(HttpServletRequest request,  @ModelAttribute Payment payment) {
-		
+	public void PaymentUpdate(HttpServletRequest request,  @ModelAttribute Payment payment) {		
 		paymentService.UpdatePaymentById(payment);
+		LOGGER.info("Event: Payment Updated");	
+	}
 	
+	
+	
+	
+	/* Updates  Menu Bar*/
+	
+	@RequestMapping("/updates")
+	public String updates(HttpServletRequest request) throws IOException {
 		
+		
+		request.setAttribute("updates", updatesService.showAllUpdates());
+		request.setAttribute("mode", "All_Updates");
+
+		return "updates";	
+	}
+	
+	@RequestMapping("/logs")
+	public String Logs(HttpServletRequest request) throws IOException {
+		
+		File file = new File("logs/spring.log");
+		BufferedReader br = new BufferedReader(new FileReader(file));	 
+		  String st;
+		  List<String> logs=new ArrayList<String>();
+		  while ((st = br.readLine()) != null) {
+			logs.add(st);
+		  }
+		
+		request.setAttribute("logs", logs);
+		request.setAttribute("mode", "All_Logs");
+		br.close();
+		return "updates";	
 	}
 }

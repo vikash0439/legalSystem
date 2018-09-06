@@ -17,8 +17,8 @@
 </head>
 <body>
 
-<% SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-yyyy"); %>
-    Date:     <%= sdf.format(new Date()) %>
+<% SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-yyyy  HH:mm:ss"); %>
+   <i class="fa fa-clock-o" style="font-size:24px"></i>     <%= sdf.format(new Date()) %>
     
     <br><br><br>
 <span>Case No: </span>

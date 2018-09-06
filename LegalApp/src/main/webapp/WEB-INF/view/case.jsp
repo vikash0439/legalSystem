@@ -8,9 +8,7 @@
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -42,9 +40,10 @@
 			<li class="nav-item"><a class="nav-link" href="document">Documents</a></li>
 			<li class="nav-item"><a class="nav-link" href="reminder">Reminder</a></li>
 			<li class="nav-item"><a class="nav-link" href="lawyer">Lawyer</a></li>
-			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>
 			<li class="nav-item"><a class="nav-link" href="case-logs">Logs</a></li>
+			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>
 			<li class="nav-item"><a class="nav-link" href="user">Users</a></li>
+			<li class="nav-item"><a class="nav-link" href="updates">Updates</a></li>
 		</ul>
 		<span class="navbar-text"> <i class="fa fa-user-circle"
 			style="font-size: 1.2rem; color: #17a2b8">&nbsp; ${name}</i></span>
@@ -59,7 +58,12 @@
 		<li class="breadcrumb-item"><a href="home">Dashboard</a></li>
 		<li class="breadcrumb-item"><a href="case">All Cases</a></li>
 		<li class="breadcrumb-item"><a href="newcase">Add New</a></li>
-		
+		<%@ page import="java.text.*,java.util.*" %>
+           <div align="right" style="margin-left:60%;font-weight: bold; color:  #343a40;"">
+             <% SimpleDateFormat d=new SimpleDateFormat("dd-MM-yyyy"); %>
+             <% SimpleDateFormat t=new SimpleDateFormat(" HH:mm aa"); %>
+           Date:  <%= d.format(new Date()) %> &nbsp;&nbsp;Time: <%= t.format(new Date()) %>
+        </div>
 	</ol>
 	<div class="container-fluid">
 		<div class="animated fadeIn">
@@ -96,7 +100,7 @@
 											<td>${cases.title }	</td>
 											<td>${cases.description }</td>
 											<td><a
-												href="/viewlawyer?lawyerid=${cases.lawyer.lawyerid }"
+												href="${pageContext.request.contextPath}/viewlawyer?lawyerid=${cases.lawyer.lawyerid }"
 												target="_blank">${cases.lawyer.name } </a></td>
 											
 											<td>${cases.updatecase.lasthearing }</td>
@@ -155,7 +159,7 @@
 												<div class="form-group">
 													<label for="ccnumber">Case Number</label> <input
 														type="text" class="form-control" id="caseno"
-														name="caseno" placeholder="Eg: CC101514H45"
+														name="caseno" placeholder="Eg: ABC-00-2018
 														value="${c.caseno }">
 												</div>
 											</div>
@@ -173,14 +177,14 @@
 											<div class="col-sm-6">
 												<div class="form-group">
 													<label for="date">Date of Institution</label> <input
-														type="date" class="form-control" id="ccnumber"
+														type="text" class="form-control" id="ccnumber" placeholder="DD-MM-YYYY"
 														name="dateinstitution" value="${c.dateinstitution }">
 												</div>
 											</div>
 											<div class="col-sm-6">
 												<div class="form-group">
 													<label for="time">Date of Summon </label> <input
-														type="date" class="form-control" id="ccnumber"
+														type="text" class="form-control" id="ccnumber" placeholder="DD-MM-YYYY"
 														name="datesummon" value="${c.datesummon }">
 												</div>
 											</div>
@@ -620,7 +624,7 @@
 											<!--/.row-->
 											<div class="row">
 												<div class="form-group col-sm-6">
-													<label for="ccmonth"><b>Connected-cases No: </b><a href="${c.updatecase.connected }">${c.updatecase.connected }</a></label>
+													<label for="ccmonth"><b>Connected-cases No: </b>${c.updatecase.connected }</label>
 												</div>
 											</div>
 											<div class="row">
@@ -635,11 +639,35 @@
 										   <security:authorize access="hasAnyRole('ADMIN')">
 											<button type="button" class="btn btn-primary"
 												data-toggle="modal" data-target="#caseModal"
-												data-whatever="@fat">Update</button>
-                                            </security:authorize>	
+												data-whatever="@fat">Update Case</button>
+                                            </security:authorize>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <security:authorize access="hasAnyRole('ADMIN')">
+											<button type="button" class="btn btn-primary"
+												data-toggle="modal" data-target="#reminderModal"
+												data-whatever="@fat">Set Reminder</button>
+                                            </security:authorize>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <security:authorize access="hasAnyRole('ADMIN')">
+											<button type="button" class="btn btn-primary"
+												data-toggle="modal" data-target="#exampleModal"
+												data-whatever="@fat">Update Payment</button>
+                                           </security:authorize>
+                                           &nbsp;&nbsp;&nbsp;&nbsp;
+                                           <security:authorize access="hasAnyRole('ADMIN')">
+											<button type="button" class="btn btn-primary"
+												data-toggle="modal" data-target="#uploadModal"
+												data-whatever="@fat">Upload Document</button>
+                                           </security:authorize>	
+                                           &nbsp;&nbsp;&nbsp;&nbsp;
+                                           <security:authorize access="hasAnyRole('ADMIN')">
+											<button type="button" class="btn btn-primary"
+												data-toggle="modal" data-target="#logModal"
+												data-whatever="@fat">Case Log</button>
+                                           </security:authorize>	
+                                           
 											<!--/.row-->
-										</div>
-										
+										</div>								
 									</div>
 								</div>
 								<div class="card">
@@ -934,29 +962,45 @@
 														<tbody>
 															<tr>
 																<td>${document.type }</td>
-																<td><a href ="${pageContext.request.contextPath}/${c.caseno}/${document.file}" target="_blank">${document.file}</</a></td>
+																<td><a href ="${pageContext.request.contextPath}/${document.type}/${document.file}" target="_blank">${document.file}</</a></td>
 																<td>${document.brief }</td>
 															</tr>
 															<tr>
 															</tr>
 														</tbody>
 													</c:forEach>
+													
 												</table>
+												
 												 <c:if test="${empty document}">
 							 <br> <h5 style=" text-align:  center; color: #dc3545; font-size: 20px;">No Document found for this case</h5><br>
 					</c:if>	
 											</div>
+											
+											
+										</div>
+										<div class="card-body">										
+										   <security:authorize access="hasAnyRole('ADMIN')">
+											<button type="button" class="btn btn-primary"
+												data-toggle="modal" data-target="#uploadModal"
+												data-whatever="@fat">Upload</button>
+                                           </security:authorize>	
+											<!--/.row-->
 										</div>
 										
+										
 										<br>
+										
+										
 									</div>
+									
 								</div>
 								<div class="card">
 									<div class="card-header" id="headingFive">
 										<h5 class="mb-0">
 											<button class="btn btn-link nav-link" data-toggle="collapse"
 												data-target="#collapseFive" aria-expanded="true"
-												aria-controls="collapseFive">Case History</button>
+												aria-controls="collapseFive">Hearing-Dates</button>
 										</h5>
 									</div>
 
@@ -967,41 +1011,314 @@
 
 												<thead>
 													<tr class="card-header">													
-														<th>Last Date of Hearing</th>
-														<th>Connected Cases</th>
-														<th>Caveat</th>
+														<th>Hearing</th>
+<!-- 														<th>Connected Cases</th> -->
+<!-- 														<th>Caveat</th> -->
+                                                        <th>Status</th>
 														<th>Next Date of Hearing</th>
-														<th>Current Status</th>
+														
 													</tr>
 												</thead>
 												<tbody>
 													<c:forEach var="trigger" items="${ casesTrigger}">
 														<tr>
                                                             <td>${trigger.lasthearing }</td>
-															<td>${trigger.connected }</td>
-															<td>${trigger.cavet }</td>															
-															<td>${trigger.nexthearing }</td>
+<%-- 															<td>${trigger.connected }</td> --%>
+<%-- 															<td>${trigger.cavet }</td>															 --%>
 															<td>${trigger.status }</td>
+															<td>${trigger.nexthearing }</td>
+															
 														</tr>
 
 													</c:forEach>
 												</tbody>
-												
-
 											</table>
 											 <c:if test="${empty casesTrigger}">
 							 <br> <h5 style=" text-align:  center; color: #dc3545; font-size: 20px;">No history yet</h5><br>
 					</c:if>	
-
                                          </div>
-
 											<!--/.row-->
 										<br>
 									</div>
 								</div>
 							</div>
 						</div>
-						
+						<div class="modal fade" id="uploadModal" tabindex="-1"
+							role="dialog" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Upload
+											Document</h5>
+										<button type="button" class="close" data-dismiss="modal"
+											aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<form id="fileUploadForm"  method ="post" enctype="multipart/form-data">
+										<div class="modal-body">
+
+											<div class="row">
+												
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="ccnumber">Case No: </label>
+														<div class="input-group">
+															<div class="input-group-prepend">
+																
+															</div>
+															<input type="text" class="form-control" id="caseno"
+																 name="caseno"
+																value="${c.caseno }" readonly>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="form-group">
+														<label for="ccnumber">Document's Type</label>
+														<div class="input-group">
+															<div class="input-group-prepend">
+																
+															</div>
+															<select class="form-control" id="type" name="type" value="${d.type }">
+													<option>--SELECT--</option>
+													<option>Petition</option>
+													<option>Reply(Written Statement)</option>
+													<option>Interim Order</option>
+													<option>Affidavit</option>
+													<option>Evidence</option>
+													<option>Pleadings</option>
+													<option>Contracts</option>
+													<option>Judgements</option>
+													<option>Notification</option>
+													<option>Correspondence</option>
+													<option>Orders</option>
+												</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--/.row-->
+											
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="form-group">
+														<label for="ccnumber">Browse</label> 
+														<input type="file" class="form-control" id="file"		
+															name="file" value="${d.file }">
+													</div>
+												</div>
+											</div>
+											<!--/.row-->
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="form-group">
+														<label for="ccnumber">Brief</label>
+														<textarea id="textarea-input" rows="5"
+															class="form-control"
+															placeholder="Enter detail about document"
+															name="brief" value="${d.brief }"></textarea>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary"
+												data-dismiss="modal">Cancel</button>
+											<button type="submit" class="btn btn-primary">Upload</button>
+										</div>
+									</form>
+
+								</div>
+							</div>
+						</div>
+						<div class="modal fade" id="logModal" tabindex="-1"
+							role="dialog" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Update Case Log</h5>
+										<button type="button" class="close" data-dismiss="modal"
+											aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<form id="setlog" action="" method="">
+										<div class="modal-body">
+
+											<div class="row">
+												
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="ccnumber">Case no:</label>
+														<div class="input-group">
+															<div class="input-group-prepend">
+																
+															</div>
+															<input type="text" class="form-control" id="caseno"
+																 name="caseno"
+																value="${c.caseno }" readonly>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="form-group">
+														<label for="ccnumber">Type</label>
+														<div class="input-group">
+															<div class="input-group-prepend">
+																
+															</div>
+															<select class="form-control multiselect-ui form-control" id="ccyear" name="type"
+													value="${logs.type }">
+													<option>--SELECT--</option>
+													<option>Critical Events</option>
+													<option>Miscellanous</option>
+													<option>Others</option>
+													
+												</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--/.row-->
+											<div class="row">
+												<div class="form-group col-sm-6">
+													<label for="ccmonth">Date</label> <input type="text"
+														class="form-control" id="ccmonth" name="date" placeholder="DD-MM-YYYY"
+														value="${logs.date }" >
+
+												</div>
+												<div class="form-group col-sm-6">
+													<label for="ccnumber">Specify Type</label>
+													<div class="input-group">
+													
+														<input type="text" class="form-control" id="specify"
+															name="specify" value="${logs.specify }">
+													</div>
+												</div>
+											</div>
+											
+											<!--/.row-->
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="form-group">
+														<label for="ccnumber">Brief</label>
+														<textarea id="froala-editor" name="brief" rows="5"
+															class="form-control"
+															placeholder="Enter brief about log here.."
+															 value="${logs.brief }"></textarea>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary"
+												data-dismiss="modal">Cancel</button>
+											<button type="submit" class="btn btn-primary">Update</button>
+										</div>
+									</form>
+
+								</div>
+							</div>
+						</div>
+						<div class="modal fade" id="reminderModal" tabindex="-1"
+							role="dialog" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Reminder for this case</h5>
+										<button type="button" class="close" data-dismiss="modal"
+											aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<form id="setreminder" action="" method="">
+										<div class="modal-body">
+
+											<div class="row">
+												
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="ccnumber">Case no:</label>
+														<div class="input-group">
+															<div class="input-group-prepend">
+																
+															</div>
+															<input type="text" class="form-control" id="caseno"
+																 name="caseno"
+																value="${c.caseno }" readonly>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="form-group">
+														<label for="ccnumber">Type</label>
+														<div class="input-group">
+															<div class="input-group-prepend">
+																
+															</div>
+															<select class="form-control" id="ccyear" name="type"
+													value="${r.type }">
+													<option>--SELECT--</option>
+													<option>Court-Fillings</option>
+													<option>Meetings</option>
+													<option>Hearings</option>
+													<option>Miscellanous</option>
+													<option>Other</option>
+												</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--/.row-->
+											<div class="row">
+												<div class="form-group col-sm-6">
+													<label for="ccmonth">Date</label> <input type="text"
+														class="form-control" id="ccmonth" name="date" placeholder="DD-MM-YYYY"
+														value="${r.date }" >
+
+												</div>
+												<div class="form-group col-sm-6">
+													<label for="ccnumber">Time</label>
+													<div class="input-group">
+														<div class="input-group-prepend">
+															
+														</div>
+														<input type="time" class="form-control" id="time"
+															name="time" value="${r.time }">
+													</div>
+												</div>
+											</div>
+											
+											<!--/.row-->
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="form-group">
+														<label for="ccnumber">Brief</label>
+														<textarea id="textarea-input" name="brief" rows="5"
+															class="form-control"
+															placeholder="Enter brief about reminder here.."
+															 value="${r.brief }"></textarea>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary"
+												data-dismiss="modal">Cancel</button>
+											<button type="submit" class="btn btn-primary">Set</button>
+										</div>
+									</form>
+
+								</div>
+							</div>
+						</div>
 						<div class="modal fade" id="exampleModal" tabindex="-1"
 							role="dialog" aria-labelledby="exampleModalLabel"
 							aria-hidden="true">
@@ -1166,9 +1483,9 @@
 															<div class="input-group-prepend">
 																
 															</div>
-															<input type="date" class="form-control" id="lasthearing"
-																 name="lasthearing"
-																value="${updatecase.lasthearing }" >
+															<input type="text" class="form-control" id="lasthearing"
+																 name="lasthearing" placeholder="DD-MM-YYYY"
+																value="${c.updatecase.nexthearing }" >
 														</div>
 													</div>
 												</div>
@@ -1179,8 +1496,8 @@
 															<div class="input-group-prepend">
 																
 															</div>
-															<input type="date" class="form-control" id="nexthearing"
-																 name="nexthearing"
+															<input type="text" class="form-control" id="nexthearing"
+																 name="nexthearing" placeholder="DD-MM-YYYY"
 																value="${updatecase.nexthearing }" >
 														</div>
 													</div>
@@ -1197,10 +1514,10 @@
 								</div>
 							</div>
 						</div>
-						</div>
-						</div>
-				</c:when>
-
+						
+					</div>
+				</div>
+			</c:when>
 			</c:choose>
 		</div>
 	</div>
@@ -1280,22 +1597,43 @@
 	    } );
 	} );
 	</script>
+	
+	<script>
+		$('form#fileUploadForm').submit(function(e) {
+			e.preventDefault();
+			var formData = new FormData(this);
+			$.ajax({
+				url : "${pageContext.request.contextPath}/upload-document",		
+				type: 'POST',
+		        data: formData,
+		        success: function (data) {
+		        	console.log('Documents uploaded Successfully!');
+		        },
+		        error : function(data) {
+					console.log('Not uploaded.');					
+				},
+		        cache: false,
+		        contentType: false,
+		        processData: false
+		    });
+			location.reload(true);
+		});
+	</script>
+	
 	<script type="text/javascript">
 		$('#case-update').submit(function(e) {
 			e.preventDefault();
 			$.ajax({
-
 				url : "${pageContext.request.contextPath}/case-update",
-				type : "POST",
+				type : "POST",				
 				data : $('#case-update').serialize(),
 				success : function(data) {
-
+                      alert('Case Updated!');
 				},
 				error : function(data) {
 					console.log('An error occurred.');
 					console.log(data);
 				},
-
 			});
 			location.reload(true);
 
@@ -1306,21 +1644,59 @@
 		$('#paysubmit').submit(function(e) {
 			e.preventDefault();
 			$.ajax({
-
 				url : "${pageContext.request.contextPath}/payment-update",
 				type : "POST",
 				data : $('#paysubmit').serialize(),
 				success : function(data) {
-
+                      alert('Payment Updated!');
 				},
 				error : function(data) {
 					console.log('An error occurred.');
 					console.log(data);
 				},
-
 			});
 			location.reload(true);
 
+		});
+	</script>
+	
+	<script type="text/javascript">
+		$('#setreminder').submit(function(e) {
+			e.preventDefault();
+			$.ajax({
+
+				url : "${pageContext.request.contextPath}/set-reminder",
+				type : "POST",
+				data : $('#setreminder').serialize(),
+				success : function(data) {
+                      alert('Reminder have been set!');
+				},
+				error : function(data) {
+					console.log('An error occurred.');
+					console.log(data);
+				},
+			});
+			location.reload(true);
+		});
+	</script>
+	
+	<script type="text/javascript">
+		$('#setlog').submit(function(e) {
+			e.preventDefault();
+			$.ajax({
+
+				url : "${pageContext.request.contextPath}/set-log",
+				type : "POST",
+				data : $('#setlog').serialize(),
+				success : function(data) {
+                      alert('Logs Updated!');
+				},
+				error : function(data) {
+					console.log('An error occurred.');
+					console.log(data);
+				},
+			});
+			location.reload(true);
 		});
 	</script>
 
@@ -1331,12 +1707,11 @@
 				var e = $("#paid").val();
 				var f = d - e;
 				$("#balance").val(f);
-
 			});
 		});
 
 		$(document).ready(function() {
-			$(document).change(function() {
+			$(document).change(function(){
 				var a = $("#dues").val();
 				var b = $("#pay").val();
 				var c = a - b;

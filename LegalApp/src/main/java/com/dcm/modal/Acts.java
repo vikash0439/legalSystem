@@ -1,13 +1,8 @@
 package com.dcm.modal;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -24,7 +19,6 @@ public class Acts {
 	public Acts() {
 		
 	}
-	
 	
 	
 	public Acts(int actid, String name, String rules) {

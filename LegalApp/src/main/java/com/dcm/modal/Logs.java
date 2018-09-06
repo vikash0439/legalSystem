@@ -53,9 +53,5 @@ public class Logs {
 	}
 	public void setBrief(String brief) {
 		this.brief = brief;
-	}
-	
-	
-	
-	
+	}		
 }

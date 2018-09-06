@@ -17,7 +17,7 @@
 <link
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 	rel="stylesheet">
-<title>Acts</title>
+<title>Updates of this version</title>
 </head>
 <body>
 	<!-- Image and text -->
@@ -37,9 +37,9 @@
 			<li class="nav-item"><a class="nav-link" href="reminder">Reminder</a></li>
 			<li class="nav-item"><a class="nav-link" href="lawyer">Lawyer</a></li>
 			<li class="nav-item"><a class="nav-link" href="case-logs">Logs</a></li>
-			<li class="nav-item active"><a class="nav-link" href="#">Acts</a></li>			
+			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>			
 			<li class="nav-item"><a class="nav-link" href="user">Users</a></li>
-			<li class="nav-item"><a class="nav-link" href="updates">Updates</a></li>
+			<li class="nav-item active"><a class="nav-link" href="updates">Updates</a></li>
 		</ul>
 		<span class="navbar-text"> <i class="fa fa-user-circle" style="font-size:1.2rem;color:#17a2b8">&nbsp; ${name}</i></span> &nbsp;&nbsp;&nbsp;
 		 <a href="" data-toggle="modal" data-target="#exampleModalCenter"><i
@@ -49,13 +49,11 @@
 	</nav>
 
 
-
-
 	<main class="main"> <!-- Breadcrumb-->
 	<ol class="breadcrumb">
 		<li class="breadcrumb-item"><a href="home">Dashboard</a></li>
-		<li class="breadcrumb-item"><a href="acts">All Acts</a></li>
-		<li class="breadcrumb-item"><a href="newacts">Add New</a></li>
+		<li class="breadcrumb-item"><a href="#">What's New</a></li>
+		<li class="breadcrumb-item"><a href="logs">Logs </a></li>
         <%@ page import="java.text.*,java.util.*" %>
            <div align="right" style="margin-left:60%;font-weight: bold; color:  #343a40;"">
              <% SimpleDateFormat d=new SimpleDateFormat("dd-MM-yyyy"); %>
@@ -67,78 +65,60 @@
 		<div class="animated fadeIn">
 			<c:choose>
 			
-				<c:when test="${ mode == 'All_Act'}">
+			    <c:when test="${ mode == 'All_Updates'}">
+				<center><h4>What's New</h4></center><br>
+				 <table class="table table-responsive-sm table-hover table-outline mb-0">
+                      <thead class="thead-light">
+                        <tr style=" text-align: ;">
+                            <th>Sr No.</th>
+                            <th>Date</th>
+							<th>Features</th>
+							<th>Benefits</th>
+							<th>Proposed By</th>
+                          
+                        </tr>
+                      </thead>
+                      
+                     
+					<tbody>
+					
+						 <c:forEach var="updates" items="${updates }">
+						 <tr>
+							<td style="color: #212529;"><strong>${updates.id }</strong></td>
+							<td>${updates.date }</td>
+							<td>${updates.features }</td>
+							<td>${updates.benefits }</td>
+							<td>${updates.proposed }</td>
+						</tr>
+						</c:forEach>						
+					</tbody>
+					<tfoot>
+					   <th>Sr No.</th>
+                            <th>Date</th>
+							<th>Features</th>
+							<th>Benefits</th>
+							<th>Proposed By</th>
+					</tfoot>						
+                    </table>
+			
+					
+					<!--/.row-->
+				</c:when>
+			
+				<c:when test="${ mode == 'All_Logs'}">
+				<c:forEach var="logs" items="${logs }">
+				<p>${logs}
+				</p></c:forEach>
+					
+					<!--/.row-->
+				</c:when>
 				
-					<c:forEach var="act" items="${acts }">
-						<div class="row">
-							<div class="col-sm-6 col-md-12">
-								<div class="card">
-									<div class="card-header"><b>${act.name }</b></div>
-									<div class="card-body">${act.rules }										
-									</div>
-								</div>
-							</div>
-							<!--/.col-->
-						</div>
-						<br>
-					</c:forEach>
-					<!--/.row-->
-				</c:when>
-				<c:when test="${ mode == 'New_Act'}">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header">
-								<strong>Add Act</strong> Details
-							</div>
-							<div class="card-body">
-								<form action="saveact" method="POST" class="form-horizontal">
-
-									<div class="form-group row">
-										<label class="col-md-3 col-form-label" for="text-input">Act
-											Name</label>
-										<div class="col-md-9">
-											<input type="text" id="text-input" name="name"
-												class="form-control" placeholder="Enter Act Name"
-												value="${act.name }">
-
-										</div>
-									</div>
-									
-
-									<div class="form-group row">
-										<label class="col-md-3 col-form-label" for="textarea-input">Brief</label>
-										<div class="col-md-9">
-											<textarea id="textarea-input" name="rules" rows="9"
-												class="form-control" placeholder="Brief about this act..."
-												value="${act.rules }"></textarea>
-										</div>
-									</div>
-
-
-
-									<div class="card-footer">
-										<button type="submit" class="btn btn-sm btn-primary">
-											<i class="fa fa-dot-circle-o"></i> Submit
-										</button>
-										<button type="reset" class="btn btn-sm btn-danger">
-											<i class="fa fa-ban"></i> Reset
-										</button>
-									</div>
-								</form>
-							</div>
-						</div>
-						<!--/.col-->
-					</div>
-					<!--/.row-->
-				</c:when>
 
 			</c:choose>
 		</div>
 
 	</div>
 	</main>
-
-
 	<br>
 
 	<!-- Image and text -->

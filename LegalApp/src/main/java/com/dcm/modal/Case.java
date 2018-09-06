@@ -224,7 +224,8 @@ public class Case{
 
 	@Override
 	public String toString() {
-		return "Case No= <a href=\"/view-cases?caseno=" + caseno + "\">" + caseno+", Title=" + title +" ";
+//		return "<a href=\"/view-cases?caseno=" + caseno + "\">" + caseno+", Title=" + title +" ";
+		return caseno;
 	}
 
 	

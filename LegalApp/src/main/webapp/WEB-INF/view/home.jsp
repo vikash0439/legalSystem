@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
+<%@ page import="java.text.*,java.util.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -33,15 +33,12 @@
        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" style="color: #dc3545;">&times;</span>
         </button>
-      <center style=" text-align:  center; color: #17a2b8; font-size: 20px;">
+      <center style=" text-align:  center; color: #17a2b8; font-size: 20px; ">
         ${msg} <br><br>
-            <img src="<c:url value='../../static/img/check-icon.png'/>" alt="Checked">
-            <img src="${pageContext.request.contextPath}/../../static/img/check-icon.png" alt="Checked1">
-            <img src="${pageContext.servletContext.contextPath}/../../static/img/check-icon.png" alt="Checked2">
-            <img src="${pageContext.request.contextPath}../../static/img/check-icon.png" alt="Checked3">
+
             <img src="<c:url value='${pageContext.request.contextPath}../../static/img/check-icon.png'/>" alt="Checked4">
 
-        <br><br> ${name}
+        <br><br>Welcome, <b>${name}</b>!
         </center>
       </div>
 
@@ -64,12 +61,13 @@
 			<li class="nav-item"><a class="nav-link" href="document">Documents</a></li>
 			<li class="nav-item"><a class="nav-link" href="reminder">Reminder</a></li>
 			<li class="nav-item"><a class="nav-link" href="lawyer">Lawyer</a></li>
-			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>
 			<li class="nav-item"><a class="nav-link" href="case-logs">Logs</a></li>
+			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>			
 			<li class="nav-item"><a class="nav-link" href="user">Users</a></li>
+			<li class="nav-item"><a class="nav-link" href="updates">Updates</a></li>
 		</ul>
 		<span class="navbar-text"> <i class="fa fa-user-circle" style="font-size:1.2rem;color:#17a2b8">&nbsp; ${name}</i></span> &nbsp;&nbsp;&nbsp;
-		<a href="" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-sign-out" style="font-size:30px;color:red" ></i></a>
+		<a href="" data-toggle="modal" data-target="#exampleModalCenter"  data-toggle="tooltip" data-placement="bottom" title="Logout"><i class="fa fa-sign-out" style="font-size:30px;color:red" ></i></a>
 	</div>
 	</nav>
 
@@ -80,19 +78,23 @@
           <li class="breadcrumb-item">
             <a href="home">Dashboard</a>
           </li>
-          
           <!-- Breadcrumb Menu-->
-          
+           <div align="right" style="margin-left:60%;font-weight: bold; color:  #343a40;"">
+             <% SimpleDateFormat d=new SimpleDateFormat("dd-MM-yyyy"); %>
+             <% SimpleDateFormat t=new SimpleDateFormat(" HH:mm aa"); %>
+           Date:  <%= d.format(new Date()) %> &nbsp;&nbsp;Time: <%= t.format(new Date()) %>
+        </div>
         </ol>
+        
         <div class="container-fluid">
           <div class="animated fadeIn">
             <div class="row">
               <div class="col-sm-6 col-lg-3">
                <a href="case" class="nav-link"> <div class="card text-white bg-primary" >
                   <div class="card-body pb-0">
-                    
-                    <div class="text-value" id="noc"></div>
-                    <div>Total no of Cases</div>
+                   <i class="fa fa-align-justify"></i>                    
+                    <div class="text-value" id="noc" style="display: inline;"></div>
+                    <div>Total no of Cases</div>	
                   </div>
                   <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
                     <canvas id="card-chart1" class="chart" height="70"></canvas>
@@ -103,8 +105,8 @@
               <div class="col-sm-6 col-lg-3">
                <a href="lawyer" class="nav-link"> <div class="card text-white bg-info">
                   <div class="card-body pb-0">
-                   
-                    <div class="text-value" id="nol"></div>
+                   <i class="fa fa-briefcase"></i>
+                    <div class="text-value" id="nol" style="display: inline;">></div>
                     <div>No of Lawyers</div>
                   </div>
                   <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
@@ -115,8 +117,8 @@
               <div class="col-sm-6 col-lg-3">
                <a href="acts" class="nav-link"> <div class="card text-white bg-danger">
                   <div class="card-body pb-0">
-                   
-                    <div class="text-value" id="noa"></div>
+                    <i class="fa fa-book"></i>
+                    <div class="text-value" id="noa" style="display: inline;"></div>
                     <div>Total No of Acts</div>
                   </div>
                   <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
@@ -129,7 +131,8 @@
               <div class="col-sm-6 col-lg-3">
                 <a href="user" class="nav-link"><div class="card text-white bg-warning">
                   <div class="card-body pb-0">
-                    <div class="text-value" id="nou"></div>
+                    <i class="fa fa-user-o"></i>
+                    <div class="text-value" id="nou" style="display: inline;"></div>
                     <div>Total no of Users</div>
                   </div>
                   <div class="chart-wrapper mt-3" style="height:70px;">
@@ -195,6 +198,7 @@
      
 	<br>
 
+
 	<!-- Image and text -->
 	<span class="d-block p-2 bg-dark text-white"><center> &copy; 2018, DCM Textiles</center></span>
 	<!-- Modal -->
@@ -219,13 +223,9 @@
 </div> 	
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-		crossorigin="anonymous"></script>
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script
 		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -283,7 +283,11 @@
 jQuery(function(){
    jQuery('#m').click();
 });
+
+
 </script>
+
+
     <p href="" id="m" data-toggle="modal" data-target="#welcomeModal"></p>
 </c:if>	
 </body>

@@ -10,10 +10,10 @@ public class Document {
 	
 	@Id
 	private int id;
-	private String caseno;
+	private String caseno;   
 	private String type;
 	private String brief;
-	private String file;
+	private String file; 
 	
 	public Document() {		
 	}

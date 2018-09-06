@@ -46,9 +46,10 @@
 			<li class="nav-item"><a class="nav-link" href="document">Documents</a></li>
 			<li class="nav-item"><a class="nav-link" href="reminder">Reminder</a></li>
 			<li class="nav-item"><a class="nav-link" href="lawyer">Lawyer</a></li>
-			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>
 			<li class="nav-item active"><a class="nav-link" href="case-logs">Logs</a></li>
+			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>			
 			<li class="nav-item"><a class="nav-link" href="user">Users</a></li>
+			<li class="nav-item"><a class="nav-link" href="updates">Updates</a></li>
 		</ul>
 		<span class="navbar-text"> <i class="fa fa-user-circle" style="font-size:1.2rem;color:#17a2b8">&nbsp; ${name}</i></span> &nbsp;&nbsp;&nbsp;
 		 <a	href="" data-toggle="modal" data-target="#exampleModalCenter"><i
@@ -65,7 +66,12 @@
 		<li class="breadcrumb-item"><a href="home">Dashboard</a></li>
 		<li class="breadcrumb-item"><a href="case-logs">View Case Logs</a></li>
 		<li class="breadcrumb-item"><a href="add-logs">Add Case Logs</a></li>
-		
+		<%@ page import="java.text.*,java.util.*" %>
+           <div align="right" style="margin-left:60%;font-weight: bold; color:  #343a40;"">
+             <% SimpleDateFormat d=new SimpleDateFormat("dd-MM-yyyy"); %>
+             <% SimpleDateFormat t=new SimpleDateFormat(" HH:mm aa"); %>
+           Date:  <%= d.format(new Date()) %> &nbsp;&nbsp;Time: <%= t.format(new Date()) %>
+        </div>
 
 	</ol>
 	<div class="container-fluid">
@@ -194,13 +200,12 @@
 										<div class="col-sm-2">
 											<label class="col-md-12 col-form-label" for="text-input">Date
 												</label>
-											<div class="form-group col-sm-12">
-												<input	type="date" class="form-control"  name="date"
+											 <div class="form-group col-sm-12">
+												<input	type="text" class="form-control"  name="date" placeholder="DD-MM-YYYY"
 														value="${logs.date }">
-											</div>
-										</div>
-										
-										</div>
+											 </div>
+										   </div>			
+										  </div>
 										 <br>
 
 

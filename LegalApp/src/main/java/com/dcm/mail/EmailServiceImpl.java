@@ -82,7 +82,7 @@ public class EmailServiceImpl {
       helper.setSubject("Tomorrow's reminder from Legal Software");     
       helper.setText("Hi from text plain value", m);
            
-      FileSystemResource file = new FileSystemResource(new File("E:\\temp\\day.jpeg"));
+      FileSystemResource file = new FileSystemResource(new File("E:\\temp\\d\\ay.jpeg"));
       helper.addAttachment("dcm.jpeg", file);  
       emailSender.send(message);
       } 
