@@ -34,9 +34,7 @@ public class LegalAppApplication extends SpringBootServletInitializer{
 		SpringApplication.run(LegalAppApplication.class, args);
 		LOGGER.info("Main program running");
 	}
-	
-	
-	
+		
 
 	@Scheduled(cron = "0 0 9,17 * * *")
 	public void scheduleFixedRateTask() throws MessagingException {

@@ -52,7 +52,7 @@
 	<main class="main"> <!-- Breadcrumb-->
 	<ol class="breadcrumb">
 		<li class="breadcrumb-item"><a href="home">Dashboard</a></li>
-		<li class="breadcrumb-item"><a href="#">What's New</a></li>
+		<li class="breadcrumb-item"><a href="updates">What's New</a></li>
 		<li class="breadcrumb-item"><a href="logs">Logs </a></li>
         <%@ page import="java.text.*,java.util.*" %>
            <div align="right" style="margin-left:60%;font-weight: bold; color:  #343a40;"">

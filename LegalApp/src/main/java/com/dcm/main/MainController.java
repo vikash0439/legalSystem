@@ -38,6 +38,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.dcm.LegalAppApplication;
+import com.dcm.mail.EmailServiceImpl;
 import com.dcm.modal.Acts;
 import com.dcm.modal.Document;
 import com.dcm.modal.Lawyer;
@@ -103,6 +104,9 @@ public class MainController {
 	
 	@Autowired
 	private TestService testService;
+	
+	@Autowired
+	private EmailServiceImpl emailService;
 	
 
 	                     /* Spring Security */
@@ -181,6 +185,8 @@ public class MainController {
 	
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
     public String test() {
+		emailService.sendSimpleMessage("vikash.k@dcmtech.com");
+		
         return "test";
     }
  

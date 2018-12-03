@@ -1,145 +1,145 @@
-30-08-2018       11:18:02 - Application started with classpath: [file:/E:/Software/LegalApp/V1/LegalApp/target/classes/]
- [restartedMain]30-08-2018       11:18:03 - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4324 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
- [restartedMain]30-08-2018       11:18:03 - No active profile set, falling back to default profiles: default
- [restartedMain]30-08-2018       11:18:03 - Loading source class com.dcm.LegalAppApplication
- [restartedMain]30-08-2018       11:18:03 - Loaded config file 'file:/E:/Software/LegalApp/V1/LegalApp/target/classes/application.properties' (classpath:/application.properties)
- [restartedMain]30-08-2018       11:18:03 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3cffdfd4: startup date [Thu Aug 30 11:18:03 IST 2018]; root of context hierarchy
- [restartedMain]30-08-2018       11:18:03 - Bean factory for org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3cffdfd4: org.springframework.beans.factory.support.DefaultListableBeanFactory@176a8611: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,legalAppApplication]; root of factory hierarchy
- [restartedMain]30-08-2018       11:18:05 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef519a63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
- [restartedMain]30-08-2018       11:18:05 - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$87ff629d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
- [restartedMain]30-08-2018       11:18:05 - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
- [restartedMain]30-08-2018       11:18:05 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4aca0bbf' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
- [restartedMain]30-08-2018       11:18:05 - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$acd4054f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
- [restartedMain]30-08-2018       11:18:05 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
- [restartedMain]30-08-2018       11:18:06 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@2ac44cb6]
- [restartedMain]30-08-2018       11:18:06 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@1a04e3fa]
- [restartedMain]30-08-2018       11:18:06 - Code archive: C:\Users\DCM\.m2\repository\org\springframework\boot\spring-boot\2.0.2.RELEASE\spring-boot-2.0.2.RELEASE.jar
- [restartedMain]30-08-2018       11:18:06 - Code archive: C:\Users\DCM\.m2\repository\org\springframework\boot\spring-boot\2.0.2.RELEASE\spring-boot-2.0.2.RELEASE.jar
- [restartedMain]30-08-2018       11:18:06 - Document root: E:\Software\LegalApp\V1\LegalApp\src\main\webapp
- [restartedMain]30-08-2018       11:18:06 - Tomcat initialized with port(s): 8082 (http)
- [restartedMain]30-08-2018       11:18:06 - Starting service [Tomcat]
- [restartedMain]30-08-2018       11:18:06 - Starting Servlet Engine: Apache Tomcat/8.5.31
- [restartedMain]30-08-2018       11:18:06 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;E:\app\DCM\product\12.1.0\dbhome_3\bin;E:\app\DCM\product\12.1.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\TortoiseHg\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\PuTTY\;D:\cvs;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;;C:\ORANT\BIN;C:\Program Files (x86)\Brackets\command;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Users\DCM\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\CVSNT\;D:\cvs;C:\Program Files\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;;D:\sts-bundle\sts-3.9.4.RELEASE;;.]
- [localhost-startStop-1]30-08-2018       11:18:07 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
- [localhost-startStop-1]30-08-2018       11:18:07 - Initializing Spring embedded WebApplicationContext
- [localhost-startStop-1]30-08-2018       11:18:07 - Root WebApplicationContext: initialization completed in 4000 ms
- [localhost-startStop-1]30-08-2018       11:18:08 - Added existing Filter initializer bean 'securityFilterChainRegistration'; order=-100, resource=class path resource [org/springframework/boot/autoconfigure/security/servlet/SecurityFilterAutoConfiguration.class]
- [localhost-startStop-1]30-08-2018       11:18:08 - Added existing Servlet initializer bean 'dispatcherServletRegistration'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration.class]
- [localhost-startStop-1]30-08-2018       11:18:08 - Added existing Filter initializer bean 'webMvcMetricsFilter'; order=2147483647, resource=class path resource [org/springframework/boot/actuate/autoconfigure/metrics/web/servlet/WebMvcMetricsAutoConfiguration.class]
- [localhost-startStop-1]30-08-2018       11:18:08 - Added existing ServletContextInitializer initializer bean 'servletEndpointRegistrar'; order=2147483647, resource=class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration.class]
- [localhost-startStop-1]30-08-2018       11:18:09 - Created Filter initializer for bean 'characterEncodingFilter'; order=-2147483648, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]
- [localhost-startStop-1]30-08-2018       11:18:09 - Created Filter initializer for bean 'hiddenHttpMethodFilter'; order=-10000, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]
- [localhost-startStop-1]30-08-2018       11:18:09 - Created Filter initializer for bean 'httpPutFormContentFilter'; order=-9900, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]
- [localhost-startStop-1]30-08-2018       11:18:09 - Created Filter initializer for bean 'requestContextFilter'; order=-105, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]
- [localhost-startStop-1]30-08-2018       11:18:09 - Created Filter initializer for bean 'httpTraceFilter'; order=2147483637, resource=class path resource [org/springframework/boot/actuate/autoconfigure/trace/http/HttpTraceAutoConfiguration$ServletTraceFilterConfiguration.class]
- [localhost-startStop-1]30-08-2018       11:18:09 - Mapping filter: 'characterEncodingFilter' to: [/*]
- [localhost-startStop-1]30-08-2018       11:18:09 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
- [localhost-startStop-1]30-08-2018       11:18:09 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
- [localhost-startStop-1]30-08-2018       11:18:09 - Mapping filter: 'requestContextFilter' to: [/*]
- [localhost-startStop-1]30-08-2018       11:18:09 - Mapping filter: 'springSecurityFilterChain' to: [/*]
- [localhost-startStop-1]30-08-2018       11:18:09 - Mapping filter: 'httpTraceFilter' to: [/*]
- [localhost-startStop-1]30-08-2018       11:18:09 - Mapping filter: 'webMvcMetricsFilter' to: [/*]
- [localhost-startStop-1]30-08-2018       11:18:09 - Servlet dispatcherServlet mapped to [/]
- [localhost-startStop-1]30-08-2018       11:18:09 - Initializing filter 'requestContextFilter'
- [localhost-startStop-1]30-08-2018       11:18:09 - Filter 'requestContextFilter' configured successfully
- [localhost-startStop-1]30-08-2018       11:18:09 - Initializing filter 'webMvcMetricsFilter'
- [localhost-startStop-1]30-08-2018       11:18:09 - Filter 'webMvcMetricsFilter' configured successfully
- [localhost-startStop-1]30-08-2018       11:18:09 - Initializing filter 'httpPutFormContentFilter'
- [localhost-startStop-1]30-08-2018       11:18:09 - Filter 'httpPutFormContentFilter' configured successfully
- [localhost-startStop-1]30-08-2018       11:18:09 - Initializing filter 'hiddenHttpMethodFilter'
- [localhost-startStop-1]30-08-2018       11:18:09 - Filter 'hiddenHttpMethodFilter' configured successfully
- [localhost-startStop-1]30-08-2018       11:18:09 - Initializing filter 'characterEncodingFilter'
- [localhost-startStop-1]30-08-2018       11:18:09 - Filter 'characterEncodingFilter' configured successfully
- [localhost-startStop-1]30-08-2018       11:18:09 - Initializing filter 'httpTraceFilter'
- [localhost-startStop-1]30-08-2018       11:18:09 - Filter 'httpTraceFilter' configured successfully
- [localhost-startStop-1]30-08-2018       11:18:09 - Initializing filter 'springSecurityFilterChain'
- [localhost-startStop-1]30-08-2018       11:18:09 - Filter 'springSecurityFilterChain' configured successfully
- [localhost-startStop-1]30-08-2018       11:18:09 - HikariPool-1 - Starting...
- [restartedMain]30-08-2018       11:18:09 - HikariPool-1 - Start completed.
- [restartedMain]30-08-2018       11:18:09 - @EnableAutoConfiguration was declared on a class in the package 'com.dcm'. Automatic @Repository and @Entity scanning is enabled.
- [restartedMain]30-08-2018       11:18:09 - Building JPA container EntityManagerFactory for persistence unit 'default'
- [restartedMain]30-08-2018       11:18:09 - HHH000204: Processing PersistenceUnitInfo [
+03-12-2018       12:01:55 - Application started with classpath: [file:/E:/Software/LegalApp/V1/LegalApp/target/classes/]
+ [restartedMain]03-12-2018       12:01:56 - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 15008 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+ [restartedMain]03-12-2018       12:01:56 - No active profile set, falling back to default profiles: default
+ [restartedMain]03-12-2018       12:01:56 - Loading source class com.dcm.LegalAppApplication
+ [restartedMain]03-12-2018       12:01:56 - Loaded config file 'file:/E:/Software/LegalApp/V1/LegalApp/target/classes/application.properties' (classpath:/application.properties)
+ [restartedMain]03-12-2018       12:01:56 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aa4e33f: startup date [Mon Dec 03 12:01:56 IST 2018]; root of context hierarchy
+ [restartedMain]03-12-2018       12:01:56 - Bean factory for org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aa4e33f: org.springframework.beans.factory.support.DefaultListableBeanFactory@2b790a01: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,legalAppApplication]; root of factory hierarchy
+ [restartedMain]03-12-2018       12:02:01 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$21e81583] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [restartedMain]03-12-2018       12:02:01 - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$ba95ddbd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [restartedMain]03-12-2018       12:02:01 - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [restartedMain]03-12-2018       12:02:01 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@17daa848' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [restartedMain]03-12-2018       12:02:01 - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$df6a806f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [restartedMain]03-12-2018       12:02:01 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [restartedMain]03-12-2018       12:02:01 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@1241f4be]
+ [restartedMain]03-12-2018       12:02:01 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@4e4b440b]
+ [restartedMain]03-12-2018       12:02:02 - Code archive: C:\Users\DCM\.m2\repository\org\springframework\boot\spring-boot\2.0.2.RELEASE\spring-boot-2.0.2.RELEASE.jar
+ [restartedMain]03-12-2018       12:02:02 - Code archive: C:\Users\DCM\.m2\repository\org\springframework\boot\spring-boot\2.0.2.RELEASE\spring-boot-2.0.2.RELEASE.jar
+ [restartedMain]03-12-2018       12:02:02 - Document root: E:\Software\LegalApp\V1\LegalApp\src\main\webapp
+ [restartedMain]03-12-2018       12:02:02 - Tomcat initialized with port(s): 8080 (http)
+ [restartedMain]03-12-2018       12:02:02 - Starting service [Tomcat]
+ [restartedMain]03-12-2018       12:02:02 - Starting Servlet Engine: Apache Tomcat/8.5.31
+ [restartedMain]03-12-2018       12:02:02 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;E:\app\DCM\product\12.1.0\dbhome_3\bin;E:\app\DCM\product\12.1.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\TortoiseHg\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\PuTTY\;D:\cvs;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\ORANT\BIN;C:\Program Files (x86)\Brackets\command;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Inno Setup 5;C:\Program Files (x86)\WiX Toolset v3.11\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Users\DCM\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\CVSNT\;D:\cvs;C:\Program Files\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jre1.8.0_161\bin;;D:\sts-bundle\sts-3.9.4.RELEASE;;.]
+ [localhost-startStop-1]03-12-2018       12:02:02 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+ [localhost-startStop-1]03-12-2018       12:02:02 - Initializing Spring embedded WebApplicationContext
+ [localhost-startStop-1]03-12-2018       12:02:02 - Root WebApplicationContext: initialization completed in 6574 ms
+ [localhost-startStop-1]03-12-2018       12:02:05 - Added existing Filter initializer bean 'securityFilterChainRegistration'; order=-100, resource=class path resource [org/springframework/boot/autoconfigure/security/servlet/SecurityFilterAutoConfiguration.class]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Added existing Servlet initializer bean 'dispatcherServletRegistration'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration.class]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Added existing Filter initializer bean 'webMvcMetricsFilter'; order=2147483647, resource=class path resource [org/springframework/boot/actuate/autoconfigure/metrics/web/servlet/WebMvcMetricsAutoConfiguration.class]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Added existing ServletContextInitializer initializer bean 'servletEndpointRegistrar'; order=2147483647, resource=class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration.class]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Created Filter initializer for bean 'characterEncodingFilter'; order=-2147483648, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Created Filter initializer for bean 'hiddenHttpMethodFilter'; order=-10000, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Created Filter initializer for bean 'httpPutFormContentFilter'; order=-9900, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Created Filter initializer for bean 'requestContextFilter'; order=-105, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Created Filter initializer for bean 'httpTraceFilter'; order=2147483637, resource=class path resource [org/springframework/boot/actuate/autoconfigure/trace/http/HttpTraceAutoConfiguration$ServletTraceFilterConfiguration.class]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Mapping filter: 'characterEncodingFilter' to: [/*]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Mapping filter: 'requestContextFilter' to: [/*]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Mapping filter: 'httpTraceFilter' to: [/*]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Servlet dispatcherServlet mapped to [/]
+ [localhost-startStop-1]03-12-2018       12:02:05 - Initializing filter 'requestContextFilter'
+ [localhost-startStop-1]03-12-2018       12:02:05 - Filter 'requestContextFilter' configured successfully
+ [localhost-startStop-1]03-12-2018       12:02:05 - Initializing filter 'webMvcMetricsFilter'
+ [localhost-startStop-1]03-12-2018       12:02:05 - Filter 'webMvcMetricsFilter' configured successfully
+ [localhost-startStop-1]03-12-2018       12:02:05 - Initializing filter 'httpPutFormContentFilter'
+ [localhost-startStop-1]03-12-2018       12:02:05 - Filter 'httpPutFormContentFilter' configured successfully
+ [localhost-startStop-1]03-12-2018       12:02:05 - Initializing filter 'hiddenHttpMethodFilter'
+ [localhost-startStop-1]03-12-2018       12:02:05 - Filter 'hiddenHttpMethodFilter' configured successfully
+ [localhost-startStop-1]03-12-2018       12:02:05 - Initializing filter 'characterEncodingFilter'
+ [localhost-startStop-1]03-12-2018       12:02:05 - Filter 'characterEncodingFilter' configured successfully
+ [localhost-startStop-1]03-12-2018       12:02:05 - Initializing filter 'httpTraceFilter'
+ [localhost-startStop-1]03-12-2018       12:02:05 - Filter 'httpTraceFilter' configured successfully
+ [localhost-startStop-1]03-12-2018       12:02:05 - Initializing filter 'springSecurityFilterChain'
+ [localhost-startStop-1]03-12-2018       12:02:05 - Filter 'springSecurityFilterChain' configured successfully
+ [localhost-startStop-1]03-12-2018       12:02:06 - HikariPool-1 - Starting...
+ [restartedMain]03-12-2018       12:02:06 - HikariPool-1 - Start completed.
+ [restartedMain]03-12-2018       12:02:06 - @EnableAutoConfiguration was declared on a class in the package 'com.dcm'. Automatic @Repository and @Entity scanning is enabled.
+ [restartedMain]03-12-2018       12:02:06 - Building JPA container EntityManagerFactory for persistence unit 'default'
+ [restartedMain]03-12-2018       12:02:06 - HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
- [restartedMain]30-08-2018       11:18:09 - HHH000412: Hibernate Core {5.2.17.Final}
- [restartedMain]30-08-2018       11:18:09 - HHH000206: hibernate.properties not found
- [restartedMain]30-08-2018       11:18:09 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
- [restartedMain]30-08-2018       11:18:09 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
- [restartedMain]30-08-2018       11:18:11 - alter table cases add constraint FK694gehtumtnv7h6svuss2fjtx foreign key (lawyer_lawyerid) references lawyer (lawyerid)
- [restartedMain]30-08-2018       11:18:11 - alter table cases add constraint FKa5k1ks264n0wnq9xi4428swdq foreign key (paymentid) references payment (paymentid)
- [restartedMain]30-08-2018       11:18:11 - alter table cases add constraint FK323ad2we4iulat1n2deqr3dwo foreign key (updateid) references updatecase (updateid)
- [restartedMain]30-08-2018       11:18:11 - alter table user_role add constraint FKa68196081fvovjhkek5m97n3y foreign key (role_id) references role (role_id)
- [restartedMain]30-08-2018       11:18:11 - alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user (user_id)
- [restartedMain]30-08-2018       11:18:11 - Initialized JPA EntityManagerFactory for persistence unit 'default'
- [restartedMain]30-08-2018       11:18:12 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b81716e, org.springframework.security.web.context.SecurityContextPersistenceFilter@4372b29e, org.springframework.security.web.header.HeaderWriterFilter@7480e772, org.springframework.security.web.authentication.logout.LogoutFilter@5239ab6a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7b227ba3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e5bc3ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@713b7a83, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@15e4049e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64c7a05f, org.springframework.security.web.session.SessionManagementFilter@5fb01a3d, org.springframework.security.web.access.ExceptionTranslationFilter@4efee4c4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34844292]
- [restartedMain]30-08-2018       11:18:12 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
- [restartedMain]30-08-2018       11:18:13 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3cffdfd4: startup date [Thu Aug 30 11:18:03 IST 2018]; root of context hierarchy
- [restartedMain]30-08-2018       11:18:13 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/name],methods=[GET]}" onto public java.util.List<com.dcm.modal.Test> com.dcm.main.MainController.name()
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/test],methods=[GET]}" onto public java.lang.String com.dcm.main.MainController.test()
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/id],methods=[GET]}" onto public java.util.List<com.dcm.modal.Case> com.dcm.main.MainController.id()
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/home]}" onto public java.lang.String com.dcm.main.MainController.home(javax.servlet.http.HttpServletRequest,java.security.Principal,org.springframework.ui.Model)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/document]}" onto public java.lang.String com.dcm.main.MainController.document(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/reminder]}" onto public java.lang.String com.dcm.main.MainController.reminder(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/save-user]}" onto public java.lang.String com.dcm.main.MainController.saveUsers(com.dcm.modal.Users,org.springframework.validation.BindingResult)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/newuser]}" onto public java.lang.String com.dcm.main.MainController.NewUsers(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/]}" onto public java.lang.String com.dcm.main.MainController.login(org.springframework.web.servlet.mvc.support.RedirectAttributes)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.dcm.main.MainController.login(java.lang.String,java.lang.String)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/accessDenied]}" onto public java.lang.String com.dcm.main.MainController.accessDenied()
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/case-submit]}" onto public java.lang.String com.dcm.main.MainController.SaveCase(com.dcm.modal.Case,com.dcm.modal.UpdateCase,com.dcm.modal.Payment,java.lang.String,org.springframework.validation.BindingResult)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/countusers]}" onto public java.lang.Long com.dcm.main.MainController.CountUsers()
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/field1],methods=[GET]}" onto public java.util.List<com.dcm.modal.Test> com.dcm.main.MainController.field1()
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/viewuser]}" onto public java.lang.String com.dcm.main.MainController.ViewUsers(javax.servlet.http.HttpServletRequest,java.lang.String)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/count]}" onto public java.lang.Long com.dcm.main.MainController.Count(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/countacts]}" onto public java.lang.Long com.dcm.main.MainController.CountActs()
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/countcases]}" onto public java.lang.Long com.dcm.main.MainController.CountCases()
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/user]}" onto public java.lang.String com.dcm.main.MainController.Users(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/case]}" onto public java.lang.String com.dcm.main.MainController.Case(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/lawyer]}" onto public java.lang.String com.dcm.main.MainController.lawyer(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/newlawyer]}" onto public java.lang.String com.dcm.main.MainController.NewLawyer(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/newcase]}" onto public java.lang.String com.dcm.main.MainController.NewCase(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/view-cases]}" onto public java.lang.String com.dcm.main.MainController.ViewCase(javax.servlet.http.HttpServletRequest,java.lang.String)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/lawyer-name]}" onto public java.lang.String com.dcm.main.MainController.LawyerName(javax.servlet.http.HttpServletRequest,java.lang.String)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/case-update],methods=[POST]}" onto public void com.dcm.main.MainController.UpdateCase(com.dcm.modal.UpdateCase,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/viewlawyer]}" onto public java.lang.String com.dcm.main.MainController.viewLawyer(int,javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/acts]}" onto public java.lang.String com.dcm.main.MainController.acts(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/newacts]}" onto public java.lang.String com.dcm.main.MainController.NewActs(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/edit-lawyer]}" onto public java.lang.String com.dcm.main.MainController.editLawyer(int,javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/saveact],methods=[POST]}" onto public java.lang.String com.dcm.main.MainController.registerAct(com.dcm.modal.Acts,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/save-lawyer],methods=[POST]}" onto public java.lang.String com.dcm.main.MainController.saveLawyer(com.dcm.modal.Lawyer,org.springframework.validation.BindingResult)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/get-logs]}" onto public java.lang.String com.dcm.main.MainController.getLogs(java.lang.String,javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/add-logs]}" onto public java.lang.String com.dcm.main.MainController.AddLogs(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/save-logs],methods=[POST]}" onto public java.lang.String com.dcm.main.MainController.saveLogs(com.dcm.modal.Logs,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/set-log],methods=[POST]}" onto public void com.dcm.main.MainController.setLogs(com.dcm.modal.Logs,java.lang.String,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/updates]}" onto public java.lang.String com.dcm.main.MainController.updates(javax.servlet.http.HttpServletRequest) throws java.io.IOException
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/logs]}" onto public java.lang.String com.dcm.main.MainController.Logs(javax.servlet.http.HttpServletRequest) throws java.io.IOException
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/save-reminder],methods=[POST]}" onto public java.lang.String com.dcm.main.MainController.saveReminder(com.dcm.modal.Reminder,org.springframework.validation.BindingResult)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/set-reminder],methods=[POST]}" onto public void com.dcm.main.MainController.setReminder(javax.servlet.http.HttpServletRequest,com.dcm.modal.Reminder)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/case-upload],methods=[POST]}" onto public void com.dcm.main.MainController.caseFileUpload(org.springframework.web.multipart.MultipartFile,java.lang.String,com.dcm.modal.Document,org.springframework.validation.BindingResult)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/case-logs]}" onto public java.lang.String com.dcm.main.MainController.CaseLogs(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/upload-document],methods=[POST]}" onto public java.lang.String com.dcm.main.MainController.singleFileUpload(org.springframework.web.multipart.MultipartFile,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,com.dcm.modal.Document,org.springframework.validation.BindingResult)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/newdocument]}" onto public java.lang.String com.dcm.main.MainController.NewDocument(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/{type}/{file}],methods=[GET]}" onto public void com.dcm.main.MainController.loadFile(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/payment-update],methods=[POST]}" onto public void com.dcm.main.MainController.PaymentUpdate(javax.servlet.http.HttpServletRequest,com.dcm.modal.Payment)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/newreminder]}" onto public java.lang.String com.dcm.main.MainController.NewReminder(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/api/case],methods=[GET]}" onto public java.lang.String com.dcm.rest.Controller.Case(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/api/],methods=[GET]}" onto public java.lang.String com.dcm.rest.Controller.hello()
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
- [restartedMain]30-08-2018       11:18:13 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
- [restartedMain]30-08-2018       11:18:13 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
- [restartedMain]30-08-2018       11:18:13 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
- [restartedMain]30-08-2018       11:18:14 - Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
- [restartedMain]30-08-2018       11:18:14 - Starting live reload server on port 35729
- [restartedMain]30-08-2018       11:18:14 - LiveReload server is running on port 35729
- [restartedMain]30-08-2018       11:18:14 - Exposing 2 endpoint(s) beneath base path '/actuator'
- [restartedMain]30-08-2018       11:18:14 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
- [restartedMain]30-08-2018       11:18:14 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
- [restartedMain]30-08-2018       11:18:14 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
- [restartedMain]30-08-2018       11:18:14 - Registering beans for JMX exposure on startup
- [restartedMain]30-08-2018       11:18:14 - Bean with name 'dataSource' has been autodetected for JMX exposure
- [restartedMain]30-08-2018       11:18:14 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
- [restartedMain]30-08-2018       11:18:14 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@77cfcd57]
- [restartedMain]30-08-2018       11:18:14 - 
+ [restartedMain]03-12-2018       12:02:06 - HHH000412: Hibernate Core {5.2.17.Final}
+ [restartedMain]03-12-2018       12:02:06 - HHH000206: hibernate.properties not found
+ [restartedMain]03-12-2018       12:02:06 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+ [restartedMain]03-12-2018       12:02:06 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+ [restartedMain]03-12-2018       12:02:09 - alter table cases add constraint FK694gehtumtnv7h6svuss2fjtx foreign key (lawyer_lawyerid) references lawyer (lawyerid)
+ [restartedMain]03-12-2018       12:02:09 - alter table cases add constraint FKa5k1ks264n0wnq9xi4428swdq foreign key (paymentid) references payment (paymentid)
+ [restartedMain]03-12-2018       12:02:09 - alter table cases add constraint FK323ad2we4iulat1n2deqr3dwo foreign key (updateid) references updatecase (updateid)
+ [restartedMain]03-12-2018       12:02:09 - alter table user_role add constraint FKa68196081fvovjhkek5m97n3y foreign key (role_id) references role (role_id)
+ [restartedMain]03-12-2018       12:02:09 - alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user (user_id)
+ [restartedMain]03-12-2018       12:02:09 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ [restartedMain]03-12-2018       12:02:12 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69057f30, org.springframework.security.web.context.SecurityContextPersistenceFilter@2fbe8f06, org.springframework.security.web.header.HeaderWriterFilter@471aa80d, org.springframework.security.web.authentication.logout.LogoutFilter@3a5c28fc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@70ce136a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@651cd9e3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79552192, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3f9e0e52, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c04985e, org.springframework.security.web.session.SessionManagementFilter@169cce78, org.springframework.security.web.access.ExceptionTranslationFilter@4571c0da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@322f7965]
+ [restartedMain]03-12-2018       12:02:12 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ [restartedMain]03-12-2018       12:02:12 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aa4e33f: startup date [Mon Dec 03 12:01:56 IST 2018]; root of context hierarchy
+ [restartedMain]03-12-2018       12:02:12 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/name],methods=[GET]}" onto public java.util.List<com.dcm.modal.Test> com.dcm.main.MainController.name()
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/test],methods=[GET]}" onto public java.lang.String com.dcm.main.MainController.test()
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/id],methods=[GET]}" onto public java.util.List<com.dcm.modal.Case> com.dcm.main.MainController.id()
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/home]}" onto public java.lang.String com.dcm.main.MainController.home(javax.servlet.http.HttpServletRequest,java.security.Principal,org.springframework.ui.Model)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/document]}" onto public java.lang.String com.dcm.main.MainController.document(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/reminder]}" onto public java.lang.String com.dcm.main.MainController.reminder(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.dcm.main.MainController.login(java.lang.String,java.lang.String)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/]}" onto public java.lang.String com.dcm.main.MainController.login(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/countacts]}" onto public java.lang.Long com.dcm.main.MainController.CountActs()
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/accessDenied]}" onto public java.lang.String com.dcm.main.MainController.accessDenied()
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/count]}" onto public java.lang.Long com.dcm.main.MainController.Count(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/case-submit]}" onto public java.lang.String com.dcm.main.MainController.SaveCase(com.dcm.modal.Case,com.dcm.modal.UpdateCase,com.dcm.modal.Payment,java.lang.String,org.springframework.validation.BindingResult)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/newcase]}" onto public java.lang.String com.dcm.main.MainController.NewCase(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/view-cases]}" onto public java.lang.String com.dcm.main.MainController.ViewCase(javax.servlet.http.HttpServletRequest,java.lang.String)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/user]}" onto public java.lang.String com.dcm.main.MainController.Users(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/save-user]}" onto public java.lang.String com.dcm.main.MainController.saveUsers(com.dcm.modal.Users,org.springframework.validation.BindingResult)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/newuser]}" onto public java.lang.String com.dcm.main.MainController.NewUsers(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/field1],methods=[GET]}" onto public java.util.List<com.dcm.modal.Test> com.dcm.main.MainController.field1()
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/viewuser]}" onto public java.lang.String com.dcm.main.MainController.ViewUsers(javax.servlet.http.HttpServletRequest,java.lang.String)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/case]}" onto public java.lang.String com.dcm.main.MainController.Case(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/countusers]}" onto public java.lang.Long com.dcm.main.MainController.CountUsers()
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/countcases]}" onto public java.lang.Long com.dcm.main.MainController.CountCases()
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/edit-lawyer]}" onto public java.lang.String com.dcm.main.MainController.editLawyer(int,javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/save-reminder],methods=[POST]}" onto public java.lang.String com.dcm.main.MainController.saveReminder(com.dcm.modal.Reminder,org.springframework.validation.BindingResult)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/lawyer-name]}" onto public java.lang.String com.dcm.main.MainController.LawyerName(javax.servlet.http.HttpServletRequest,java.lang.String)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/lawyer]}" onto public java.lang.String com.dcm.main.MainController.lawyer(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/saveact],methods=[POST]}" onto public java.lang.String com.dcm.main.MainController.registerAct(com.dcm.modal.Acts,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/newacts]}" onto public java.lang.String com.dcm.main.MainController.NewActs(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/acts]}" onto public java.lang.String com.dcm.main.MainController.acts(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/set-reminder],methods=[POST]}" onto public void com.dcm.main.MainController.setReminder(javax.servlet.http.HttpServletRequest,com.dcm.modal.Reminder)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/upload-document],methods=[POST]}" onto public java.lang.String com.dcm.main.MainController.singleFileUpload(org.springframework.web.multipart.MultipartFile,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,com.dcm.modal.Document,org.springframework.validation.BindingResult)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/viewlawyer]}" onto public java.lang.String com.dcm.main.MainController.viewLawyer(int,javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/newreminder]}" onto public java.lang.String com.dcm.main.MainController.NewReminder(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/save-lawyer],methods=[POST]}" onto public java.lang.String com.dcm.main.MainController.saveLawyer(com.dcm.modal.Lawyer,org.springframework.validation.BindingResult)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/{type}/{file}],methods=[GET]}" onto public void com.dcm.main.MainController.loadFile(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/case-update],methods=[POST]}" onto public void com.dcm.main.MainController.UpdateCase(com.dcm.modal.UpdateCase,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/newlawyer]}" onto public java.lang.String com.dcm.main.MainController.NewLawyer(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/get-logs]}" onto public java.lang.String com.dcm.main.MainController.getLogs(java.lang.String,javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/logs]}" onto public java.lang.String com.dcm.main.MainController.Logs(javax.servlet.http.HttpServletRequest) throws java.io.IOException
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/case-upload],methods=[POST]}" onto public void com.dcm.main.MainController.caseFileUpload(org.springframework.web.multipart.MultipartFile,java.lang.String,com.dcm.modal.Document,org.springframework.validation.BindingResult)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/case-logs]}" onto public java.lang.String com.dcm.main.MainController.CaseLogs(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/set-log],methods=[POST]}" onto public void com.dcm.main.MainController.setLogs(com.dcm.modal.Logs,java.lang.String,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/newdocument]}" onto public java.lang.String com.dcm.main.MainController.NewDocument(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/add-logs]}" onto public java.lang.String com.dcm.main.MainController.AddLogs(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/updates]}" onto public java.lang.String com.dcm.main.MainController.updates(javax.servlet.http.HttpServletRequest) throws java.io.IOException
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/save-logs],methods=[POST]}" onto public java.lang.String com.dcm.main.MainController.saveLogs(com.dcm.modal.Logs,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/payment-update],methods=[POST]}" onto public void com.dcm.main.MainController.PaymentUpdate(javax.servlet.http.HttpServletRequest,com.dcm.modal.Payment)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/api/case],methods=[GET]}" onto public java.lang.String com.dcm.rest.Controller.Case(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/api/],methods=[GET]}" onto public java.lang.String com.dcm.rest.Controller.hello()
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+ [restartedMain]03-12-2018       12:02:12 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ [restartedMain]03-12-2018       12:02:12 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ [restartedMain]03-12-2018       12:02:12 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ [restartedMain]03-12-2018       12:02:13 - Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+ [restartedMain]03-12-2018       12:02:14 - Starting live reload server on port 35729
+ [restartedMain]03-12-2018       12:02:14 - LiveReload server is running on port 35729
+ [restartedMain]03-12-2018       12:02:14 - Exposing 2 endpoint(s) beneath base path '/actuator'
+ [restartedMain]03-12-2018       12:02:14 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+ [restartedMain]03-12-2018       12:02:14 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+ [restartedMain]03-12-2018       12:02:14 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ [restartedMain]03-12-2018       12:02:14 - Registering beans for JMX exposure on startup
+ [restartedMain]03-12-2018       12:02:14 - Bean with name 'dataSource' has been autodetected for JMX exposure
+ [restartedMain]03-12-2018       12:02:14 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+ [restartedMain]03-12-2018       12:02:14 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@21ae09df]
+ [restartedMain]03-12-2018       12:02:14 - 
 
 
 ============================
@@ -1613,165 +1613,854 @@ Unconditional classes:
 
 
 
- [restartedMain]30-08-2018       11:18:14 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
- [restartedMain]30-08-2018       11:18:14 - Tomcat started on port(s): 8082 (http) with context path ''
- [restartedMain]30-08-2018       11:18:14 - Started LegalAppApplication in 12.039 seconds (JVM running for 13.94)
- [restartedMain]30-08-2018       11:18:14 - Creating new Restarter for thread Thread[main,5,main]
- [restartedMain]30-08-2018       11:18:14 - Immediately restarting application
- [restartedMain]30-08-2018       11:18:14 - Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2f7bfbd3
- [restartedMain]30-08-2018       11:18:14 - Starting application com.dcm.LegalAppApplication with URLs [file:/E:/Software/LegalApp/V1/LegalApp/target/classes/]
- [restartedMain]30-08-2018       11:18:14 - Main program running
- [restartedMain]30-08-2018       11:18:28 - Initializing Spring FrameworkServlet 'dispatcherServlet'
- [http-nio-8082-exec-1]30-08-2018       11:18:28 - FrameworkServlet 'dispatcherServlet': initialization started
- [http-nio-8082-exec-1]30-08-2018       11:18:28 - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
- [http-nio-8082-exec-1]30-08-2018       11:18:28 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@715c52d4
- [http-nio-8082-exec-1]30-08-2018       11:18:28 - AuditEvent [timestamp=2018-08-30T05:48:28.648Z, principal=anonymousUser, type=AUTHORIZATION_FAILURE, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}]
- [http-nio-8082-exec-1]30-08-2018       11:18:28 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@715c52d4
- [http-nio-8082-exec-1]30-08-2018       11:18:28 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@715c52d4
- [http-nio-8082-exec-2]30-08-2018       11:18:28 - Looking up handler method for path /login
- [http-nio-8082-exec-2]30-08-2018       11:18:28 - Did not find handler method for [/login]
- [http-nio-8082-exec-2]30-08-2018       11:18:28 - Looking up handler method for path /login
- [http-nio-8082-exec-2]30-08-2018       11:18:28 - Did not find handler method for [/login]
- [http-nio-8082-exec-2]30-08-2018       11:18:28 - Looking up handler method for path /login
- [http-nio-8082-exec-2]30-08-2018       11:18:28 - Did not find handler method for [/login]
- [http-nio-8082-exec-2]30-08-2018       11:18:28 - Looking up handler method for path /login
- [http-nio-8082-exec-2]30-08-2018       11:18:28 - Did not find handler method for [/login]
- [http-nio-8082-exec-2]30-08-2018       11:18:29 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@715c52d4
- [http-nio-8082-exec-2]30-08-2018       11:18:34 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@715c52d4
- [http-nio-8082-exec-3]30-08-2018       11:18:34 - HHH000397: Using ASTQueryTranslatorFactory
- [http-nio-8082-exec-3]30-08-2018       11:18:35 - select users0_.user_id as user_id1_12_, users0_.active as active2_12_, users0_.username as username3_12_, users0_.name as name4_12_, users0_.password as password5_12_ from user users0_ where users0_.username=?
- [http-nio-8082-exec-3]30-08-2018       11:18:35 - select roles0_.user_id as user_id1_13_0_, roles0_.role_id as role_id2_13_0_, role1_.role_id as role_id1_9_1_, role1_.role as role2_9_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
- [http-nio-8082-exec-3]30-08-2018       11:18:35 - AuditEvent [timestamp=2018-08-30T05:48:35.110Z, principal=Vikash Kumar, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffbcba8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 751D23A9FE069CE1ECB5CCA52058382E}]
- [http-nio-8082-exec-3]30-08-2018       11:18:35 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@715c52d4
- [http-nio-8082-exec-3]30-08-2018       11:18:35 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@715c52d4
- [http-nio-8082-exec-4]30-08-2018       11:18:35 - Looking up handler method for path /
- [http-nio-8082-exec-4]30-08-2018       11:18:35 - Did not find handler method for [/]
- [http-nio-8082-exec-4]30-08-2018       11:18:35 - Looking up handler method for path /
- [http-nio-8082-exec-4]30-08-2018       11:18:35 - Did not find handler method for [/]
- [http-nio-8082-exec-4]30-08-2018       11:18:35 - Looking up handler method for path /
- [http-nio-8082-exec-4]30-08-2018       11:18:35 - Did not find handler method for [/]
- [http-nio-8082-exec-4]30-08-2018       11:18:35 - Looking up handler method for path /
- [http-nio-8082-exec-4]30-08-2018       11:18:35 - Did not find handler method for [/]
- [http-nio-8082-exec-4]30-08-2018       11:18:35 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@715c52d4
- [http-nio-8082-exec-4]30-08-2018       11:18:35 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@715c52d4
- [http-nio-8082-exec-5]30-08-2018       11:18:35 - Looking up handler method for path /home
- [http-nio-8082-exec-5]30-08-2018       11:18:35 - Did not find handler method for [/home]
- [http-nio-8082-exec-5]30-08-2018       11:18:35 - Looking up handler method for path /home
- [http-nio-8082-exec-5]30-08-2018       11:18:35 - Did not find handler method for [/home]
- [http-nio-8082-exec-5]30-08-2018       11:18:35 - Looking up handler method for path /home
- [http-nio-8082-exec-5]30-08-2018       11:18:35 - Did not find handler method for [/home]
- [http-nio-8082-exec-5]30-08-2018       11:18:35 - Looking up handler method for path /home
- [http-nio-8082-exec-5]30-08-2018       11:18:35 - Did not find handler method for [/home]
- [http-nio-8082-exec-5]30-08-2018       11:18:35 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=?
- [http-nio-8082-exec-5]30-08-2018       11:18:35 - Logged in by: Vikash Kumar
- [http-nio-8082-exec-5]30-08-2018       11:18:35 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@715c52d4
- [http-nio-8082-exec-5]30-08-2018       11:18:35 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@715c52d4
- [http-nio-8082-exec-6]30-08-2018       11:18:35 - Looking up handler method for path /static/img/check-icon.png
- [http-nio-8082-exec-6]30-08-2018       11:18:35 - Did not find handler method for [/static/img/check-icon.png]
- [http-nio-8082-exec-6]30-08-2018       11:18:35 - Looking up handler method for path /static/img/check-icon.png
- [http-nio-8082-exec-6]30-08-2018       11:18:35 - Did not find handler method for [/static/img/check-icon.png]
- [http-nio-8082-exec-6]30-08-2018       11:18:35 - Looking up handler method for path /static/img/check-icon.png
- [http-nio-8082-exec-6]30-08-2018       11:18:35 - Did not find handler method for [/static/img/check-icon.png]
- [http-nio-8082-exec-6]30-08-2018       11:18:35 - Looking up handler method for path /static/img/check-icon.png
- [http-nio-8082-exec-6]30-08-2018       11:18:35 - Did not find handler method for [/static/img/check-icon.png]
- [http-nio-8082-exec-6]30-08-2018       11:18:35 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@715c52d4
- [http-nio-8082-exec-6]30-08-2018       11:18:35 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@715c52d4
- [http-nio-8082-exec-7]30-08-2018       11:18:35 - Looking up handler method for path /count
- [http-nio-8082-exec-7]30-08-2018       11:18:35 - Did not find handler method for [/count]
- [http-nio-8082-exec-7]30-08-2018       11:18:35 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@3a570d76
- [http-nio-8082-exec-8]30-08-2018       11:18:35 - Looking up handler method for path /count
- [http-nio-8082-exec-7]30-08-2018       11:18:35 - Did not find handler method for [/count]
- [http-nio-8082-exec-7]30-08-2018       11:18:35 - Looking up handler method for path /count
- [http-nio-8082-exec-7]30-08-2018       11:18:35 - Looking up handler method for path /countacts
- [http-nio-8082-exec-8]30-08-2018       11:18:35 - Did not find handler method for [/count]
- [http-nio-8082-exec-7]30-08-2018       11:18:35 - Looking up handler method for path /count
- [http-nio-8082-exec-7]30-08-2018       11:18:35 - Did not find handler method for [/count]
- [http-nio-8082-exec-7]30-08-2018       11:18:35 - Did not find handler method for [/countacts]
- [http-nio-8082-exec-8]30-08-2018       11:18:35 - Looking up handler method for path /countacts
- [http-nio-8082-exec-8]30-08-2018       11:18:35 - Did not find handler method for [/countacts]
- [http-nio-8082-exec-8]30-08-2018       11:18:35 - Looking up handler method for path /countacts
- [http-nio-8082-exec-8]30-08-2018       11:18:35 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53eba702
- [http-nio-8082-exec-9]30-08-2018       11:18:35 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@660541dc
- [http-nio-8082-exec-10]30-08-2018       11:18:35 - Did not find handler method for [/countacts]
- [http-nio-8082-exec-8]30-08-2018       11:18:35 - Looking up handler method for path /countacts
- [http-nio-8082-exec-8]30-08-2018       11:18:35 - Did not find handler method for [/countacts]
- [http-nio-8082-exec-8]30-08-2018       11:18:35 - Looking up handler method for path /countusers
- [http-nio-8082-exec-9]30-08-2018       11:18:35 - Looking up handler method for path /countcases
- [http-nio-8082-exec-10]30-08-2018       11:18:35 - Did not find handler method for [/countusers]
- [http-nio-8082-exec-9]30-08-2018       11:18:35 - Looking up handler method for path /countusers
- [http-nio-8082-exec-9]30-08-2018       11:18:35 - Did not find handler method for [/countcases]
- [http-nio-8082-exec-10]30-08-2018       11:18:35 - Did not find handler method for [/countusers]
- [http-nio-8082-exec-9]30-08-2018       11:18:35 - Looking up handler method for path /countcases
- [http-nio-8082-exec-10]30-08-2018       11:18:35 - Did not find handler method for [/countcases]
- [http-nio-8082-exec-10]30-08-2018       11:18:35 - Looking up handler method for path /countusers
- [http-nio-8082-exec-9]30-08-2018       11:18:35 - Looking up handler method for path /countcases
- [http-nio-8082-exec-10]30-08-2018       11:18:35 - Did not find handler method for [/countcases]
- [http-nio-8082-exec-10]30-08-2018       11:18:35 - Looking up handler method for path /countcases
- [http-nio-8082-exec-10]30-08-2018       11:18:35 - Did not find handler method for [/countcases]
- [http-nio-8082-exec-10]30-08-2018       11:18:35 - Did not find handler method for [/countusers]
- [http-nio-8082-exec-9]30-08-2018       11:18:35 - Looking up handler method for path /countusers
- [http-nio-8082-exec-9]30-08-2018       11:18:35 - Did not find handler method for [/countusers]
- [http-nio-8082-exec-9]30-08-2018       11:18:35 - select count(*) as col_0_0_ from acts acts0_
- [http-nio-8082-exec-8]30-08-2018       11:18:35 - select count(*) as col_0_0_ from lawyer lawyer0_
- [http-nio-8082-exec-7]30-08-2018       11:18:35 - select count(*) as col_0_0_ from user users0_
- [http-nio-8082-exec-9]30-08-2018       11:18:35 - select count(*) as col_0_0_ from cases case0_
- [http-nio-8082-exec-10]30-08-2018       11:18:35 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@715c52d4
- [http-nio-8082-exec-7]30-08-2018       11:18:35 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@3a570d76
- [http-nio-8082-exec-8]30-08-2018       11:18:35 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53eba702
- [http-nio-8082-exec-9]30-08-2018       11:18:35 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@660541dc
- [http-nio-8082-exec-10]30-08-2018       11:18:43 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@660541dc
- [http-nio-8082-exec-1]30-08-2018       11:18:43 - Looking up handler method for path /acts
- [http-nio-8082-exec-1]30-08-2018       11:18:43 - Did not find handler method for [/acts]
- [http-nio-8082-exec-1]30-08-2018       11:18:43 - Looking up handler method for path /acts
- [http-nio-8082-exec-1]30-08-2018       11:18:43 - Did not find handler method for [/acts]
- [http-nio-8082-exec-1]30-08-2018       11:18:43 - Looking up handler method for path /acts
- [http-nio-8082-exec-1]30-08-2018       11:18:43 - Did not find handler method for [/acts]
- [http-nio-8082-exec-1]30-08-2018       11:18:43 - Looking up handler method for path /acts
- [http-nio-8082-exec-1]30-08-2018       11:18:43 - Did not find handler method for [/acts]
- [http-nio-8082-exec-1]30-08-2018       11:18:43 - select acts0_.actid as actid1_0_, acts0_.name as name2_0_, acts0_.rules as rules3_0_ from acts acts0_
- [http-nio-8082-exec-1]30-08-2018       11:18:43 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@660541dc
- [http-nio-8082-exec-1]30-08-2018       11:18:44 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@660541dc
- [http-nio-8082-exec-2]30-08-2018       11:18:44 - Looking up handler method for path /updates
- [http-nio-8082-exec-2]30-08-2018       11:18:44 - Did not find handler method for [/updates]
- [http-nio-8082-exec-2]30-08-2018       11:18:44 - Looking up handler method for path /updates
- [http-nio-8082-exec-2]30-08-2018       11:18:44 - Did not find handler method for [/updates]
- [http-nio-8082-exec-2]30-08-2018       11:18:44 - Looking up handler method for path /updates
- [http-nio-8082-exec-2]30-08-2018       11:18:44 - Did not find handler method for [/updates]
- [http-nio-8082-exec-2]30-08-2018       11:18:44 - Looking up handler method for path /updates
- [http-nio-8082-exec-2]30-08-2018       11:18:44 - Did not find handler method for [/updates]
- [http-nio-8082-exec-2]30-08-2018       11:18:44 - select updates0_.id as id1_14_, updates0_.benefits as benefits2_14_, updates0_.date as date3_14_, updates0_.features as features4_14_, updates0_.proposed as proposed5_14_ from v1 updates0_
- [http-nio-8082-exec-2]30-08-2018       11:18:44 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@660541dc
- [http-nio-8082-exec-2]30-08-2018       11:18:49 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@660541dc
- [http-nio-8082-exec-3]30-08-2018       11:18:49 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@660541dc
- [http-nio-8082-exec-3]30-08-2018       11:18:49 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@660541dc
- [http-nio-8082-exec-4]30-08-2018       11:18:49 - Looking up handler method for path /login
- [http-nio-8082-exec-4]30-08-2018       11:18:49 - Did not find handler method for [/login]
- [http-nio-8082-exec-4]30-08-2018       11:18:49 - Looking up handler method for path /login
- [http-nio-8082-exec-4]30-08-2018       11:18:49 - Did not find handler method for [/login]
- [http-nio-8082-exec-4]30-08-2018       11:18:49 - Looking up handler method for path /login
- [http-nio-8082-exec-4]30-08-2018       11:18:49 - Did not find handler method for [/login]
- [http-nio-8082-exec-4]30-08-2018       11:18:49 - Looking up handler method for path /login
- [http-nio-8082-exec-4]30-08-2018       11:18:49 - Did not find handler method for [/login]
- [http-nio-8082-exec-4]30-08-2018       11:18:49 - Logged out!
- [http-nio-8082-exec-4]30-08-2018       11:18:49 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@660541dc
- [http-nio-8082-exec-4]30-08-2018       11:19:18 - Application shutdown requested.
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3cffdfd4: startup date [Thu Aug 30 11:18:03 IST 2018]; root of context hierarchy
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Auditevents' from the JMX domain
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Beans' from the JMX domain
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Health' from the JMX domain
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Conditions' from the JMX domain
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Configprops' from the JMX domain
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Env' from the JMX domain
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Info' from the JMX domain
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Loggers' from the JMX domain
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Threaddump' from the JMX domain
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Metrics' from the JMX domain
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Scheduledtasks' from the JMX domain
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Httptrace' from the JMX domain
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Mappings' from the JMX domain
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregistering JMX-exposed beans on shutdown
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Unregistering JMX-exposed beans
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - Closing JPA EntityManagerFactory for persistence unit 'default'
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - HikariPool-1 - Shutdown initiated...
- [RMI TCP Connection(9)-127.0.0.1]30-08-2018       11:19:18 - HikariPool-1 - Shutdown completed.
- [RMI TCP Connection(9)-127.0.0.1]
+ [restartedMain]03-12-2018       12:02:14 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+ [restartedMain]03-12-2018       12:02:14 - Tomcat started on port(s): 8080 (http) with context path ''
+ [restartedMain]03-12-2018       12:02:14 - Started LegalAppApplication in 20.089 seconds (JVM running for 23.354)
+ [restartedMain]03-12-2018       12:02:14 - Creating new Restarter for thread Thread[main,5,main]
+ [restartedMain]03-12-2018       12:02:14 - Immediately restarting application
+ [restartedMain]03-12-2018       12:02:14 - Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4fcf8921
+ [restartedMain]03-12-2018       12:02:14 - Starting application com.dcm.LegalAppApplication with URLs [file:/E:/Software/LegalApp/V1/LegalApp/target/classes/]
+ [restartedMain]03-12-2018       12:02:14 - Main program running
+ [restartedMain]03-12-2018       12:02:47 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+ [http-nio-8080-exec-6]03-12-2018       12:02:47 - FrameworkServlet 'dispatcherServlet': initialization started
+ [http-nio-8080-exec-6]03-12-2018       12:02:47 - FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+ [http-nio-8080-exec-6]03-12-2018       12:02:47 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-6]03-12-2018       12:02:47 - AuditEvent [timestamp=2018-12-03T06:32:47.345Z, principal=anonymousUser, type=AUTHORIZATION_FAILURE, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}]
+ [http-nio-8080-exec-6]03-12-2018       12:02:48 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-6]03-12-2018       12:02:48 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-2]03-12-2018       12:02:48 - Looking up handler method for path /login
+ [http-nio-8080-exec-2]03-12-2018       12:02:48 - Did not find handler method for [/login]
+ [http-nio-8080-exec-2]03-12-2018       12:02:48 - Looking up handler method for path /login
+ [http-nio-8080-exec-2]03-12-2018       12:02:48 - Did not find handler method for [/login]
+ [http-nio-8080-exec-2]03-12-2018       12:02:48 - Looking up handler method for path /login
+ [http-nio-8080-exec-2]03-12-2018       12:02:48 - Did not find handler method for [/login]
+ [http-nio-8080-exec-2]03-12-2018       12:02:48 - Looking up handler method for path /login
+ [http-nio-8080-exec-2]03-12-2018       12:02:48 - Did not find handler method for [/login]
+ [http-nio-8080-exec-2]03-12-2018       12:02:48 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-1]03-12-2018       12:02:48 - AuditEvent [timestamp=2018-12-03T06:32:48.207Z, principal=anonymousUser, type=AUTHORIZATION_FAILURE, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@380f4: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 07CF69DDAFD5457E045CBC012950CA51, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}]
+ [http-nio-8080-exec-1]03-12-2018       12:02:48 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-1]03-12-2018       12:02:50 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-5]03-12-2018       12:02:50 - Looking up handler method for path /login
+ [http-nio-8080-exec-5]03-12-2018       12:02:50 - Did not find handler method for [/login]
+ [http-nio-8080-exec-5]03-12-2018       12:02:50 - Looking up handler method for path /login
+ [http-nio-8080-exec-5]03-12-2018       12:02:50 - Did not find handler method for [/login]
+ [http-nio-8080-exec-5]03-12-2018       12:02:50 - Looking up handler method for path /login
+ [http-nio-8080-exec-5]03-12-2018       12:02:50 - Did not find handler method for [/login]
+ [http-nio-8080-exec-5]03-12-2018       12:02:50 - Looking up handler method for path /login
+ [http-nio-8080-exec-5]03-12-2018       12:02:50 - Did not find handler method for [/login]
+ [http-nio-8080-exec-5]03-12-2018       12:02:50 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-5]03-12-2018       12:02:50 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-2]03-12-2018       12:02:56 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-9]03-12-2018       12:02:56 - HHH000397: Using ASTQueryTranslatorFactory
+ [http-nio-8080-exec-9]03-12-2018       12:02:56 - select users0_.user_id as user_id1_12_, users0_.active as active2_12_, users0_.username as username3_12_, users0_.name as name4_12_, users0_.password as password5_12_ from user users0_ where users0_.username=?
+ [http-nio-8080-exec-9]03-12-2018       12:02:56 - select roles0_.user_id as user_id1_13_0_, roles0_.role_id as role_id2_13_0_, role1_.role_id as role_id1_9_1_, role1_.role as role2_9_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
+ [http-nio-8080-exec-9]03-12-2018       12:02:56 - AuditEvent [timestamp=2018-12-03T06:32:56.992Z, principal=Vikash Kumar, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@380f4: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 07CF69DDAFD5457E045CBC012950CA51}]
+ [http-nio-8080-exec-9]03-12-2018       12:02:56 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-9]03-12-2018       12:02:56 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-10]03-12-2018       12:02:56 - Looking up handler method for path /
+ [http-nio-8080-exec-10]03-12-2018       12:02:56 - Did not find handler method for [/]
+ [http-nio-8080-exec-10]03-12-2018       12:02:56 - Looking up handler method for path /
+ [http-nio-8080-exec-10]03-12-2018       12:02:56 - Did not find handler method for [/]
+ [http-nio-8080-exec-10]03-12-2018       12:02:56 - Looking up handler method for path /
+ [http-nio-8080-exec-10]03-12-2018       12:02:57 - Did not find handler method for [/]
+ [http-nio-8080-exec-10]03-12-2018       12:02:57 - Looking up handler method for path /
+ [http-nio-8080-exec-10]03-12-2018       12:02:57 - Did not find handler method for [/]
+ [http-nio-8080-exec-10]03-12-2018       12:02:57 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-10]03-12-2018       12:02:57 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-3]03-12-2018       12:02:57 - Looking up handler method for path /home
+ [http-nio-8080-exec-3]03-12-2018       12:02:57 - Did not find handler method for [/home]
+ [http-nio-8080-exec-3]03-12-2018       12:02:57 - Looking up handler method for path /home
+ [http-nio-8080-exec-3]03-12-2018       12:02:57 - Did not find handler method for [/home]
+ [http-nio-8080-exec-3]03-12-2018       12:02:57 - Looking up handler method for path /home
+ [http-nio-8080-exec-3]03-12-2018       12:02:57 - Did not find handler method for [/home]
+ [http-nio-8080-exec-3]03-12-2018       12:02:57 - Looking up handler method for path /home
+ [http-nio-8080-exec-3]03-12-2018       12:02:57 - Did not find handler method for [/home]
+ [http-nio-8080-exec-3]03-12-2018       12:02:57 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=?
+ [http-nio-8080-exec-3]03-12-2018       12:02:57 - Logged in by: Vikash Kumar
+ [http-nio-8080-exec-3]03-12-2018       12:02:57 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-3]03-12-2018       12:02:57 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-4]03-12-2018       12:02:57 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-4]03-12-2018       12:02:57 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-4]03-12-2018       12:02:57 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-4]03-12-2018       12:02:57 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-4]03-12-2018       12:02:57 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-4]03-12-2018       12:02:57 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-4]03-12-2018       12:02:57 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-4]03-12-2018       12:02:57 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-4]03-12-2018       12:02:57 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-4]03-12-2018       12:02:58 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-7]03-12-2018       12:02:58 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-8]03-12-2018       12:02:58 - Looking up handler method for path /count
+ [http-nio-8080-exec-7]03-12-2018       12:02:58 - Did not find handler method for [/count]
+ [http-nio-8080-exec-7]03-12-2018       12:02:58 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:02:58 - Looking up handler method for path /count
+ [http-nio-8080-exec-7]03-12-2018       12:02:58 - Did not find handler method for [/count]
+ [http-nio-8080-exec-7]03-12-2018       12:02:58 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:02:58 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:02:58 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-1]03-12-2018       12:02:58 - Looking up handler method for path /count
+ [http-nio-8080-exec-7]03-12-2018       12:02:58 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-6]03-12-2018       12:02:58 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:02:58 - Did not find handler method for [/count]
+ [http-nio-8080-exec-7]03-12-2018       12:02:58 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:02:58 - Looking up handler method for path /count
+ [http-nio-8080-exec-7]03-12-2018       12:02:58 - Did not find handler method for [/count]
+ [http-nio-8080-exec-7]03-12-2018       12:02:58 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-1]03-12-2018       12:02:58 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-6]03-12-2018       12:02:58 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:02:58 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:02:58 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:02:58 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-1]03-12-2018       12:02:58 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-6]03-12-2018       12:02:58 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-1]03-12-2018       12:02:58 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-6]03-12-2018       12:02:58 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-1]03-12-2018       12:02:58 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-6]03-12-2018       12:02:58 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-1]03-12-2018       12:02:58 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-6]03-12-2018       12:02:58 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-6]03-12-2018       12:02:58 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-1]03-12-2018       12:02:58 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-1]03-12-2018       12:02:58 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-6]03-12-2018       12:02:58 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-1]03-12-2018       12:02:58 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-6]03-12-2018       12:02:58 - select count(*) as col_0_0_ from acts acts0_
+ [http-nio-8080-exec-8]03-12-2018       12:02:58 - select count(*) as col_0_0_ from user users0_
+ [http-nio-8080-exec-6]03-12-2018       12:02:58 - select count(*) as col_0_0_ from lawyer lawyer0_
+ [http-nio-8080-exec-7]03-12-2018       12:02:58 - select count(*) as col_0_0_ from cases case0_
+ [http-nio-8080-exec-1]03-12-2018       12:02:58 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-6]03-12-2018       12:02:58 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-1]03-12-2018       12:02:58 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-8]03-12-2018       12:02:58 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-7]03-12-2018       12:03:03 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-5]03-12-2018       12:03:03 - Looking up handler method for path /document
+ [http-nio-8080-exec-5]03-12-2018       12:03:03 - Did not find handler method for [/document]
+ [http-nio-8080-exec-5]03-12-2018       12:03:03 - Looking up handler method for path /document
+ [http-nio-8080-exec-5]03-12-2018       12:03:03 - Did not find handler method for [/document]
+ [http-nio-8080-exec-5]03-12-2018       12:03:03 - Looking up handler method for path /document
+ [http-nio-8080-exec-5]03-12-2018       12:03:03 - Did not find handler method for [/document]
+ [http-nio-8080-exec-5]03-12-2018       12:03:03 - Looking up handler method for path /document
+ [http-nio-8080-exec-5]03-12-2018       12:03:03 - Did not find handler method for [/document]
+ [http-nio-8080-exec-5]03-12-2018       12:03:03 - select document0_.id as id1_3_, document0_.brief as brief2_3_, document0_.caseno as caseno3_3_, document0_.file as file4_3_, document0_.type as type5_3_ from document document0_
+ [http-nio-8080-exec-5]03-12-2018       12:03:03 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-5]03-12-2018       12:03:04 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-2]03-12-2018       12:03:04 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-2]03-12-2018       12:03:04 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-2]03-12-2018       12:03:04 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-2]03-12-2018       12:03:04 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-2]03-12-2018       12:03:04 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-2]03-12-2018       12:03:04 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-2]03-12-2018       12:03:04 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-2]03-12-2018       12:03:04 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-2]03-12-2018       12:03:04 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_
+ [http-nio-8080-exec-2]03-12-2018       12:03:05 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-2]03-12-2018       12:03:13 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-9]03-12-2018       12:03:13 - Looking up handler method for path /newreminder
+ [http-nio-8080-exec-9]03-12-2018       12:03:13 - Did not find handler method for [/newreminder]
+ [http-nio-8080-exec-9]03-12-2018       12:03:13 - Looking up handler method for path /newreminder
+ [http-nio-8080-exec-9]03-12-2018       12:03:13 - Did not find handler method for [/newreminder]
+ [http-nio-8080-exec-9]03-12-2018       12:03:13 - Looking up handler method for path /newreminder
+ [http-nio-8080-exec-9]03-12-2018       12:03:13 - Did not find handler method for [/newreminder]
+ [http-nio-8080-exec-9]03-12-2018       12:03:13 - Looking up handler method for path /newreminder
+ [http-nio-8080-exec-9]03-12-2018       12:03:13 - Did not find handler method for [/newreminder]
+ [http-nio-8080-exec-9]03-12-2018       12:03:13 - select caseno from cases;
+ [http-nio-8080-exec-9]03-12-2018       12:03:13 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-9]03-12-2018       12:03:51 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-10]03-12-2018       12:03:51 - Looking up handler method for path /save-reminder
+ [http-nio-8080-exec-10]03-12-2018       12:03:51 - Did not find handler method for [/save-reminder]
+ [http-nio-8080-exec-10]03-12-2018       12:03:51 - Looking up handler method for path /save-reminder
+ [http-nio-8080-exec-10]03-12-2018       12:03:51 - Did not find handler method for [/save-reminder]
+ [http-nio-8080-exec-10]03-12-2018       12:03:51 - Looking up handler method for path /save-reminder
+ [http-nio-8080-exec-10]03-12-2018       12:03:51 - Did not find handler method for [/save-reminder]
+ [http-nio-8080-exec-10]03-12-2018       12:03:51 - Looking up handler method for path /save-reminder
+ [http-nio-8080-exec-10]03-12-2018       12:03:51 - Did not find handler method for [/save-reminder]
+ [http-nio-8080-exec-10]03-12-2018       12:03:51 - insert into reminder (brief, caseno, date, time, type, reminderid) values (?, ?, ?, ?, ?, ?)
+ [http-nio-8080-exec-10]03-12-2018       12:03:51 - Event: New Reminder created
+ [http-nio-8080-exec-10]03-12-2018       12:03:51 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-10]03-12-2018       12:03:52 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-3]03-12-2018       12:03:52 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-3]03-12-2018       12:03:52 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-3]03-12-2018       12:03:52 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-3]03-12-2018       12:03:52 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-3]03-12-2018       12:03:52 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-3]03-12-2018       12:03:52 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-3]03-12-2018       12:03:52 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-3]03-12-2018       12:03:52 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-3]03-12-2018       12:03:52 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_
+ [http-nio-8080-exec-3]03-12-2018       12:03:52 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-3]03-12-2018       12:03:55 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-4]03-12-2018       12:03:55 - Looking up handler method for path /home
+ [http-nio-8080-exec-4]03-12-2018       12:03:55 - Did not find handler method for [/home]
+ [http-nio-8080-exec-4]03-12-2018       12:03:55 - Looking up handler method for path /home
+ [http-nio-8080-exec-4]03-12-2018       12:03:55 - Did not find handler method for [/home]
+ [http-nio-8080-exec-4]03-12-2018       12:03:55 - Looking up handler method for path /home
+ [http-nio-8080-exec-4]03-12-2018       12:03:55 - Did not find handler method for [/home]
+ [http-nio-8080-exec-4]03-12-2018       12:03:55 - Looking up handler method for path /home
+ [http-nio-8080-exec-4]03-12-2018       12:03:55 - Did not find handler method for [/home]
+ [http-nio-8080-exec-4]03-12-2018       12:03:55 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=?
+ [http-nio-8080-exec-4]03-12-2018       12:03:55 - Logged in by: Vikash Kumar
+ [http-nio-8080-exec-4]03-12-2018       12:03:55 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-4]03-12-2018       12:03:55 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-6]03-12-2018       12:03:55 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-6]03-12-2018       12:03:55 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-6]03-12-2018       12:03:55 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-6]03-12-2018       12:03:55 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-6]03-12-2018       12:03:55 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-6]03-12-2018       12:03:55 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-6]03-12-2018       12:03:55 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-6]03-12-2018       12:03:55 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-6]03-12-2018       12:03:55 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-6]03-12-2018       12:03:55 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-1]03-12-2018       12:03:55 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-8]03-12-2018       12:03:55 - Looking up handler method for path /count
+ [http-nio-8080-exec-1]03-12-2018       12:03:55 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:03:55 - Did not find handler method for [/count]
+ [http-nio-8080-exec-1]03-12-2018       12:03:55 - Looking up handler method for path /count
+ [http-nio-8080-exec-1]03-12-2018       12:03:55 - Did not find handler method for [/count]
+ [http-nio-8080-exec-1]03-12-2018       12:03:55 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:03:55 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:03:55 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:03:55 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-5]03-12-2018       12:03:55 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-7]03-12-2018       12:03:55 - Looking up handler method for path /count
+ [http-nio-8080-exec-1]03-12-2018       12:03:55 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:03:55 - Did not find handler method for [/count]
+ [http-nio-8080-exec-1]03-12-2018       12:03:55 - Looking up handler method for path /count
+ [http-nio-8080-exec-1]03-12-2018       12:03:55 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:03:55 - Did not find handler method for [/count]
+ [http-nio-8080-exec-1]03-12-2018       12:03:55 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-5]03-12-2018       12:03:55 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:03:55 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-7]03-12-2018       12:03:55 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:03:55 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-5]03-12-2018       12:03:55 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-5]03-12-2018       12:03:55 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-7]03-12-2018       12:03:55 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-5]03-12-2018       12:03:55 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-7]03-12-2018       12:03:55 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-7]03-12-2018       12:03:55 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-5]03-12-2018       12:03:55 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-7]03-12-2018       12:03:55 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-5]03-12-2018       12:03:55 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-7]03-12-2018       12:03:55 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-7]03-12-2018       12:03:55 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-5]03-12-2018       12:03:55 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-7]03-12-2018       12:03:55 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-5]03-12-2018       12:03:55 - select count(*) as col_0_0_ from lawyer lawyer0_
+ [http-nio-8080-exec-1]03-12-2018       12:03:55 - select count(*) as col_0_0_ from acts acts0_
+ [http-nio-8080-exec-8]03-12-2018       12:03:55 - select count(*) as col_0_0_ from user users0_
+ [http-nio-8080-exec-7]03-12-2018       12:03:55 - select count(*) as col_0_0_ from cases case0_
+ [http-nio-8080-exec-5]03-12-2018       12:03:55 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-1]03-12-2018       12:03:55 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-8]03-12-2018       12:03:55 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-7]03-12-2018       12:03:55 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-5]03-12-2018       12:03:58 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-2]03-12-2018       12:03:58 - Looking up handler method for path /home
+ [http-nio-8080-exec-2]03-12-2018       12:03:58 - Did not find handler method for [/home]
+ [http-nio-8080-exec-2]03-12-2018       12:03:58 - Looking up handler method for path /home
+ [http-nio-8080-exec-2]03-12-2018       12:03:58 - Did not find handler method for [/home]
+ [http-nio-8080-exec-2]03-12-2018       12:03:58 - Looking up handler method for path /home
+ [http-nio-8080-exec-2]03-12-2018       12:03:58 - Did not find handler method for [/home]
+ [http-nio-8080-exec-2]03-12-2018       12:03:58 - Looking up handler method for path /home
+ [http-nio-8080-exec-2]03-12-2018       12:03:58 - Did not find handler method for [/home]
+ [http-nio-8080-exec-2]03-12-2018       12:03:58 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=?
+ [http-nio-8080-exec-2]03-12-2018       12:03:58 - Logged in by: Vikash Kumar
+ [http-nio-8080-exec-2]03-12-2018       12:03:58 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-2]03-12-2018       12:03:58 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-9]03-12-2018       12:03:58 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-9]03-12-2018       12:03:58 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-9]03-12-2018       12:03:58 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-9]03-12-2018       12:03:58 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-9]03-12-2018       12:03:58 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-9]03-12-2018       12:03:58 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-9]03-12-2018       12:03:58 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-9]03-12-2018       12:03:58 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-9]03-12-2018       12:03:58 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-9]03-12-2018       12:03:58 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-10]03-12-2018       12:03:58 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-3]03-12-2018       12:03:58 - Looking up handler method for path /count
+ [http-nio-8080-exec-10]03-12-2018       12:03:58 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-4]03-12-2018       12:03:58 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-3]03-12-2018       12:03:58 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-6]03-12-2018       12:03:58 - Did not find handler method for [/count]
+ [http-nio-8080-exec-10]03-12-2018       12:03:58 - Looking up handler method for path /count
+ [http-nio-8080-exec-10]03-12-2018       12:03:58 - Did not find handler method for [/count]
+ [http-nio-8080-exec-10]03-12-2018       12:03:58 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-3]03-12-2018       12:03:58 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-3]03-12-2018       12:03:58 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-3]03-12-2018       12:03:58 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-4]03-12-2018       12:03:58 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-6]03-12-2018       12:03:58 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-3]03-12-2018       12:03:58 - Looking up handler method for path /count
+ [http-nio-8080-exec-10]03-12-2018       12:03:58 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-4]03-12-2018       12:03:58 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-4]03-12-2018       12:03:58 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-4]03-12-2018       12:03:58 - Did not find handler method for [/count]
+ [http-nio-8080-exec-10]03-12-2018       12:03:58 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-3]03-12-2018       12:03:58 - Looking up handler method for path /count
+ [http-nio-8080-exec-10]03-12-2018       12:03:58 - Did not find handler method for [/count]
+ [http-nio-8080-exec-10]03-12-2018       12:03:58 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-3]03-12-2018       12:03:58 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-6]03-12-2018       12:03:58 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-3]03-12-2018       12:03:58 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-6]03-12-2018       12:03:58 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-4]03-12-2018       12:03:58 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-6]03-12-2018       12:03:58 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-4]03-12-2018       12:03:58 - select count(*) as col_0_0_ from lawyer lawyer0_
+ [http-nio-8080-exec-10]03-12-2018       12:03:58 - select count(*) as col_0_0_ from acts acts0_
+ [http-nio-8080-exec-3]03-12-2018       12:03:58 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-6]03-12-2018       12:03:58 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-6]03-12-2018       12:03:58 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-6]03-12-2018       12:03:58 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-6]03-12-2018       12:03:58 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-4]03-12-2018       12:03:58 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-4]03-12-2018       12:03:58 - select count(*) as col_0_0_ from cases case0_
+ [http-nio-8080-exec-6]03-12-2018       12:03:58 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-10]03-12-2018       12:03:58 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-3]03-12-2018       12:03:58 - select count(*) as col_0_0_ from user users0_
+ [http-nio-8080-exec-4]03-12-2018       12:03:58 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-6]03-12-2018       12:03:58 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-4]03-12-2018       12:03:58 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-8]03-12-2018       12:03:58 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-8]03-12-2018       12:04:00 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-1]03-12-2018       12:04:00 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-1]03-12-2018       12:04:00 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-1]03-12-2018       12:04:00 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-1]03-12-2018       12:04:00 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-1]03-12-2018       12:04:00 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-1]03-12-2018       12:04:00 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-1]03-12-2018       12:04:00 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-1]03-12-2018       12:04:00 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-1]03-12-2018       12:04:00 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_
+ [http-nio-8080-exec-1]03-12-2018       12:04:00 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-1]03-12-2018       12:04:03 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-7]03-12-2018       12:04:03 - Looking up handler method for path /user
+ [http-nio-8080-exec-7]03-12-2018       12:04:03 - Did not find handler method for [/user]
+ [http-nio-8080-exec-7]03-12-2018       12:04:03 - Looking up handler method for path /user
+ [http-nio-8080-exec-7]03-12-2018       12:04:03 - Did not find handler method for [/user]
+ [http-nio-8080-exec-7]03-12-2018       12:04:03 - Looking up handler method for path /user
+ [http-nio-8080-exec-7]03-12-2018       12:04:03 - Did not find handler method for [/user]
+ [http-nio-8080-exec-7]03-12-2018       12:04:03 - Looking up handler method for path /user
+ [http-nio-8080-exec-7]03-12-2018       12:04:03 - Did not find handler method for [/user]
+ [http-nio-8080-exec-7]03-12-2018       12:04:03 - select users0_.user_id as user_id1_12_, users0_.active as active2_12_, users0_.username as username3_12_, users0_.name as name4_12_, users0_.password as password5_12_ from user users0_
+ [http-nio-8080-exec-7]03-12-2018       12:04:03 - select roles0_.user_id as user_id1_13_0_, roles0_.role_id as role_id2_13_0_, role1_.role_id as role_id1_9_1_, role1_.role as role2_9_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
+ [http-nio-8080-exec-7]03-12-2018       12:04:03 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-7]03-12-2018       12:04:06 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-5]03-12-2018       12:04:06 - Looking up handler method for path /home
+ [http-nio-8080-exec-5]03-12-2018       12:04:06 - Did not find handler method for [/home]
+ [http-nio-8080-exec-5]03-12-2018       12:04:06 - Looking up handler method for path /home
+ [http-nio-8080-exec-5]03-12-2018       12:04:06 - Did not find handler method for [/home]
+ [http-nio-8080-exec-5]03-12-2018       12:04:06 - Looking up handler method for path /home
+ [http-nio-8080-exec-5]03-12-2018       12:04:06 - Did not find handler method for [/home]
+ [http-nio-8080-exec-5]03-12-2018       12:04:06 - Looking up handler method for path /home
+ [http-nio-8080-exec-5]03-12-2018       12:04:06 - Did not find handler method for [/home]
+ [http-nio-8080-exec-5]03-12-2018       12:04:06 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=?
+ [http-nio-8080-exec-5]03-12-2018       12:04:06 - Logged in by: Vikash Kumar
+ [http-nio-8080-exec-5]03-12-2018       12:04:06 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-5]03-12-2018       12:04:06 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-2]03-12-2018       12:04:06 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-2]03-12-2018       12:04:06 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-2]03-12-2018       12:04:06 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-2]03-12-2018       12:04:06 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-2]03-12-2018       12:04:06 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-2]03-12-2018       12:04:06 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-2]03-12-2018       12:04:06 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-2]03-12-2018       12:04:06 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-2]03-12-2018       12:04:06 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-2]03-12-2018       12:04:06 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-9]03-12-2018       12:04:06 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-3]03-12-2018       12:04:06 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-3]03-12-2018       12:04:06 - Looking up handler method for path /count
+ [http-nio-8080-exec-9]03-12-2018       12:04:06 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-3]03-12-2018       12:04:06 - Did not find handler method for [/count]
+ [http-nio-8080-exec-9]03-12-2018       12:04:06 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-3]03-12-2018       12:04:06 - Looking up handler method for path /count
+ [http-nio-8080-exec-9]03-12-2018       12:04:06 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-3]03-12-2018       12:04:06 - Did not find handler method for [/count]
+ [http-nio-8080-exec-9]03-12-2018       12:04:06 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-3]03-12-2018       12:04:06 - Looking up handler method for path /count
+ [http-nio-8080-exec-9]03-12-2018       12:04:06 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-10]03-12-2018       12:04:06 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-6]03-12-2018       12:04:06 - Did not find handler method for [/count]
+ [http-nio-8080-exec-9]03-12-2018       12:04:06 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-3]03-12-2018       12:04:06 - Looking up handler method for path /count
+ [http-nio-8080-exec-9]03-12-2018       12:04:06 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-3]03-12-2018       12:04:06 - Did not find handler method for [/count]
+ [http-nio-8080-exec-9]03-12-2018       12:04:06 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-3]03-12-2018       12:04:06 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-10]03-12-2018       12:04:06 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-6]03-12-2018       12:04:06 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-10]03-12-2018       12:04:06 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-10]03-12-2018       12:04:06 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-6]03-12-2018       12:04:06 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-10]03-12-2018       12:04:06 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-6]03-12-2018       12:04:06 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-6]03-12-2018       12:04:06 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-10]03-12-2018       12:04:06 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-6]03-12-2018       12:04:06 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-10]03-12-2018       12:04:06 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-10]03-12-2018       12:04:06 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-10]03-12-2018       12:04:06 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-6]03-12-2018       12:04:06 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-6]03-12-2018       12:04:06 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-6]03-12-2018       12:04:06 - select count(*) as col_0_0_ from lawyer lawyer0_
+ [http-nio-8080-exec-9]03-12-2018       12:04:06 - select count(*) as col_0_0_ from acts acts0_
+ [http-nio-8080-exec-3]03-12-2018       12:04:06 - select count(*) as col_0_0_ from user users0_
+ [http-nio-8080-exec-10]03-12-2018       12:04:06 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-9]03-12-2018       12:04:06 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-3]03-12-2018       12:04:06 - select count(*) as col_0_0_ from cases case0_
+ [http-nio-8080-exec-6]03-12-2018       12:04:06 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-10]03-12-2018       12:04:06 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-6]03-12-2018       12:04:17 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-4]03-12-2018       12:04:17 - Looking up handler method for path /lawyer
+ [http-nio-8080-exec-4]03-12-2018       12:04:17 - Did not find handler method for [/lawyer]
+ [http-nio-8080-exec-4]03-12-2018       12:04:17 - Looking up handler method for path /lawyer
+ [http-nio-8080-exec-4]03-12-2018       12:04:17 - Did not find handler method for [/lawyer]
+ [http-nio-8080-exec-4]03-12-2018       12:04:17 - Looking up handler method for path /lawyer
+ [http-nio-8080-exec-4]03-12-2018       12:04:17 - Did not find handler method for [/lawyer]
+ [http-nio-8080-exec-4]03-12-2018       12:04:17 - Looking up handler method for path /lawyer
+ [http-nio-8080-exec-4]03-12-2018       12:04:17 - Did not find handler method for [/lawyer]
+ [http-nio-8080-exec-4]03-12-2018       12:04:17 - select lawyer0_.lawyerid as lawyerid1_4_, lawyer0_.address as address2_4_, lawyer0_.cemail as cemail3_4_, lawyer0_.city as city4_4_, lawyer0_.cname as cname5_4_, lawyer0_.country as country6_4_, lawyer0_.cphone as cphone7_4_, lawyer0_.email as email8_4_, lawyer0_.jemail as jemail9_4_, lawyer0_.jname as jname10_4_, lawyer0_.jphone as jphone11_4_, lawyer0_.line2 as line12_4_, lawyer0_.name as name13_4_, lawyer0_.phone as phone14_4_, lawyer0_.pin as pin15_4_, lawyer0_.state as state16_4_ from lawyer lawyer0_
+ [http-nio-8080-exec-4]03-12-2018       12:04:18 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-4]03-12-2018       12:04:20 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-8]03-12-2018       12:04:20 - Looking up handler method for path /home
+ [http-nio-8080-exec-8]03-12-2018       12:04:20 - Did not find handler method for [/home]
+ [http-nio-8080-exec-8]03-12-2018       12:04:20 - Looking up handler method for path /home
+ [http-nio-8080-exec-8]03-12-2018       12:04:20 - Did not find handler method for [/home]
+ [http-nio-8080-exec-8]03-12-2018       12:04:20 - Looking up handler method for path /home
+ [http-nio-8080-exec-8]03-12-2018       12:04:20 - Did not find handler method for [/home]
+ [http-nio-8080-exec-8]03-12-2018       12:04:20 - Looking up handler method for path /home
+ [http-nio-8080-exec-8]03-12-2018       12:04:20 - Did not find handler method for [/home]
+ [http-nio-8080-exec-8]03-12-2018       12:04:20 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=?
+ [http-nio-8080-exec-8]03-12-2018       12:04:20 - Logged in by: Vikash Kumar
+ [http-nio-8080-exec-8]03-12-2018       12:04:20 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-8]03-12-2018       12:04:20 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-1]03-12-2018       12:04:20 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-1]03-12-2018       12:04:20 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-1]03-12-2018       12:04:20 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-1]03-12-2018       12:04:20 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-1]03-12-2018       12:04:20 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-1]03-12-2018       12:04:20 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-1]03-12-2018       12:04:20 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-1]03-12-2018       12:04:20 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-1]03-12-2018       12:04:20 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-1]03-12-2018       12:04:20 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-7]03-12-2018       12:04:20 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-2]03-12-2018       12:04:20 - Looking up handler method for path /count
+ [http-nio-8080-exec-7]03-12-2018       12:04:20 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-2]03-12-2018       12:04:20 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-9]03-12-2018       12:04:20 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-5]03-12-2018       12:04:20 - Did not find handler method for [/count]
+ [http-nio-8080-exec-7]03-12-2018       12:04:20 - Looking up handler method for path /count
+ [http-nio-8080-exec-7]03-12-2018       12:04:20 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-2]03-12-2018       12:04:20 - Did not find handler method for [/count]
+ [http-nio-8080-exec-7]03-12-2018       12:04:20 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-2]03-12-2018       12:04:20 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-2]03-12-2018       12:04:20 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-9]03-12-2018       12:04:20 - Looking up handler method for path /count
+ [http-nio-8080-exec-7]03-12-2018       12:04:20 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-2]03-12-2018       12:04:20 - Did not find handler method for [/count]
+ [http-nio-8080-exec-7]03-12-2018       12:04:20 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-9]03-12-2018       12:04:20 - Looking up handler method for path /count
+ [http-nio-8080-exec-7]03-12-2018       12:04:20 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-2]03-12-2018       12:04:20 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-9]03-12-2018       12:04:20 - Did not find handler method for [/count]
+ [http-nio-8080-exec-7]03-12-2018       12:04:20 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-2]03-12-2018       12:04:20 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-9]03-12-2018       12:04:20 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-2]03-12-2018       12:04:20 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-9]03-12-2018       12:04:20 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-9]03-12-2018       12:04:20 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-9]03-12-2018       12:04:20 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-9]03-12-2018       12:04:20 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-5]03-12-2018       12:04:20 - select count(*) as col_0_0_ from user users0_
+ [http-nio-8080-exec-2]03-12-2018       12:04:20 - select count(*) as col_0_0_ from lawyer lawyer0_
+ [http-nio-8080-exec-7]03-12-2018       12:04:20 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-5]03-12-2018       12:04:20 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-5]03-12-2018       12:04:20 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-5]03-12-2018       12:04:20 - select count(*) as col_0_0_ from cases case0_
+ [http-nio-8080-exec-9]03-12-2018       12:04:20 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-5]03-12-2018       12:04:20 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-5]03-12-2018       12:04:20 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-5]03-12-2018       12:04:20 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-5]03-12-2018       12:04:20 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-7]03-12-2018       12:04:20 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-2]03-12-2018       12:04:20 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-9]03-12-2018       12:04:20 - select count(*) as col_0_0_ from acts acts0_
+ [http-nio-8080-exec-5]03-12-2018       12:04:20 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-5]03-12-2018       12:04:21 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-3]03-12-2018       12:04:21 - Looking up handler method for path /acts
+ [http-nio-8080-exec-3]03-12-2018       12:04:21 - Did not find handler method for [/acts]
+ [http-nio-8080-exec-3]03-12-2018       12:04:21 - Looking up handler method for path /acts
+ [http-nio-8080-exec-3]03-12-2018       12:04:21 - Did not find handler method for [/acts]
+ [http-nio-8080-exec-3]03-12-2018       12:04:21 - Looking up handler method for path /acts
+ [http-nio-8080-exec-3]03-12-2018       12:04:21 - Did not find handler method for [/acts]
+ [http-nio-8080-exec-3]03-12-2018       12:04:21 - Looking up handler method for path /acts
+ [http-nio-8080-exec-3]03-12-2018       12:04:21 - Did not find handler method for [/acts]
+ [http-nio-8080-exec-3]03-12-2018       12:04:21 - select acts0_.actid as actid1_0_, acts0_.name as name2_0_, acts0_.rules as rules3_0_ from acts acts0_
+ [http-nio-8080-exec-3]03-12-2018       12:04:22 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-3]03-12-2018       12:04:23 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-10]03-12-2018       12:04:23 - Looking up handler method for path /home
+ [http-nio-8080-exec-10]03-12-2018       12:04:23 - Did not find handler method for [/home]
+ [http-nio-8080-exec-10]03-12-2018       12:04:23 - Looking up handler method for path /home
+ [http-nio-8080-exec-10]03-12-2018       12:04:23 - Did not find handler method for [/home]
+ [http-nio-8080-exec-10]03-12-2018       12:04:23 - Looking up handler method for path /home
+ [http-nio-8080-exec-10]03-12-2018       12:04:23 - Did not find handler method for [/home]
+ [http-nio-8080-exec-10]03-12-2018       12:04:23 - Looking up handler method for path /home
+ [http-nio-8080-exec-10]03-12-2018       12:04:23 - Did not find handler method for [/home]
+ [http-nio-8080-exec-10]03-12-2018       12:04:23 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=?
+ [http-nio-8080-exec-10]03-12-2018       12:04:23 - Logged in by: Vikash Kumar
+ [http-nio-8080-exec-10]03-12-2018       12:04:23 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-10]03-12-2018       12:04:23 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-6]03-12-2018       12:04:23 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-6]03-12-2018       12:04:23 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-6]03-12-2018       12:04:23 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-6]03-12-2018       12:04:23 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-6]03-12-2018       12:04:23 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-6]03-12-2018       12:04:23 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-6]03-12-2018       12:04:23 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-6]03-12-2018       12:04:23 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-6]03-12-2018       12:04:23 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-6]03-12-2018       12:04:24 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-4]03-12-2018       12:04:24 - Looking up handler method for path /count
+ [http-nio-8080-exec-4]03-12-2018       12:04:24 - Did not find handler method for [/count]
+ [http-nio-8080-exec-4]03-12-2018       12:04:24 - Looking up handler method for path /count
+ [http-nio-8080-exec-4]03-12-2018       12:04:24 - Did not find handler method for [/count]
+ [http-nio-8080-exec-4]03-12-2018       12:04:24 - Looking up handler method for path /count
+ [http-nio-8080-exec-4]03-12-2018       12:04:24 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-1]03-12-2018       12:04:24 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-8]03-12-2018       12:04:24 - Did not find handler method for [/count]
+ [http-nio-8080-exec-4]03-12-2018       12:04:24 - Looking up handler method for path /count
+ [http-nio-8080-exec-4]03-12-2018       12:04:24 - Did not find handler method for [/count]
+ [http-nio-8080-exec-4]03-12-2018       12:04:24 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-1]03-12-2018       12:04:24 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:04:24 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-1]03-12-2018       12:04:24 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:04:24 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-1]03-12-2018       12:04:24 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:04:24 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-1]03-12-2018       12:04:24 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:04:24 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-2]03-12-2018       12:04:24 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:04:24 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-1]03-12-2018       12:04:24 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:04:24 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:04:24 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-1]03-12-2018       12:04:24 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:04:24 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-1]03-12-2018       12:04:24 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-2]03-12-2018       12:04:24 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-1]03-12-2018       12:04:24 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-2]03-12-2018       12:04:24 - select count(*) as col_0_0_ from lawyer lawyer0_
+ [http-nio-8080-exec-4]03-12-2018       12:04:24 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-2]03-12-2018       12:04:24 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-2]03-12-2018       12:04:24 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-2]03-12-2018       12:04:24 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-2]03-12-2018       12:04:24 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-2]03-12-2018       12:04:24 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-2]03-12-2018       12:04:24 - select count(*) as col_0_0_ from user users0_
+ [http-nio-8080-exec-1]03-12-2018       12:04:24 - select count(*) as col_0_0_ from acts acts0_
+ [http-nio-8080-exec-8]03-12-2018       12:04:24 - select count(*) as col_0_0_ from cases case0_
+ [http-nio-8080-exec-2]03-12-2018       12:04:24 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-4]03-12-2018       12:04:24 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-1]03-12-2018       12:04:24 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-8]03-12-2018       12:04:24 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-2]03-12-2018       12:04:26 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-7]03-12-2018       12:04:26 - Looking up handler method for path /document
+ [http-nio-8080-exec-7]03-12-2018       12:04:26 - Did not find handler method for [/document]
+ [http-nio-8080-exec-7]03-12-2018       12:04:26 - Looking up handler method for path /document
+ [http-nio-8080-exec-7]03-12-2018       12:04:26 - Did not find handler method for [/document]
+ [http-nio-8080-exec-7]03-12-2018       12:04:26 - Looking up handler method for path /document
+ [http-nio-8080-exec-7]03-12-2018       12:04:26 - Did not find handler method for [/document]
+ [http-nio-8080-exec-7]03-12-2018       12:04:26 - Looking up handler method for path /document
+ [http-nio-8080-exec-7]03-12-2018       12:04:26 - Did not find handler method for [/document]
+ [http-nio-8080-exec-7]03-12-2018       12:04:26 - select document0_.id as id1_3_, document0_.brief as brief2_3_, document0_.caseno as caseno3_3_, document0_.file as file4_3_, document0_.type as type5_3_ from document document0_
+ [http-nio-8080-exec-7]03-12-2018       12:04:26 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-7]03-12-2018       12:04:27 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-9]03-12-2018       12:04:27 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-9]03-12-2018       12:04:27 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-9]03-12-2018       12:04:27 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-9]03-12-2018       12:04:27 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-9]03-12-2018       12:04:27 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-9]03-12-2018       12:04:27 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-9]03-12-2018       12:04:27 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-9]03-12-2018       12:04:27 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-9]03-12-2018       12:04:27 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_
+ [http-nio-8080-exec-9]03-12-2018       12:04:27 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-9]03-12-2018       12:04:28 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-5]03-12-2018       12:04:28 - Looking up handler method for path /lawyer
+ [http-nio-8080-exec-5]03-12-2018       12:04:28 - Did not find handler method for [/lawyer]
+ [http-nio-8080-exec-5]03-12-2018       12:04:28 - Looking up handler method for path /lawyer
+ [http-nio-8080-exec-5]03-12-2018       12:04:28 - Did not find handler method for [/lawyer]
+ [http-nio-8080-exec-5]03-12-2018       12:04:28 - Looking up handler method for path /lawyer
+ [http-nio-8080-exec-5]03-12-2018       12:04:28 - Did not find handler method for [/lawyer]
+ [http-nio-8080-exec-5]03-12-2018       12:04:28 - Looking up handler method for path /lawyer
+ [http-nio-8080-exec-5]03-12-2018       12:04:28 - Did not find handler method for [/lawyer]
+ [http-nio-8080-exec-5]03-12-2018       12:04:28 - select lawyer0_.lawyerid as lawyerid1_4_, lawyer0_.address as address2_4_, lawyer0_.cemail as cemail3_4_, lawyer0_.city as city4_4_, lawyer0_.cname as cname5_4_, lawyer0_.country as country6_4_, lawyer0_.cphone as cphone7_4_, lawyer0_.email as email8_4_, lawyer0_.jemail as jemail9_4_, lawyer0_.jname as jname10_4_, lawyer0_.jphone as jphone11_4_, lawyer0_.line2 as line12_4_, lawyer0_.name as name13_4_, lawyer0_.phone as phone14_4_, lawyer0_.pin as pin15_4_, lawyer0_.state as state16_4_ from lawyer lawyer0_
+ [http-nio-8080-exec-5]03-12-2018       12:04:28 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-5]03-12-2018       12:04:29 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-3]03-12-2018       12:04:29 - Looking up handler method for path /case-logs
+ [http-nio-8080-exec-3]03-12-2018       12:04:29 - Did not find handler method for [/case-logs]
+ [http-nio-8080-exec-3]03-12-2018       12:04:29 - Looking up handler method for path /case-logs
+ [http-nio-8080-exec-3]03-12-2018       12:04:29 - Did not find handler method for [/case-logs]
+ [http-nio-8080-exec-3]03-12-2018       12:04:29 - Looking up handler method for path /case-logs
+ [http-nio-8080-exec-3]03-12-2018       12:04:29 - Did not find handler method for [/case-logs]
+ [http-nio-8080-exec-3]03-12-2018       12:04:29 - Looking up handler method for path /case-logs
+ [http-nio-8080-exec-3]03-12-2018       12:04:29 - Did not find handler method for [/case-logs]
+ [http-nio-8080-exec-3]03-12-2018       12:04:29 - select caseno from cases;
+ [http-nio-8080-exec-3]03-12-2018       12:04:29 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-3]03-12-2018       12:04:30 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-10]03-12-2018       12:04:30 - Looking up handler method for path /acts
+ [http-nio-8080-exec-10]03-12-2018       12:04:30 - Did not find handler method for [/acts]
+ [http-nio-8080-exec-10]03-12-2018       12:04:30 - Looking up handler method for path /acts
+ [http-nio-8080-exec-10]03-12-2018       12:04:30 - Did not find handler method for [/acts]
+ [http-nio-8080-exec-10]03-12-2018       12:04:30 - Looking up handler method for path /acts
+ [http-nio-8080-exec-10]03-12-2018       12:04:30 - Did not find handler method for [/acts]
+ [http-nio-8080-exec-10]03-12-2018       12:04:30 - Looking up handler method for path /acts
+ [http-nio-8080-exec-10]03-12-2018       12:04:30 - Did not find handler method for [/acts]
+ [http-nio-8080-exec-10]03-12-2018       12:04:30 - select acts0_.actid as actid1_0_, acts0_.name as name2_0_, acts0_.rules as rules3_0_ from acts acts0_
+ [http-nio-8080-exec-10]03-12-2018       12:04:30 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-10]03-12-2018       12:04:30 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-6]03-12-2018       12:04:30 - Looking up handler method for path /user
+ [http-nio-8080-exec-6]03-12-2018       12:04:30 - Did not find handler method for [/user]
+ [http-nio-8080-exec-6]03-12-2018       12:04:30 - Looking up handler method for path /user
+ [http-nio-8080-exec-6]03-12-2018       12:04:30 - Did not find handler method for [/user]
+ [http-nio-8080-exec-6]03-12-2018       12:04:30 - Looking up handler method for path /user
+ [http-nio-8080-exec-6]03-12-2018       12:04:30 - Did not find handler method for [/user]
+ [http-nio-8080-exec-6]03-12-2018       12:04:30 - Looking up handler method for path /user
+ [http-nio-8080-exec-6]03-12-2018       12:04:30 - Did not find handler method for [/user]
+ [http-nio-8080-exec-6]03-12-2018       12:04:30 - select users0_.user_id as user_id1_12_, users0_.active as active2_12_, users0_.username as username3_12_, users0_.name as name4_12_, users0_.password as password5_12_ from user users0_
+ [http-nio-8080-exec-6]03-12-2018       12:04:30 - select roles0_.user_id as user_id1_13_0_, roles0_.role_id as role_id2_13_0_, role1_.role_id as role_id1_9_1_, role1_.role as role2_9_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
+ [http-nio-8080-exec-6]03-12-2018       12:04:30 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-6]03-12-2018       12:04:31 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-4]03-12-2018       12:04:31 - Looking up handler method for path /updates
+ [http-nio-8080-exec-4]03-12-2018       12:04:31 - Did not find handler method for [/updates]
+ [http-nio-8080-exec-4]03-12-2018       12:04:31 - Looking up handler method for path /updates
+ [http-nio-8080-exec-4]03-12-2018       12:04:31 - Did not find handler method for [/updates]
+ [http-nio-8080-exec-4]03-12-2018       12:04:31 - Looking up handler method for path /updates
+ [http-nio-8080-exec-4]03-12-2018       12:04:31 - Did not find handler method for [/updates]
+ [http-nio-8080-exec-4]03-12-2018       12:04:31 - Looking up handler method for path /updates
+ [http-nio-8080-exec-4]03-12-2018       12:04:31 - Did not find handler method for [/updates]
+ [http-nio-8080-exec-4]03-12-2018       12:04:31 - select updates0_.id as id1_14_, updates0_.benefits as benefits2_14_, updates0_.date as date3_14_, updates0_.features as features4_14_, updates0_.proposed as proposed5_14_ from v1 updates0_
+ [http-nio-8080-exec-4]03-12-2018       12:04:32 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-4]03-12-2018       12:04:32 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-1]03-12-2018       12:04:32 - Looking up handler method for path /home
+ [http-nio-8080-exec-1]03-12-2018       12:04:32 - Did not find handler method for [/home]
+ [http-nio-8080-exec-1]03-12-2018       12:04:32 - Looking up handler method for path /home
+ [http-nio-8080-exec-1]03-12-2018       12:04:32 - Did not find handler method for [/home]
+ [http-nio-8080-exec-1]03-12-2018       12:04:32 - Looking up handler method for path /home
+ [http-nio-8080-exec-1]03-12-2018       12:04:32 - Did not find handler method for [/home]
+ [http-nio-8080-exec-1]03-12-2018       12:04:32 - Looking up handler method for path /home
+ [http-nio-8080-exec-1]03-12-2018       12:04:32 - Did not find handler method for [/home]
+ [http-nio-8080-exec-1]03-12-2018       12:04:32 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=?
+ [http-nio-8080-exec-1]03-12-2018       12:04:32 - Logged in by: Vikash Kumar
+ [http-nio-8080-exec-1]03-12-2018       12:04:32 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-1]03-12-2018       12:04:32 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-8]03-12-2018       12:04:32 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-8]03-12-2018       12:04:32 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-8]03-12-2018       12:04:32 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-8]03-12-2018       12:04:32 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-8]03-12-2018       12:04:32 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-8]03-12-2018       12:04:32 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-8]03-12-2018       12:04:32 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-8]03-12-2018       12:04:32 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-8]03-12-2018       12:04:32 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-8]03-12-2018       12:04:32 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-2]03-12-2018       12:04:32 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-7]03-12-2018       12:04:32 - Looking up handler method for path /count
+ [http-nio-8080-exec-2]03-12-2018       12:04:32 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-7]03-12-2018       12:04:32 - Did not find handler method for [/count]
+ [http-nio-8080-exec-2]03-12-2018       12:04:32 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-7]03-12-2018       12:04:32 - Looking up handler method for path /count
+ [http-nio-8080-exec-2]03-12-2018       12:04:32 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-7]03-12-2018       12:04:32 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-7]03-12-2018       12:04:32 - Did not find handler method for [/count]
+ [http-nio-8080-exec-2]03-12-2018       12:04:32 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-7]03-12-2018       12:04:32 - Looking up handler method for path /count
+ [http-nio-8080-exec-2]03-12-2018       12:04:32 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-9]03-12-2018       12:04:32 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-5]03-12-2018       12:04:32 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-7]03-12-2018       12:04:32 - Did not find handler method for [/count]
+ [http-nio-8080-exec-2]03-12-2018       12:04:32 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-7]03-12-2018       12:04:32 - Looking up handler method for path /count
+ [http-nio-8080-exec-2]03-12-2018       12:04:32 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-7]03-12-2018       12:04:32 - Did not find handler method for [/count]
+ [http-nio-8080-exec-2]03-12-2018       12:04:32 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-5]03-12-2018       12:04:32 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-9]03-12-2018       12:04:32 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-5]03-12-2018       12:04:32 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-9]03-12-2018       12:04:32 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-5]03-12-2018       12:04:32 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-9]03-12-2018       12:04:32 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-5]03-12-2018       12:04:32 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-9]03-12-2018       12:04:32 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-5]03-12-2018       12:04:32 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-9]03-12-2018       12:04:32 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-9]03-12-2018       12:04:32 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-5]03-12-2018       12:04:32 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-9]03-12-2018       12:04:32 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-5]03-12-2018       12:04:32 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-9]03-12-2018       12:04:32 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-5]03-12-2018       12:04:32 - select count(*) as col_0_0_ from lawyer lawyer0_
+ [http-nio-8080-exec-2]03-12-2018       12:04:32 - select count(*) as col_0_0_ from acts acts0_
+ [http-nio-8080-exec-7]03-12-2018       12:04:32 - select count(*) as col_0_0_ from user users0_
+ [http-nio-8080-exec-9]03-12-2018       12:04:32 - select count(*) as col_0_0_ from cases case0_
+ [http-nio-8080-exec-5]03-12-2018       12:04:32 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-2]03-12-2018       12:04:32 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@5d421eb6
+ [http-nio-8080-exec-5]03-12-2018       12:04:32 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-9]03-12-2018       12:04:32 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-7]03-12-2018       12:04:34 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-3]03-12-2018       12:04:34 - Looking up handler method for path /lawyer
+ [http-nio-8080-exec-3]03-12-2018       12:04:34 - Did not find handler method for [/lawyer]
+ [http-nio-8080-exec-3]03-12-2018       12:04:34 - Looking up handler method for path /lawyer
+ [http-nio-8080-exec-3]03-12-2018       12:04:34 - Did not find handler method for [/lawyer]
+ [http-nio-8080-exec-3]03-12-2018       12:04:34 - Looking up handler method for path /lawyer
+ [http-nio-8080-exec-3]03-12-2018       12:04:34 - Did not find handler method for [/lawyer]
+ [http-nio-8080-exec-3]03-12-2018       12:04:34 - Looking up handler method for path /lawyer
+ [http-nio-8080-exec-3]03-12-2018       12:04:34 - Did not find handler method for [/lawyer]
+ [http-nio-8080-exec-3]03-12-2018       12:04:34 - select lawyer0_.lawyerid as lawyerid1_4_, lawyer0_.address as address2_4_, lawyer0_.cemail as cemail3_4_, lawyer0_.city as city4_4_, lawyer0_.cname as cname5_4_, lawyer0_.country as country6_4_, lawyer0_.cphone as cphone7_4_, lawyer0_.email as email8_4_, lawyer0_.jemail as jemail9_4_, lawyer0_.jname as jname10_4_, lawyer0_.jphone as jphone11_4_, lawyer0_.line2 as line12_4_, lawyer0_.name as name13_4_, lawyer0_.phone as phone14_4_, lawyer0_.pin as pin15_4_, lawyer0_.state as state16_4_ from lawyer lawyer0_
+ [http-nio-8080-exec-3]03-12-2018       12:04:34 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-3]03-12-2018       12:04:37 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-10]03-12-2018       12:04:37 - Looking up handler method for path /home
+ [http-nio-8080-exec-10]03-12-2018       12:04:37 - Did not find handler method for [/home]
+ [http-nio-8080-exec-10]03-12-2018       12:04:37 - Looking up handler method for path /home
+ [http-nio-8080-exec-10]03-12-2018       12:04:37 - Did not find handler method for [/home]
+ [http-nio-8080-exec-10]03-12-2018       12:04:37 - Looking up handler method for path /home
+ [http-nio-8080-exec-10]03-12-2018       12:04:37 - Did not find handler method for [/home]
+ [http-nio-8080-exec-10]03-12-2018       12:04:37 - Looking up handler method for path /home
+ [http-nio-8080-exec-10]03-12-2018       12:04:37 - Did not find handler method for [/home]
+ [http-nio-8080-exec-10]03-12-2018       12:04:37 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=?
+ [http-nio-8080-exec-10]03-12-2018       12:04:37 - Logged in by: Vikash Kumar
+ [http-nio-8080-exec-10]03-12-2018       12:04:37 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-10]03-12-2018       12:04:37 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-6]03-12-2018       12:04:37 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-6]03-12-2018       12:04:37 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-6]03-12-2018       12:04:37 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-6]03-12-2018       12:04:37 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-6]03-12-2018       12:04:37 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-6]03-12-2018       12:04:37 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-6]03-12-2018       12:04:37 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-6]03-12-2018       12:04:37 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-6]03-12-2018       12:04:37 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-6]03-12-2018       12:04:37 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-4]03-12-2018       12:04:37 - Looking up handler method for path /count
+ [http-nio-8080-exec-4]03-12-2018       12:04:37 - Did not find handler method for [/count]
+ [http-nio-8080-exec-4]03-12-2018       12:04:37 - Looking up handler method for path /count
+ [http-nio-8080-exec-4]03-12-2018       12:04:37 - Did not find handler method for [/count]
+ [http-nio-8080-exec-4]03-12-2018       12:04:37 - Looking up handler method for path /count
+ [http-nio-8080-exec-4]03-12-2018       12:04:37 - Did not find handler method for [/count]
+ [http-nio-8080-exec-4]03-12-2018       12:04:37 - Looking up handler method for path /count
+ [http-nio-8080-exec-4]03-12-2018       12:04:37 - Did not find handler method for [/count]
+ [http-nio-8080-exec-4]03-12-2018       12:04:37 - select count(*) as col_0_0_ from lawyer lawyer0_
+ [http-nio-8080-exec-4]03-12-2018       12:04:37 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-4]03-12-2018       12:04:37 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-1]03-12-2018       12:04:37 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-1]03-12-2018       12:04:37 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-1]03-12-2018       12:04:37 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-1]03-12-2018       12:04:37 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-1]03-12-2018       12:04:37 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-1]03-12-2018       12:04:37 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-8]03-12-2018       12:04:37 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-1]03-12-2018       12:04:37 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-2]03-12-2018       12:04:37 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-1]03-12-2018       12:04:37 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-1]03-12-2018       12:04:37 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-8]03-12-2018       12:04:37 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-2]03-12-2018       12:04:37 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-8]03-12-2018       12:04:37 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-8]03-12-2018       12:04:37 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-2]03-12-2018       12:04:37 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-8]03-12-2018       12:04:37 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-2]03-12-2018       12:04:37 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-2]03-12-2018       12:04:37 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-8]03-12-2018       12:04:37 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-8]03-12-2018       12:04:37 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-2]03-12-2018       12:04:37 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-8]03-12-2018       12:04:37 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-8]03-12-2018       12:04:37 - select count(*) as col_0_0_ from acts acts0_
+ [http-nio-8080-exec-1]03-12-2018       12:04:37 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-2]03-12-2018       12:04:37 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-2]03-12-2018       12:04:37 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-2]03-12-2018       12:04:37 - select count(*) as col_0_0_ from cases case0_
+ [http-nio-8080-exec-2]03-12-2018       12:04:37 - select count(*) as col_0_0_ from user users0_
+ [http-nio-8080-exec-8]03-12-2018       12:04:37 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-1]03-12-2018       12:04:37 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-8]03-12-2018       12:04:37 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-2]03-12-2018       12:04:38 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-9]03-12-2018       12:04:38 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-9]03-12-2018       12:04:38 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-9]03-12-2018       12:04:38 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-9]03-12-2018       12:04:38 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-9]03-12-2018       12:04:38 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-9]03-12-2018       12:04:38 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-9]03-12-2018       12:04:38 - Looking up handler method for path /reminder
+ [http-nio-8080-exec-9]03-12-2018       12:04:38 - Did not find handler method for [/reminder]
+ [http-nio-8080-exec-9]03-12-2018       12:04:38 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_
+ [http-nio-8080-exec-9]03-12-2018       12:04:38 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-9]03-12-2018       12:06:38 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-6]03-12-2018       12:06:38 - Looking up handler method for path /home
+ [http-nio-8080-exec-6]03-12-2018       12:06:38 - Did not find handler method for [/home]
+ [http-nio-8080-exec-6]03-12-2018       12:06:38 - Looking up handler method for path /home
+ [http-nio-8080-exec-6]03-12-2018       12:06:38 - Did not find handler method for [/home]
+ [http-nio-8080-exec-6]03-12-2018       12:06:38 - Looking up handler method for path /home
+ [http-nio-8080-exec-6]03-12-2018       12:06:38 - Did not find handler method for [/home]
+ [http-nio-8080-exec-6]03-12-2018       12:06:38 - Looking up handler method for path /home
+ [http-nio-8080-exec-6]03-12-2018       12:06:38 - Did not find handler method for [/home]
+ [http-nio-8080-exec-6]03-12-2018       12:06:38 - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=?
+ [http-nio-8080-exec-6]03-12-2018       12:06:38 - Logged in by: Vikash Kumar
+ [http-nio-8080-exec-6]03-12-2018       12:06:38 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-6]03-12-2018       12:06:38 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-4]03-12-2018       12:06:38 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-4]03-12-2018       12:06:38 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-4]03-12-2018       12:06:38 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-4]03-12-2018       12:06:38 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-4]03-12-2018       12:06:38 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-4]03-12-2018       12:06:38 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-4]03-12-2018       12:06:38 - Looking up handler method for path /static/img/check-icon.png
+ [http-nio-8080-exec-4]03-12-2018       12:06:38 - Did not find handler method for [/static/img/check-icon.png]
+ [http-nio-8080-exec-4]03-12-2018       12:06:38 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-4]03-12-2018       12:06:38 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Looking up handler method for path /count
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Did not find handler method for [/count]
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Looking up handler method for path /count
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Did not find handler method for [/count]
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Looking up handler method for path /count
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Did not find handler method for [/count]
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Looking up handler method for path /count
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Did not find handler method for [/count]
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-8]03-12-2018       12:06:38 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:06:38 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:06:38 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:06:38 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:06:38 - select count(*) as col_0_0_ from lawyer lawyer0_
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:06:38 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:06:38 - Looking up handler method for path /countacts
+ [http-nio-8080-exec-8]03-12-2018       12:06:38 - Did not find handler method for [/countacts]
+ [http-nio-8080-exec-8]03-12-2018       12:06:38 - select count(*) as col_0_0_ from acts acts0_
+ [http-nio-8080-exec-8]03-12-2018       12:06:38 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-2]03-12-2018       12:06:38 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-2]03-12-2018       12:06:38 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-2]03-12-2018       12:06:38 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-2]03-12-2018       12:06:38 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-2]03-12-2018       12:06:38 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@21430437
+ [http-nio-8080-exec-8]03-12-2018       12:06:38 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-2]03-12-2018       12:06:38 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-2]03-12-2018       12:06:38 - Looking up handler method for path /countusers
+ [http-nio-8080-exec-2]03-12-2018       12:06:38 - Did not find handler method for [/countusers]
+ [http-nio-8080-exec-2]03-12-2018       12:06:38 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - select count(*) as col_0_0_ from user users0_
+ [http-nio-8080-exec-2]03-12-2018       12:06:38 - Looking up handler method for path /countcases
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Did not find handler method for [/countcases]
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - select count(*) as col_0_0_ from cases case0_
+ [http-nio-8080-exec-1]03-12-2018       12:06:38 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@614c8b92
+ [http-nio-8080-exec-2]03-12-2018       12:06:38 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67b4f016
+ [http-nio-8080-exec-1]

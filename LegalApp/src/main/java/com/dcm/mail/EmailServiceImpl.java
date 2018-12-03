@@ -1,13 +1,13 @@
 package com.dcm.mail;
 
-import java.io.File;
 import java.util.List;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -19,6 +19,8 @@ import com.dcm.service.ReminderService;
 @Component
 public class EmailServiceImpl {
 	
+	private static final Logger LOGGER = LoggerFactory.getLogger(EmailServiceImpl.class);
+	
 	@Autowired
 	private ReminderService reminderService;
   
@@ -29,8 +31,8 @@ public class EmailServiceImpl {
     	
         SimpleMailMessage message = new SimpleMailMessage(); 
         message.setTo(to); 
-        message.setSubject("Forgot Password"); 
-        message.setText("Hi <br> vikash");
+        message.setSubject("Test Mail from Legal"); 
+        message.setText("Please ignore");
         emailSender.send(message);   
     }
     
@@ -40,7 +42,9 @@ public class EmailServiceImpl {
       List<Reminder> reminder = reminderService.MailReminder();  
       if(reminder.isEmpty()) {
     	  System.out.println("No reminders");
+    	  LOGGER.info("No reminders today");
       }else {
+    	  LOGGER.info("Reminders today");
       String m = "<html><h3><b>Namaste!</b></h3><p>Reminders for tomorrow's are : </p><br><br><table style=\"\r\n" + 
       		 
       		"    text-align:  center;     border: 1px solid #ddd; font-family: arial, sans-serif; border-collapse: collapse;\r\n" + 
@@ -82,8 +86,9 @@ public class EmailServiceImpl {
       helper.setSubject("Tomorrow's reminder from Legal Software");     
       helper.setText("Hi from text plain value", m);
            
-      FileSystemResource file = new FileSystemResource(new File("E:\\temp\\d\\ay.jpeg"));
-      helper.addAttachment("dcm.jpeg", file);  
+//      FileSystemResource file = new FileSystemResource(new File("static/img/day.jpeg"));
+//      helper.addAttachment("dcm.jpeg", file);  
+      
       emailSender.send(message);
       } 
   }

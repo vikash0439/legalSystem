@@ -27,7 +27,7 @@
 </head>
 <body>
 	<!-- Image and text -->
-	<span class="d-block p-2 bg-dark text-white"><center>Welocme
+	<span class="d-block p-2 bg-dark text-white"><center>Welcome
 			to Legal Managament System</center></span>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light"> <a
 		class="navbar-brand" href="home"><strong>LEGAL</strong> </a>
@@ -174,14 +174,14 @@
 										<div class="row">
 											<div class="col-sm-6">
 												<div class="form-group">
-													<label for="date">Date of Reminder</label> <input
-														type="text" class="form-control" id="ccnumber" name="date" placeholder="DD-MM-YYYY"
+													<label for="date">Date of Event</label> <input
+														type="text" class="form-control" id="ccnumber" name="date" placeholder="YYYY-MM-DD"
 														value="${reminder.date }">
 												</div>
 											</div>
 											<div class="col-sm-6">
 												<div class="form-group">
-													<label for="time">Time </label> <input type="time"
+													<label for="time">Time of Event</label> <input type="time"
 														class="form-control" id="ccnumber" name="time"
 														value="${reminder.time }">
 												</div>

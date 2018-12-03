@@ -9,6 +9,7 @@
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <!-- Bootstrap CSS -->
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -25,7 +26,7 @@
 </head>
 <body>
 	<!-- Image and text -->
-	<span class="d-block p-2 bg-dark text-white"><center>Welocme
+	<span class="d-block p-2 bg-dark text-white"><center>Welcome
 			to Legal Managament System</center></span>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light"> <a
 		class="navbar-brand" href="home"><strong>LEGAL</strong></a>

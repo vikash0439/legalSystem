@@ -28,7 +28,7 @@
 </head>
 <body>
 	<!-- Image and text -->
-	<span class="d-block p-2 bg-dark text-white"><center>Welocme
+	<span class="d-block p-2 bg-dark text-white"><center>Welcome
 			to Legal Managament System</center></span>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light"> <a
 		class="navbar-brand" href="home"><strong>LEGAL</strong> </a>
@@ -43,8 +43,8 @@
 			<li class="nav-item"><a class="nav-link" href="document">Documents</a></li>
 			<li class="nav-item"><a class="nav-link" href="reminder">Reminder</a></li>
 			<li class="nav-item"><a class="nav-link" href="lawyer">Lawyer</a></li>
-			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>
 			<li class="nav-item"><a class="nav-link" href="case-logs">Logs</a></li>
+			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>
 			<li class="nav-item active"><a class="nav-link" href="user">Users</a></li>
 			<li class="nav-item"><a class="nav-link" href="updates">Updates</a></li>
 		</ul>
