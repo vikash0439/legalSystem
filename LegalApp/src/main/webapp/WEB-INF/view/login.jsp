@@ -30,7 +30,7 @@
 <body class="app flex-row align-items-center">
 
 	<!-- Image and text -->
-	<span class="d-block p-2 bg-dark text-white"><center>Welocme to Legal Management System</center></span>
+	<span class="d-block p-2 bg-dark text-white"><center>Welcome to Legal Management System</center></span>
 	<nav class="navbar navbar-dark bg-primary">
 	<marquee style="color:  white; font-size:20px;">This Software
 				is a comprehensive legal case management application featuring all

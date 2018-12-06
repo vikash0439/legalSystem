@@ -14,6 +14,8 @@ import java.nio.file.Paths;
 import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -185,7 +187,12 @@ public class MainController {
 	
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
     public String test() {
-		emailService.sendSimpleMessage("vikash.k@dcmtech.com");
+		try {
+			emailService.sendSimpleMessage("vikash.k@dcmtech.com");
+		} catch (MessagingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
         return "test";
     }
@@ -379,6 +386,7 @@ public class MainController {
 	public String registerAct(@ModelAttribute Acts act, BindingResult bindingResult, HttpServletRequest request) {
 		actsService.saveMyAct(act);
 		request.setAttribute("msg", "Acts saved into the system successfully");
+		LOGGER.info("New Act added");
 		return "redirect:/acts";
 		
 	}
@@ -404,8 +412,7 @@ public class MainController {
 	public String saveReminder(@ModelAttribute Reminder reminder, BindingResult bindingResult) {
 		reminderService.saveReminder(reminder);
 		LOGGER.info("Event: New Reminder created");
-		return "redirect:/reminder";
-		
+		return "redirect:/reminder";		
 	}
 	
 	@PreAuthorize("hasAnyRole('ADMIN')")
@@ -452,7 +459,8 @@ public class MainController {
             LOGGER.info("Event: Document Uploaded {}"+ file.getOriginalFilename());
         } catch (IOException e) {
             e.printStackTrace();
-        }       
+        }  
+        LOGGER.info("New Document uploaded!");
         return "redirect:/document";
     }
 	
@@ -526,7 +534,7 @@ public class MainController {
             Path path = Paths.get(type, file.getOriginalFilename());
             Files.write(path, bytes);
             LOGGER.info("Event: Document Uploaded {}"+ file.getOriginalFilename());
-        } catch (IOException e) {
+        }catch (IOException e) {
             e.printStackTrace();
         }       
         
@@ -538,6 +546,7 @@ public class MainController {
 	public String CaseLogs(HttpServletRequest request) {
 		request.setAttribute("title", caseService.CaseTitle());
 		request.setAttribute("mode", "Case-Logs");
+		    
 		return "case-logs";
 	}
 	
@@ -547,6 +556,7 @@ public class MainController {
 		request.setAttribute("title", caseService.CaseTitle());
 		request.setAttribute("logs", logsService.getLog(caseno));
 		request.setAttribute("mode", "Case-Logs");
+		
 		return "case-logs";
 	}
 	
@@ -606,7 +616,7 @@ public class MainController {
 	@RequestMapping("/logs")
 	public String Logs(HttpServletRequest request) throws IOException {
 		
-		File file = new File("logs/spring.log");
+		File file = new File("logs/info.log");
 		BufferedReader br = new BufferedReader(new FileReader(file));	 
 		  String st;
 		  List<String> logs=new ArrayList<String>();
