@@ -113,8 +113,10 @@ public class MainController {
 
 	                     /* Spring Security */
 	@RequestMapping("/")
-	public String login( RedirectAttributes redirectAttributes) {	
+	public String login( RedirectAttributes redirectAttributes, Principal principal) {	
         redirectAttributes.addFlashAttribute("msg", "Authentication Successfull ");
+        String name = principal.getName();
+        LOGGER.info("Logged in by: " +name);
 		return "redirect:/home";		
 	}
 	
@@ -187,8 +189,15 @@ public class MainController {
 	
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
     public String test() {
+	
+        return "test";
+    }
+	
+	@RequestMapping(value = "/mail", method = RequestMethod.GET)
+    public String mail() {
 		try {
-			emailService.sendSimpleMessage("vikash.k@dcmtech.com");
+			 String[] to = userservice.getEmail();
+				emailService.sendMailWithAttachement(to);
 		} catch (MessagingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -212,8 +221,6 @@ public class MainController {
     public @ResponseBody List<Test> name() {
         return testService.showAllTest();
     }
-
-
 	
 	
 	@RequestMapping("/home")
@@ -221,7 +228,7 @@ public class MainController {
 		 String name = principal.getName();
 		 model.addAttribute("name", name);
 		request.setAttribute("reminder", reminderService.AllReminder());
-		LOGGER.info("Logged in by: " +name);
+		
 		return "home";
 		
 	}
@@ -234,13 +241,6 @@ public class MainController {
 		return "user";		
 	}
 	
-	@PreAuthorize("hasAnyRole('SYSTEM')")
-	@RequestMapping("/newuser")
-	public String NewUsers(HttpServletRequest request) {	
-		request.setAttribute("mode", "New_User");
-		return "user";		
-	}
-	
 	@RequestMapping("/viewuser")
 	public String ViewUsers(HttpServletRequest request, @RequestParam String name) {
 		request.setAttribute("user", userservice.findUser(name));;
@@ -248,10 +248,21 @@ public class MainController {
 		return "user";		
 	}
 	
+//	@PreAuthorize("hasAnyRole('SYSTEM') or hasRole('ADMIN')")
+	@PreAuthorize("hasAnyRole('SYSTEM')")
+	@RequestMapping("/newuser")
+	public String NewUsers(HttpServletRequest request) {	
+		request.setAttribute("mode", "New_User");		
+		return "user";		
+	}
+	
+	
+	
 	@RequestMapping("/save-user")
-	public String saveUsers(@ModelAttribute com.dcm.modal.Users user, BindingResult bindingResult) {
+	public String saveUsers(@ModelAttribute com.dcm.modal.Users user, BindingResult bindingResult, Principal principal) {
 		userservice.saveUser(user);
-		LOGGER.info("Event: New User Added");
+		String name = principal.getName();
+		LOGGER.info("Event: New User Added by "+name);
 		return "redirect:/user";		
 	}
 	
@@ -266,14 +277,15 @@ public class MainController {
 	}
 	
 	@RequestMapping("/case-submit")
-	public String SaveCase(@ModelAttribute com.dcm.modal.Case c, @ModelAttribute com.dcm.modal.UpdateCase updatecase, @ModelAttribute Payment payment, @RequestParam String advocate, BindingResult bindingResult) {
+	public String SaveCase(@ModelAttribute com.dcm.modal.Case c, @ModelAttribute com.dcm.modal.UpdateCase updatecase, @ModelAttribute Payment payment, @RequestParam String advocate, BindingResult bindingResult, Principal principal) {
 		c.setUpdatecase(updatecase);
 		c.setPayment(payment);	
 		System.out.println(advocate);
 	    Lawyer lawyer1=lawyerService.findLawyer(advocate);
 		c.setLawyer(lawyer1);	
 		caseService.SaveCase(c);
-		LOGGER.info("Event: New Case Added");
+		String name = principal.getName();
+		LOGGER.info("Event: New Case Added by "+name);
 		return "redirect:/case";
 		
 	}
@@ -597,11 +609,8 @@ public class MainController {
 		paymentService.UpdatePaymentById(payment);
 		LOGGER.info("Event: Payment Updated");	
 	}
-	
-	
-	
-	
-	/* Updates  Menu Bar*/
+		
+	/* Updates Menu Bar*/
 	
 	@RequestMapping("/updates")
 	public String updates(HttpServletRequest request) throws IOException {

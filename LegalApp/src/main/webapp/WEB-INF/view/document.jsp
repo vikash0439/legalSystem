@@ -26,7 +26,7 @@
 </head>
 <body>
 	<!-- Image and text -->
-	<span class="d-block p-2 bg-dark text-white"><center>Welocme
+	<span class="d-block p-2 bg-dark text-white"><center>Welcome
 			to Legal Managament System</center></span>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light"> <a
 		class="navbar-brand" href="home"><strong>LEGAL</strong> </a>
@@ -47,7 +47,7 @@
 			<li class="nav-item"><a class="nav-link" href="updates">Updates</a></li>
 		</ul>
 		<span class="navbar-text"> <i class="fa fa-user-circle"
-			style="font-size: 1.2rem; color: #17a2b8">&nbsp; ${name}</i></span>
+			style="font-size: 1.2rem; color: #17a2b8">&nbsp; <a href="viewuser?name=${name }">${name}</a></i></span>
 		&nbsp;&nbsp;&nbsp; <a href="" data-toggle="modal"
 			data-target="#exampleModalCenter"><i class="fa fa-sign-out"
 			style="font-size: 30px; color: red"></i></a>

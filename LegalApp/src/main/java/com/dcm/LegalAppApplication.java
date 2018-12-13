@@ -36,11 +36,11 @@ public class LegalAppApplication extends SpringBootServletInitializer{
 	}
 		
 
-	@Scheduled(cron = "0 0 9,17 * * *")
+	@Scheduled(cron = "0 0 9,16 * * *")
 	public void scheduleFixedRateTask() throws MessagingException {
 	    String[] to = userservice.getEmail();
 		emailService.sendMailWithAttachement(to);
-		LOGGER.info("Reminder sent");		
+		LOGGER.info("Reminder Time");		
 	}
 	
 	

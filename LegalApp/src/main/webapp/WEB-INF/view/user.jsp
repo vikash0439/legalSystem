@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<%@taglib prefix="security"	uri="http://www.springframework.org/security/tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -18,8 +18,8 @@
 <link
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 	rel="stylesheet">
-	
-	<link rel="stylesheet" type="text/css"
+
+<link rel="stylesheet" type="text/css"
 	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
 <link rel="stylesheet" type="text/css"
 	href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
@@ -48,8 +48,10 @@
 			<li class="nav-item active"><a class="nav-link" href="user">Users</a></li>
 			<li class="nav-item"><a class="nav-link" href="updates">Updates</a></li>
 		</ul>
-		<span class="navbar-text"> <i class="fa fa-user-circle" style="font-size:1.2rem;color:#17a2b8">&nbsp; ${name}</i></span> &nbsp;&nbsp;&nbsp;
-		 <a	href="" data-toggle="modal" data-target="#exampleModalCenter"><i
+		<span class="navbar-text"> <i class="fa fa-user-circle"
+			style="font-size: 1.2rem; color: #17a2b8">&nbsp; <a
+				href="viewuser?name=${name}">${name}</a></i></span> &nbsp;&nbsp;&nbsp; <a
+			href="" data-toggle="modal" data-target="#exampleModalCenter"><i
 			class="fa fa-sign-out" style="font-size: 30px; color: red"></i></a>
 
 	</div>
@@ -63,12 +65,20 @@
 		<li class="breadcrumb-item"><a href="home">Dashboard</a></li>
 		<li class="breadcrumb-item"><a href="user">All User</a></li>
 		<li class="breadcrumb-item"><a href="newuser">Add New</a></li>
-        <%@ page import="java.text.*,java.util.*" %>
-           <div align="right" style="margin-left:60%;font-weight: bold; color:  #343a40;"">
-             <% SimpleDateFormat d=new SimpleDateFormat("dd-MM-yyyy"); %>
-             <% SimpleDateFormat t=new SimpleDateFormat(" HH:mm aa"); %>
-           Date:  <%= d.format(new Date()) %> &nbsp;&nbsp;Time: <%= t.format(new Date()) %>
-        </div>
+		<%@ page import="java.text.*,java.util.*"%>
+		<div align="right"
+			style="margin-left: 60%; font-weight: bold; color: #343a40;"">
+			<%
+				SimpleDateFormat d = new SimpleDateFormat("dd-MM-yyyy");
+			%>
+			<%
+				SimpleDateFormat t = new SimpleDateFormat(" HH:mm aa");
+			%>
+			Date:
+			<%=d.format(new Date())%>
+			&nbsp;&nbsp;Time:
+			<%=t.format(new Date())%>
+		</div>
 	</ol>
 	<div class="container-fluid">
 		<div class="animated fadeIn">
@@ -83,10 +93,12 @@
 									<th scope="col">#Id</th>
 									<th scope="col">Name</th>
 									<th scope="col">Email-ID</th>
-									<security:authorize access="hasAnyRole('SYSTEM')"><th scope="col">Password</th>	</security:authorize>							
+									<security:authorize access="hasAnyRole('SYSTEM')">
+										<th scope="col">Password</th>
+									</security:authorize>
 									<th scope="col">Status</th>
-<!-- 									<th scope="col">Role</th> -->
-									
+									<!-- 									<th scope="col">Role</th> -->
+
 								</tr>
 							</thead>
 
@@ -95,14 +107,19 @@
 									<tr>
 
 										<td>${user.id }</td>
-										<td><security:authorize access="hasAnyRole('SYSTEM')"><a href="/viewuser?name=${user.name }"></security:authorize>${user.name }<security:authorize access="hasAnyRole('ADMIN')"></a></security:authorize></td>
+										<td><security:authorize access="hasAnyRole('SYSTEM')">
+												<a href="viewuser?name=${user.name }">
+											</security:authorize>${user.name }<security:authorize access="hasAnyRole('ADMIN')">
+												</a>
+											</security:authorize></td>
 										<td>${user.email }</td>
-										<security:authorize access="hasAnyRole('SYSTEM')"><td>${user.password }</td></security:authorize>
+										<security:authorize access="hasAnyRole('SYSTEM')">
+											<td>${user.password }</td>
+										</security:authorize>
 										<td>${user.active }</td>
-									
+
 									</tr>
 								</c:forEach>
-
 							</tbody>
 
 							<tfoot>
@@ -110,10 +127,12 @@
 									<th scope="col">#Id</th>
 									<th scope="col">Name</th>
 									<th scope="col">Email-ID</th>
-									<security:authorize access="hasAnyRole('SYSTEM')"><th scope="col">Password</th></security:authorize>
+									<security:authorize access="hasAnyRole('SYSTEM')">
+										<th scope="col">Password</th>
+									</security:authorize>
 									<th scope="col">Status</th>
-<!-- 									<th scope="col">Role</th> -->
-									
+									<!-- 									<th scope="col">Role</th> -->
+
 								</tr>
 							</tfoot>
 						</table>
@@ -128,66 +147,64 @@
 									<strong>Add User</strong> Details
 								</div>
 								<div class="card-body">
-									<form action="save-user" method="POST"
-										class="form-horizontal">
-										
+									<form action="save-user" method="POST" class="form-horizontal">
+
 										<div class="form-group row">
-											<label class="col-md-3 col-form-label" for="text-input">User's Name:
-												</label>
+											<label class="col-md-3 col-form-label" for="text-input">User's
+												Name: </label>
 											<div class="col-md-9">
-												<input type="text"
-														class="form-control" id="name"
-														 name="name"
-														value="${user.name}">
+												<input type="text" class="form-control" id="name"
+													name="name" value="${user.name}">
 											</div>
 										</div>
 										<div class="form-group row">
-											<label class="col-md-3 col-form-label" for="text-input">Email-Id/Username: 
-												</label>
+											<label class="col-md-3 col-form-label" for="text-input">Email-Id/Username:
+											</label>
 											<div class="col-md-9">
-												<input type="text"
-														class="form-control" id="email"
-														 name="email"
-														value="${user.email}">
+												<input type="text" class="form-control" id="email"
+													name="email" value="${user.email}">
 											</div>
 										</div>
 										<div class="form-group row">
-											<label class="col-md-3 col-form-label" for="text-input">Password: 
-												</label>
+											<label class="col-md-3 col-form-label" for="text-input">Password:
+											</label>
 											<div class="col-md-9">
-												<input type="password"
-														class="form-control" id="password"
-														 name="password"
-														value="${user.password}">
+												<input type="password" class="form-control" id="password"
+													name="password" value="${user.password}">
 											</div>
 										</div>
-																
-                                     <div class="row">
-																				
-												<div class="form-group form-group col-sm-6">
-													<label for="time">Status <span style="color:  red; font-weight:  bolder;">*</span></label> <div>
-												<input type="text"
-														class="form-control" id="active"
-														 name="active"
-														value="${user.active }">
-											      </div>
+
+										<div class="row">
+
+											<div class="form-group form-group col-sm-6">
+												<label for="time">Status <span
+													style="color: red; font-weight: bolder;">*</span></label>
+												<div>
+													<input type="text" class="form-control" id="active"
+														name="active" value="${user.active }">
 												</div>
-												
-												<div class="form-group form-group col-sm-6">
-												
-													<label for="date">Role</label> <div >
-												<select class="form-control" id="role" name="role"
-													>
-													<option>--SELECT--</option>
-													<option>User</option>
-													<option>Admin</option>
-													
-												</select>
 											</div>
+
+											<div class="form-group form-group col-sm-6">
+
+												<label for="date">Role</label>
+												<div>
+													<select class="form-control" id="role" name="role">
+														<option>--SELECT--</option>
+
+														<option>User</option>
+														<option>Admin</option>
+
+													</select>
+												</div>
 											</div>
-											
-										</div><hr>
-                                       <p style="color:  #dc3545;">  <span style="color:  red; font-weight:  bolder;">*</span>Enter 1 for active & 0 for not active</p>
+
+										</div>
+										<hr>
+										<p style="color: #dc3545;">
+											<span style="color: red; font-weight: bolder;">*</span>Enter
+											1 for active & 0 for not active
+										</p>
 
 
 										<div class="card-footer">
@@ -218,74 +235,64 @@
 									<strong> Update user</strong> Details
 								</div>
 								<div class="card-body">
-									<form action="save-user" method="POST"
-										class="form-horizontal">
-										<input type="hidden" class="form-control" id="id"
-														 name="id"
-														value="${user.id}" >
+									<form action="save-user" method="POST" class="form-horizontal">
+										<input type="hidden" class="form-control" id="id" name="id"
+											value="${user.id}">
 										<div class="form-group row">
-											<label class="col-md-3 col-form-label" for="text-input">User's Name:
-												</label>
+											<label class="col-md-3 col-form-label" for="text-input">User's
+												Name: </label>
 											<div class="col-md-9">
-												<input type="text"
-														class="form-control" id="name"
-														 name="name"
-														value="${user.name}" >
+												<input type="text" class="form-control" id="name"
+													name="name" value="${user.name}">
 											</div>
 										</div>
 										<div class="form-group row">
-											<label class="col-md-3 col-form-label" for="text-input">Email-Id/Username: 
-												</label>
+											<label class="col-md-3 col-form-label" for="text-input">Email-Id/Username:
+											</label>
 											<div class="col-md-9">
-												<input type="text"
-														class="form-control" id="email"
-														 name="email"
-														value="${user.email}" >
+												<input type="text" class="form-control" id="email"
+													name="email" value="${user.email}">
 											</div>
 										</div>
 										<div class="form-group row">
-											<label class="col-md-3 col-form-label" for="text-input">Password: 
-												</label>
+											<label class="col-md-3 col-form-label" for="text-input">Password:
+											</label>
 											<div class="col-md-9">
-												<input type="password"
-														class="form-control" id="password"
-														 name="password"
-														value="${user.password}">
+												<input type="password" class="form-control" id="password"
+													name="password" value="${user.password}">
 											</div>
 										</div>
-																
-                                     <div class="row">
-										
-											
-										
-											
-												<div class="form-group form-group col-sm-6">
-													<label for="time">Status <span style="color:  red; font-weight:  bolder;">*</span></label> <div>
-												<input type="text"
-														class="form-control" id="active"
-														 name="active"
-														value="${user.active }">
-													
-													
-											      </div>
+
+										<div class="row">
+											<div class="form-group form-group col-sm-6">
+												<label for="time">Status <span
+													style="color: red; font-weight: bolder;">*</span></label>
+												<div>
+													<input type="text" class="form-control" id="active"
+														name="active" value="${user.active }">
+
+
 												</div>
-												
-												<div class="form-group form-group col-sm-6">
-											
-												
-													<label for="date">Role</label> <div >
-												<select class="form-control" id="ccyear" name="type"
-													>
-													<option>--SELECT--</option>
-													<option>User</option>
-													<option>Admin</option>
-													
-												</select>
 											</div>
+
+											<div class="form-group form-group col-sm-6">
+
+
+<!-- 												<label for="date">Role</label> -->
+												<!-- 												<div> -->
+												<!-- 													<select class="form-control" id="ccyear" name="type"> -->
+												<!-- 														<option>--SELECT--</option> -->
+												<!-- 														<option>User</option> -->
+												<!-- 														<option>Admin</option> -->
+												<!-- 													</select> -->
+												<!-- 												</div> -->
 											</div>
-											
+
 										</div>
-                                       <p style="color:  #dc3545;">  <span style="color:  red; font-weight:  bolder;">*</span>Enter 1 for active & 0 for not active</p>
+										<p style="color: #dc3545;">
+											<span style="color: red; font-weight: bolder;">*</span>Enter
+											1 for active & 0 for not active
+										</p>
 
 
 
@@ -294,7 +301,7 @@
 												data-toggle="modal" data-target="#exampleModal">
 												<i class="fa fa-dot-circle-o"></i> Update
 											</button>
-											
+
 										</div>
 									</form>
 								</div>
@@ -311,8 +318,6 @@
 		</div>
 	</div>
 	</main>
-
-
 	<br>
 
 	<!-- Image and text -->
@@ -358,13 +363,13 @@
 		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
 		integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
 		crossorigin="anonymous"></script>
-		<script type="text/javascript"
+	<script type="text/javascript"
 		src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script type="text/javascript"
 		src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" charset="utf-8"
 		src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
-		<script>
+	<script>
 		$(document).ready(function() {
 			$('#example').DataTable();
 		});

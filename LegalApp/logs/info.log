@@ -1,42 +1,16 @@
-2018-12-06 15:06:13 [restartedMain] INFO  com.dcm.LegalAppApplication - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 13696 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
-2018-12-06 15:06:13 [restartedMain] INFO  com.dcm.LegalAppApplication - No active profile set, falling back to default profiles: default
-2018-12-06 15:06:15 [restartedMain] INFO  com.dcm.LegalAppApplication - Started LegalAppApplication in 2.23 seconds (JVM running for 490.706)
-2018-12-06 15:06:15 [restartedMain] INFO  com.dcm.LegalAppApplication - Main program running
-2018-12-06 15:08:04 [restartedMain] INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 7692 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
-2018-12-06 15:08:04 [restartedMain] INFO  - No active profile set, falling back to default profiles: default
-2018-12-06 15:08:09 [restartedMain] INFO  - Started LegalAppApplication in 5.368 seconds (JVM running for 6.082)
-2018-12-06 15:08:09 [restartedMain] INFO  - Main program running
-2018-12-06 15:08:24 [http-nio-8080-exec-7] INFO  - Logged in by: Vikash Kumar
-2018-12-06 15:08:31 [http-nio-8080-exec-6] INFO  - Logged out!
-2018-12-06 15:09:44 [restartedMain] INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 1608 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
-2018-12-06 15:09:44 [restartedMain] INFO  - No active profile set, falling back to default profiles: default
-2018-12-06 15:09:50 [restartedMain] INFO  - Started LegalAppApplication in 5.378 seconds (JVM running for 6.107)
-2018-12-06 15:09:50 [restartedMain] INFO  - Main program running
-2018-12-06 15:10:02 [http-nio-8080-exec-7] INFO  - Logged in by: Vikash Kumar
-2018-12-06 15:10:07 [http-nio-8080-exec-4] INFO  - This is an info message
-2018-12-06 15:10:07 [http-nio-8080-exec-4] WARN  - This is a warn message
-2018-12-06 15:10:07 [http-nio-8080-exec-4] ERROR - This is an error message
-2018-12-06 15:10:22 [http-nio-8080-exec-6] INFO  - Logged out!
-2018-12-06 15:11:02 [restartedMain] INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 10432 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
-2018-12-06 15:11:02 [restartedMain] INFO  - No active profile set, falling back to default profiles: default
-2018-12-06 15:11:07 [restartedMain] INFO  - Started LegalAppApplication in 5.638 seconds (JVM running for 6.372)
-2018-12-06 15:11:07 [restartedMain] INFO  - Main program running
-2018-12-06 15:11:13 [http-nio-8080-exec-7] INFO  - Logged in by: Vikash Kumar
-2018-12-06 15:11:23 [http-nio-8080-exec-5] INFO  - Event: New Reminder created
-2018-12-06 15:12:20 [restartedMain] INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 10432 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
-2018-12-06 15:12:20 [restartedMain] INFO  - No active profile set, falling back to default profiles: default
-2018-12-06 15:12:22 [restartedMain] INFO  - Started LegalAppApplication in 2.115 seconds (JVM running for 81.492)
-2018-12-06 15:12:22 [restartedMain] INFO  - Main program running
-2018-12-06 15:13:05 [restartedMain] INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 10432 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
-2018-12-06 15:13:05 [restartedMain] INFO  - No active profile set, falling back to default profiles: default
-2018-12-06 15:13:07 [restartedMain] INFO  - Started LegalAppApplication in 2.062 seconds (JVM running for 126.104)
-2018-12-06 15:13:07 [restartedMain] INFO  - Main program running
-2018-12-06 15:15:09 [http-nio-8080-exec-2] INFO  - Logged in by: null
-2018-12-06 15:37:27 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 11676 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
-2018-12-06 15:37:27 : INFO  - No active profile set, falling back to default profiles: default
-2018-12-06 15:37:33 : INFO  - Started LegalAppApplication in 5.675 seconds (JVM running for 6.428)
-2018-12-06 15:37:33 : INFO  - Main program running
-2018-12-06 15:37:53 : INFO  - Logged in by: null
-2018-12-06 15:37:54 : INFO  - Logged in by: null
-2018-12-06 15:38:15 : INFO  - Event: New Lawyer Added
-2018-12-06 15:38:18 : INFO  - Logged out!
+2018-12-12 10:33:18 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 12004 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-12 10:33:18 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-12 10:33:29 : INFO  - Started LegalAppApplication in 10.917 seconds (JVM running for 12.104)
+2018-12-12 10:33:29 : INFO  - Main program running
+2018-12-12 10:36:37 : INFO  - Logged in by: Vikash Kumar
+2018-12-12 10:37:19 : INFO  - No reminders today
+2018-12-12 10:39:51 : INFO  - Logged out!
+2018-12-12 10:39:58 : INFO  - Logged in by: Viku
+2018-12-12 10:46:07 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 12004 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-12 10:46:07 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-12 10:46:11 : INFO  - Started LegalAppApplication in 3.799 seconds (JVM running for 774.159)
+2018-12-12 10:46:11 : INFO  - Main program running
+2018-12-12 10:46:28 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 12004 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-12 10:46:28 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-12 10:46:32 : INFO  - Started LegalAppApplication in 3.545 seconds (JVM running for 795.447)
+2018-12-12 10:46:32 : INFO  - Main program running

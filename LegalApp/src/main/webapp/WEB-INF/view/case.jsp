@@ -47,7 +47,7 @@
 			<li class="nav-item"><a class="nav-link" href="updates">Updates</a></li>
 		</ul>
 		<span class="navbar-text"> <i class="fa fa-user-circle"
-			style="font-size: 1.2rem; color: #17a2b8">&nbsp; ${name}</i></span>
+			style="font-size: 1.2rem; color: #17a2b8">&nbsp; <a href="viewuser?name=${name }">${name}</a></i></span>
 		&nbsp;&nbsp;&nbsp; <a href="" data-toggle="modal"
 			data-target="#exampleModalCenter"><i class="fa fa-sign-out"
 			style="font-size: 30px; color: red"></i></a>
@@ -78,16 +78,17 @@
 								<thead>
 									<tr>
 										<th>#Id</th>
-										<th>Case No</th>
-										<th>File No</th>
+										<th>Cateogry</th>
 										<th>Court</th>
+										<th>Case No</th>
 										<th>Title</th>
 										<th>Description</th>
 										<th>Lawyer</th>
 										<th>Last Date of Hearing</th>
 										<th>Next Date of Hearing</th>
-										<th>Cateogry</th>
 										<th>Current Status</th>
+										<th>File No</th>		
+										
 									</tr>
 								</thead>
 								
@@ -95,9 +96,11 @@
 									<c:forEach var="cases" items="${ cases}">
 										<tr>
 											<td>${cases.id }</td>
-											<td><a href="${pageContext.request.contextPath}/view-cases?caseno=${cases.caseno }">${cases.caseno }</a></td>
-											<td>${cases.fileno }</td>
+											<td>${cases.cateogry }</td>
 											<td>${cases.state }</td>
+											<td><a href="${pageContext.request.contextPath}/view-cases?caseno=${cases.caseno }">${cases.caseno }</a></td>
+											
+											
 											<td>${cases.title }	</td>
 											<td>${cases.description }</td>
 											<td><a
@@ -106,8 +109,9 @@
 											
 											<td>${cases.updatecase.lasthearing }</td>
 											<td>${cases.updatecase.nexthearing }</td>
-											<td>${cases.cateogry }</td>
+											
 											<td>${cases.updatecase.status }</td>
+											<td>${cases.fileno }</td>
 										</tr>
 
 									</c:forEach>
@@ -115,16 +119,17 @@
 								<tfoot>
 									<tr>
 										<th>#Id</th>
-										<th>Case No</th>
-										<th>File No</th>
+										<th>Cateogry</th>
 										<th>Court</th>
+										<th>Case No</th>
 										<th>Title</th>
 										<th>Description</th>
 										<th>Lawyer</th>
 										<th>Last Date of Hearing</th>
 										<th>Next Date of Hearing</th>
-										<th>Cateogry</th>
 										<th>Current Status</th>
+										<th>File No</th>		
+										
 									</tr>
 								</tfoot>
 
@@ -1001,7 +1006,7 @@
 										<h5 class="mb-0">
 											<button class="btn btn-link nav-link" data-toggle="collapse"
 												data-target="#collapseFive" aria-expanded="true"
-												aria-controls="collapseFive">Hearing-Dates</button>
+												aria-controls="collapseFive">History-Dates</button>
 										</h5>
 									</div>
 
@@ -1016,7 +1021,7 @@
 <!-- 														<th>Connected Cases</th> -->
 <!-- 														<th>Caveat</th> -->
                                                         <th>Status</th>
-														<th>Next Date of Hearing</th>
+														<th>Next Date</th>
 														
 													</tr>
 												</thead>

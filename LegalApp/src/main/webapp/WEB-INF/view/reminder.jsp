@@ -47,7 +47,7 @@
 			<li class="nav-item"><a class="nav-link" href="user">Users</a></li>
 			<li class="nav-item"><a class="nav-link" href="updates">Updates</a></li>
 		</ul>
-		<span class="navbar-text"> <i class="fa fa-user-circle" style="font-size:1.2rem;color:#17a2b8">&nbsp; ${name}</i></span> &nbsp;&nbsp;&nbsp;
+		<span class="navbar-text"> <i class="fa fa-user-circle" style="font-size:1.2rem;color:#17a2b8">&nbsp;<a href="viewuser?name=${name }">${name}</a></i></span> &nbsp;&nbsp;&nbsp;
 		 <a	href="" data-toggle="modal" data-target="#exampleModalCenter"><i
 			class="fa fa-sign-out" style="font-size: 30px; color: red"></i></a>
 
@@ -175,7 +175,7 @@
 											<div class="col-sm-6">
 												<div class="form-group">
 													<label for="date">Date of Event</label> <input
-														type="text" class="form-control" id="ccnumber" name="date" placeholder="YYYY-MM-DD"
+														type="text" class="form-control" id="ccnumber" name="date" placeholder="DD-MM-YYYY"
 														value="${reminder.date }">
 												</div>
 											</div>
