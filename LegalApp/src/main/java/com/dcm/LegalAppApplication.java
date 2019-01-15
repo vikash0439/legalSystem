@@ -45,6 +45,8 @@ public class LegalAppApplication extends SpringBootServletInitializer {
 		emailService.hearingReminder(to);
 		LOGGER.info("Hearing Reminder Executed");
 		
+		// Automatic database backup code
+		
 		String date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
 
 		File f = new File("DB_backup\\");
