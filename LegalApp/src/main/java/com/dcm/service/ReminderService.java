@@ -1,6 +1,7 @@
 package com.dcm.service;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
@@ -44,11 +45,27 @@ public class ReminderService {
 	}
 
 	public List<Reminder> MailReminder() {
-		LocalDate date= java.time.LocalDate.now().plusDays(1);
+		LocalDate date= java.time.LocalDate.now();
 		 DateTimeFormatter formatters = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 		String d = date.format(formatters);
 		List<Reminder> reminder = new ArrayList<Reminder>();
 		reminderRepository.findByDate(d).forEach(reminder::add);
+		d= null;	
+		return reminder;
+	}
+	
+	public List<Reminder> MailReminderwithTime() {
+		LocalDate date= java.time.LocalDate.now();
+		 DateTimeFormatter formatters = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+		String d = date.format(formatters);
+		
+		LocalTime t= java.time.LocalTime.now();
+		DateTimeFormatter format = DateTimeFormatter.ofPattern("hh:mm");
+		String time = t.format(format);
+		System.out.println("Time  from mailReminderwithTime : "+time + " Date : "+d);
+		
+		List<Reminder> reminder = new ArrayList<Reminder>();
+		reminderRepository.findByDateAndTime(d, time).forEach(reminder::add);
 		d= null;	
 		return reminder;
 	}

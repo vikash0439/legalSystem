@@ -18,6 +18,7 @@ public class UpdateCase {
 	private String lasthearing;
 	private String nexthearing;
 	private String status;
+	private String title;
 	
 	public UpdateCase() {
 		
@@ -76,6 +77,14 @@ public class UpdateCase {
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 }

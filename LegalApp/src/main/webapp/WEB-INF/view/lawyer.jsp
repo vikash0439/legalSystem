@@ -137,7 +137,7 @@
 											<label for="company">Name of Lawyer</label> <input
 												type="text" class="form-control" id="name" name="name"
 												placeholder="Enter name of the Lawyer"
-												value="${lawyer.name }">
+												value="${lawyer.name }" required>
 										</div>
 										<div class="form-group">
 											<label for="vat">Address</label> <input type="text"

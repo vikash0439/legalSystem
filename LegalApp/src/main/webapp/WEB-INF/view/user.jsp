@@ -154,7 +154,7 @@
 												Name: </label>
 											<div class="col-md-9">
 												<input type="text" class="form-control" id="name"
-													name="name" value="${user.name}">
+													name="name" value="${user.name}" required>
 											</div>
 										</div>
 										<div class="form-group row">
@@ -162,7 +162,7 @@
 											</label>
 											<div class="col-md-9">
 												<input type="text" class="form-control" id="email"
-													name="email" value="${user.email}">
+													name="email" value="${user.email}" required>
 											</div>
 										</div>
 										<div class="form-group row">
@@ -170,7 +170,7 @@
 											</label>
 											<div class="col-md-9">
 												<input type="password" class="form-control" id="password"
-													name="password" value="${user.password}">
+													name="password" value="${user.password}" required>
 											</div>
 										</div>
 
@@ -191,9 +191,9 @@
 												<div>
 													<select class="form-control" id="role" name="role">
 														<option>--SELECT--</option>
-
-														<option>User</option>
-														<option>Admin</option>
+                                                        <option>SYSTEM</option>
+														<option>ADMIN</option>
+														<option>USER</option>
 
 													</select>
 												</div>

@@ -37,12 +37,14 @@
 			<li class="nav-item"><a class="nav-link" href="reminder">Reminder</a></li>
 			<li class="nav-item"><a class="nav-link" href="lawyer">Lawyer</a></li>
 			<li class="nav-item"><a class="nav-link" href="case-logs">Logs</a></li>
-			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>			
+			<li class="nav-item"><a class="nav-link" href="acts">Acts</a></li>
 			<li class="nav-item"><a class="nav-link" href="user">Users</a></li>
 			<li class="nav-item active"><a class="nav-link" href="updates">Updates</a></li>
 		</ul>
-		<span class="navbar-text"> <i class="fa fa-user-circle" style="font-size:1.2rem;color:#17a2b8">&nbsp; <a href="viewuser?name=${name }">${name}</a></i></span> &nbsp;&nbsp;&nbsp;
-		 <a href="" data-toggle="modal" data-target="#exampleModalCenter"><i
+		<span class="navbar-text"> <i class="fa fa-user-circle"
+			style="font-size: 1.2rem; color: #17a2b8">&nbsp; <a
+				href="viewuser?name=${name }">${name}</a></i></span> &nbsp;&nbsp;&nbsp; <a
+			href="" data-toggle="modal" data-target="#exampleModalCenter"><i
 			class="fa fa-sign-out" style="font-size: 30px; color: red"></i></a>
 
 	</div>
@@ -54,68 +56,127 @@
 		<li class="breadcrumb-item"><a href="home">Dashboard</a></li>
 		<li class="breadcrumb-item"><a href="updates">What's New</a></li>
 		<li class="breadcrumb-item"><a href="logs">Logs </a></li>
-        <%@ page import="java.text.*,java.util.*" %>
-           <div align="right" style="margin-left:60%;font-weight: bold; color:  #343a40;"">
-             <% SimpleDateFormat d=new SimpleDateFormat("dd-MM-yyyy"); %>
-             <% SimpleDateFormat t=new SimpleDateFormat(" HH:mm aa"); %>
-           Date:  <%= d.format(new Date()) %> &nbsp;&nbsp;Time: <%= t.format(new Date()) %>
-        </div>
+		<%@ page import="java.text.*,java.util.*"%>
+		<div align="right"
+			style="margin-left: 60%; font-weight: bold; color: #343a40;"">
+			<%
+				SimpleDateFormat d = new SimpleDateFormat("dd-MM-yyyy");
+			%>
+			<%
+				SimpleDateFormat t = new SimpleDateFormat(" HH:mm aa");
+			%>
+			Date:
+			<%=d.format(new Date())%>
+			&nbsp;&nbsp;Time:
+			<%=t.format(new Date())%>
+		</div>
 	</ol>
 	<div class="container-fluid">
 		<div class="animated fadeIn">
 			<c:choose>
-			
-			    <c:when test="${ mode == 'All_Updates'}">
-				<center><h4>What's New in this System</h4></center><br>
-				 <table class="table table-responsive-sm table-hover table-outline mb-0">
-                      <thead class="thead-light">
-                        <tr style=" text-align: ;">
-                            <th>Sr No.</th>
-                            <th>Implemented On</th>
-							<th>Features</th>
-							<th>Benefits</th>
-							<th>Proposed By</th>
-                          
-                        </tr>
-                      </thead>
-                      
-                     
-					<tbody>
-					
-						 <c:forEach var="updates" items="${updates }">
-						 <tr>
-							<td style="color: #212529;"><strong>${updates.id }</strong></td>
-							<td>${updates.date }</td>
-							<td>${updates.features }</td>
-							<td>${updates.benefits }</td>
-							<td>${updates.proposed }</td>
-						</tr>
-						</c:forEach>						
-					</tbody>
-					<tfoot>
-					   <th>Sr No.</th>
-                            <th>Date</th>
-							<th>Features</th>
-							<th>Benefits</th>
-							<th>Proposed By</th>
-					</tfoot>						
-                    </table>
-			
-					
-					<!--/.row-->
-				</c:when>
-			
-				<c:when test="${ mode == 'All_Logs'}">
-				<c:forEach var="logs" items="${logs }">
-				<p>${logs}
-				</p></c:forEach>
-					
-					<!--/.row-->
-				</c:when>
-				
 
-			</c:choose>
+				<c:when test="${ mode == 'All_Updates'}">
+					<center>
+						<h4>What's New in this System</h4>
+					</center>
+					<br>
+					<table
+						class="table table-responsive-sm table-hover table-outline mb-0">
+						<thead class="thead-light">
+							<tr style="text-align:;">
+								<th>Sr No.</th>
+								<th>Implemented On</th>
+								<th>Features</th>
+								<th>Benefits</th>
+								<th>Proposed By</th>
+
+							</tr>
+						</thead>
+
+
+						<tbody>
+
+							<c:forEach var="updates" items="${updates }">
+								<tr>
+									<td style="color: #212529;"><strong>${updates.id }</strong></td>
+									<td>${updates.date }</td>
+									<td>${updates.features }</td>
+									<td>${updates.benefits }</td>
+									<td>${updates.proposed }</td>
+								</tr>
+							</c:forEach>
+						</tbody>
+						<tfoot>
+							<th>Sr No.</th>
+							<th>Date</th>
+							<th>Features</th>
+							<th>Benefits</th>
+							<th>Proposed By</th>
+						</tfoot>
+					</table>
+					<br>
+					<br>
+					<br>
+					<!--/.row-->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+
+									<center>
+										<strong><i class="fa fa-download"></i> Download Forms</strong>
+									</center>
+								</div>
+								<br>
+								<div class="row">
+
+									<!--/.row-->
+									<br>
+									<div class="col-sm-6 col-lg-4">
+
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="<c:url value='${pageContext.request.contextPath}../../static/forms/Software Change.docx'/>" class="btn btn-primary" download>Change
+											Request Form</a>
+
+
+									</div>
+									<!--/.col-->
+									<div class="col-sm-6 col-lg-4">
+
+										<a href="<c:url value='${pageContext.request.contextPath}../../static/forms/Manual Updation.docx'/>" class="btn btn-warning" download>Data Manual
+											Updation Form</a>
+
+									</div>
+									<div class="col-sm-6 col-lg-4">
+
+										<a href="<c:url value='${pageContext.request.contextPath}../../static/forms/Permissions.docx'/>" class="btn btn-info" download>New/Permission
+											Form</a>
+									</div>
+								</div>
+								<br>
+								<!--/.col-->
+
+
+							</div>
+						</div>
+					</div>
+					<!--/.col-->
 		</div>
+		<!--/.row-->
+
+		<!--/.row-->
+		</c:when>
+
+		<c:when test="${ mode == 'All_Logs'}">
+			<c:forEach var="logs" items="${logs }">
+				<p>${logs}</p>
+			</c:forEach>
+
+			<!--/.row-->
+		</c:when>
+
+
+		</c:choose>
+	</div>
 
 	</div>
 	</main>

@@ -19,9 +19,14 @@
 
 <style>
 @media screen and (max-width: 600px) {
-	#best, #ver {
+	#best{
 		display: none;
 	}
+	#line{
+	    height: 40px;
+	}
+	
+	
 }
 </style>
 
@@ -116,9 +121,9 @@
 	<br>
 	
 	<!-- Image and text -->
-	<span class="d-block p-2 bg-dark text-white"><i id="best" style="color: #ff0000;">&nbsp;&nbsp;&nbsp; * Best Viewed in Google chrome on all devices.</i>
+	<span id ="line" class="d-block p-2 bg-dark text-white"><i id="best" style="color: #ff0000;">&nbsp;&nbsp;&nbsp; * Best Viewed in Google chrome on all devices.</i>
 		
-		<i id="ver" style="color: #ff0000; float: right;">Ver 1.02&nbsp;&nbsp;&nbsp;</i></span>
+		<i id="ver" style="color: #ff0000; float: right;">Ver 1.03&nbsp;&nbsp;&nbsp;</i></span>
 
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

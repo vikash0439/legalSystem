@@ -1,0 +1,428 @@
+2018-12-18 10:08:43 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 14372 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 10:08:43 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 10:08:56 : INFO  - Started LegalAppApplication in 13.372 seconds (JVM running for 14.697)
+2018-12-18 10:08:56 : INFO  - Main program running
+2018-12-18 10:12:02 : INFO  - Logged in by: Viku
+2018-12-18 10:16:34 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 14372 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 10:16:34 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 10:16:37 : INFO  - Started LegalAppApplication in 3.777 seconds (JVM running for 475.66)
+2018-12-18 10:16:37 : INFO  - Main program running
+2018-12-18 10:16:43 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 14372 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 10:16:43 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 10:16:46 : INFO  - Started LegalAppApplication in 3.197 seconds (JVM running for 484.134)
+2018-12-18 10:16:46 : INFO  - Main program running
+2018-12-18 10:17:31 : INFO  - Logged in by: null
+2018-12-18 10:17:36 : INFO  - Logged out!
+2018-12-18 10:17:44 : INFO  - Logged in by: Viku
+2018-12-18 10:25:38 : INFO  - Event: New Reminder created
+2018-12-18 10:30:39 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 14372 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 10:30:39 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 10:30:43 : INFO  - Started LegalAppApplication in 4.122 seconds (JVM running for 1321.233)
+2018-12-18 10:30:43 : INFO  - Main program running
+2018-12-18 10:33:48 : INFO  - Event: New Reminder created
+2018-12-18 10:47:23 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 14372 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 10:47:23 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 10:47:26 : INFO  - Started LegalAppApplication in 3.534 seconds (JVM running for 2324.61)
+2018-12-18 10:47:26 : INFO  - Main program running
+2018-12-18 10:47:46 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 14372 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 10:47:46 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 10:47:49 : INFO  - Started LegalAppApplication in 3.298 seconds (JVM running for 2347.521)
+2018-12-18 10:47:49 : INFO  - Main program running
+2018-12-18 10:48:16 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 14372 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 10:48:16 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 10:48:19 : INFO  - Started LegalAppApplication in 3.145 seconds (JVM running for 2377.615)
+2018-12-18 10:48:19 : INFO  - Main program running
+2018-12-18 10:48:36 : INFO  - Reminders sent today
+2018-12-18 10:48:40 : INFO  - Reminders sent today
+2018-12-18 10:51:20 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 14372 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 10:51:20 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 10:51:23 : INFO  - Started LegalAppApplication in 3.105 seconds (JVM running for 2561.066)
+2018-12-18 10:51:23 : INFO  - Main program running
+2018-12-18 10:53:21 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 14372 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 10:53:21 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 10:53:24 : INFO  - Started LegalAppApplication in 3.213 seconds (JVM running for 2682.702)
+2018-12-18 10:53:24 : INFO  - Main program running
+2018-12-18 10:55:54 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 14372 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 10:55:54 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 10:55:58 : INFO  - Started LegalAppApplication in 3.633 seconds (JVM running for 2836.377)
+2018-12-18 10:55:58 : INFO  - Main program running
+2018-12-18 10:55:58 : INFO  - No reminders today
+2018-12-18 10:56:59 : INFO  - Event: Case Status Updated
+2018-12-18 10:57:11 : INFO  - Reminders sent today
+2018-12-18 10:57:15 : INFO  - Reminders sent today
+2018-12-18 10:57:57 : INFO  - Logged in by: null
+2018-12-18 10:57:58 : INFO  - Logged in by: null
+2018-12-18 10:58:37 : INFO  - Event: Case Status Updated
+2018-12-18 11:06:09 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 11:06:09 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 11:06:20 : INFO  - Started LegalAppApplication in 11.195 seconds (JVM running for 12.504)
+2018-12-18 11:06:20 : INFO  - Main program running
+2018-12-18 11:06:41 : INFO  - Reminders sent today
+2018-12-18 11:08:10 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 11:08:10 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 11:08:13 : INFO  - Started LegalAppApplication in 3.515 seconds (JVM running for 125.881)
+2018-12-18 11:08:13 : INFO  - Main program running
+2018-12-18 11:08:41 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 11:08:41 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 11:08:45 : INFO  - Started LegalAppApplication in 3.554 seconds (JVM running for 157.408)
+2018-12-18 11:08:45 : INFO  - Main program running
+2018-12-18 11:08:45 : INFO  - Reminders sent today
+2018-12-18 11:09:35 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 11:09:35 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 11:09:39 : INFO  - Started LegalAppApplication in 3.277 seconds (JVM running for 211.53)
+2018-12-18 11:09:39 : INFO  - Main program running
+2018-12-18 11:09:45 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 11:09:45 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 11:09:48 : INFO  - Started LegalAppApplication in 2.991 seconds (JVM running for 220.929)
+2018-12-18 11:09:48 : INFO  - Main program running
+2018-12-18 11:09:53 : INFO  - Reminders sent today
+2018-12-18 11:12:46 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 11:12:46 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 11:12:52 : INFO  - Started LegalAppApplication in 5.625 seconds (JVM running for 404.544)
+2018-12-18 11:12:52 : INFO  - Main program running
+2018-12-18 11:13:07 : INFO  - Reminders sent today
+2018-12-18 11:13:33 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 11:13:33 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 11:13:37 : INFO  - Started LegalAppApplication in 3.609 seconds (JVM running for 449.386)
+2018-12-18 11:13:37 : INFO  - Main program running
+2018-12-18 11:13:43 : INFO  - Reminders sent today
+2018-12-18 11:14:31 : INFO  - Logged out!
+2018-12-18 11:39:46 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 11:39:46 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 11:39:51 : INFO  - Started LegalAppApplication in 4.899 seconds (JVM running for 2023.533)
+2018-12-18 11:39:51 : INFO  - Main program running
+2018-12-18 11:40:58 : INFO  - Logged in by: Vikash Kumar
+2018-12-18 11:42:16 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 11:42:16 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 11:42:19 : INFO  - Started LegalAppApplication in 3.359 seconds (JVM running for 2171.734)
+2018-12-18 11:42:19 : INFO  - Main program running
+2018-12-18 12:24:39 : INFO  - Logged in by: Vikash Kumar
+2018-12-18 12:43:09 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:43:09 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:43:14 : INFO  - Started LegalAppApplication in 4.566 seconds (JVM running for 5826.906)
+2018-12-18 12:43:14 : INFO  - Main program running
+2018-12-18 12:44:56 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:44:56 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:44:58 : INFO  - Started LegalAppApplication in 1.854 seconds (JVM running for 5930.68)
+2018-12-18 12:44:58 : INFO  - Main program running
+2018-12-18 12:45:23 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:45:23 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:45:25 : INFO  - Started LegalAppApplication in 2.146 seconds (JVM running for 5958.075)
+2018-12-18 12:45:25 : INFO  - Main program running
+2018-12-18 12:49:46 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:49:46 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:49:54 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:49:54 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:49:56 : INFO  - Started LegalAppApplication in 1.955 seconds (JVM running for 6228.57)
+2018-12-18 12:49:56 : INFO  - Main program running
+2018-12-18 12:50:04 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:50:04 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:50:06 : INFO  - Started LegalAppApplication in 1.928 seconds (JVM running for 6238.989)
+2018-12-18 12:50:06 : INFO  - Main program running
+2018-12-18 12:51:03 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:51:03 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:51:05 : INFO  - Started LegalAppApplication in 1.927 seconds (JVM running for 6297.643)
+2018-12-18 12:51:05 : INFO  - Main program running
+2018-12-18 12:51:12 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:51:12 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:51:14 : INFO  - Started LegalAppApplication in 1.861 seconds (JVM running for 6307.218)
+2018-12-18 12:51:14 : INFO  - Main program running
+2018-12-18 12:51:34 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:51:34 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:54:20 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:54:20 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:54:23 : INFO  - Started LegalAppApplication in 2.685 seconds (JVM running for 6495.441)
+2018-12-18 12:54:23 : INFO  - Main program running
+2018-12-18 12:54:41 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:54:41 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:54:43 : INFO  - Started LegalAppApplication in 1.879 seconds (JVM running for 6516.028)
+2018-12-18 12:54:43 : INFO  - Main program running
+2018-12-18 12:54:45 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:54:45 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:54:47 : INFO  - Started LegalAppApplication in 1.872 seconds (JVM running for 6519.873)
+2018-12-18 12:54:47 : INFO  - Main program running
+2018-12-18 12:55:30 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:55:30 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:55:32 : INFO  - Started LegalAppApplication in 1.891 seconds (JVM running for 6564.399)
+2018-12-18 12:55:32 : INFO  - Main program running
+2018-12-18 12:55:45 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:55:45 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:55:47 : INFO  - Started LegalAppApplication in 1.814 seconds (JVM running for 6579.605)
+2018-12-18 12:55:47 : INFO  - Main program running
+2018-12-18 12:57:25 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 12:57:25 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 12:57:27 : INFO  - Started LegalAppApplication in 1.85 seconds (JVM running for 6680.109)
+2018-12-18 12:57:27 : INFO  - Main program running
+2018-12-18 13:31:25 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 13:31:25 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 13:31:27 : INFO  - Started LegalAppApplication in 1.86 seconds (JVM running for 8719.499)
+2018-12-18 13:31:27 : INFO  - Main program running
+2018-12-18 13:31:47 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 13:31:47 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 13:31:49 : INFO  - Started LegalAppApplication in 1.859 seconds (JVM running for 8741.784)
+2018-12-18 13:31:49 : INFO  - Main program running
+2018-12-18 13:31:56 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 13:31:56 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 13:31:58 : INFO  - Started LegalAppApplication in 1.75 seconds (JVM running for 8750.661)
+2018-12-18 13:31:58 : INFO  - Main program running
+2018-12-18 13:32:08 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 13:32:08 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 13:32:10 : INFO  - Started LegalAppApplication in 1.865 seconds (JVM running for 8763.191)
+2018-12-18 13:32:10 : INFO  - Main program running
+2018-12-18 13:33:01 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 13:33:01 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 13:33:03 : INFO  - Started LegalAppApplication in 1.874 seconds (JVM running for 8815.976)
+2018-12-18 13:33:03 : INFO  - Main program running
+2018-12-18 13:33:06 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17572 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 13:33:06 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 13:33:08 : INFO  - Started LegalAppApplication in 1.824 seconds (JVM running for 8820.967)
+2018-12-18 13:33:08 : INFO  - Main program running
+2018-12-18 14:02:27 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:02:27 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:02:33 : INFO  - Started LegalAppApplication in 5.856 seconds (JVM running for 6.585)
+2018-12-18 14:02:33 : INFO  - Main program running
+2018-12-18 14:12:57 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:12:57 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:12:59 : INFO  - Started LegalAppApplication in 2.237 seconds (JVM running for 633.165)
+2018-12-18 14:12:59 : INFO  - Main program running
+2018-12-18 14:18:48 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 11648 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:18:48 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:18:49 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:18:49 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:18:51 : INFO  - Started LegalAppApplication in 2.368 seconds (JVM running for 984.817)
+2018-12-18 14:18:51 : INFO  - Main program running
+2018-12-18 14:29:47 : INFO  - Logged in by: Vikash Kumar
+2018-12-18 14:31:03 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:31:03 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:31:05 : INFO  - Started LegalAppApplication in 2.049 seconds (JVM running for 1719.013)
+2018-12-18 14:31:05 : INFO  - Main program running
+2018-12-18 14:31:45 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:31:45 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:31:47 : INFO  - Started LegalAppApplication in 1.997 seconds (JVM running for 1760.448)
+2018-12-18 14:31:47 : INFO  - Main program running
+2018-12-18 14:32:07 : INFO  - Logged in by: null
+2018-12-18 14:33:54 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:33:54 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:33:56 : INFO  - Started LegalAppApplication in 1.964 seconds (JVM running for 1889.619)
+2018-12-18 14:33:56 : INFO  - Main program running
+2018-12-18 14:34:02 : INFO  - Logged in by: null
+2018-12-18 14:34:45 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:34:45 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:34:48 : INFO  - Started LegalAppApplication in 3.065 seconds (JVM running for 1942.277)
+2018-12-18 14:34:48 : INFO  - Main program running
+2018-12-18 14:35:11 : INFO  - Logged in by: null
+2018-12-18 14:38:37 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:38:37 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:38:40 : INFO  - Started LegalAppApplication in 3.139 seconds (JVM running for 2173.778)
+2018-12-18 14:38:40 : INFO  - Main program running
+2018-12-18 14:39:17 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:39:17 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:39:19 : INFO  - Started LegalAppApplication in 1.842 seconds (JVM running for 2213.141)
+2018-12-18 14:39:19 : INFO  - Main program running
+2018-12-18 14:39:31 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:39:31 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:39:32 : INFO  - Started LegalAppApplication in 1.845 seconds (JVM running for 2226.324)
+2018-12-18 14:39:32 : INFO  - Main program running
+2018-12-18 14:39:47 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:39:47 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:39:48 : INFO  - Started LegalAppApplication in 1.891 seconds (JVM running for 2242.329)
+2018-12-18 14:39:48 : INFO  - Main program running
+2018-12-18 14:40:00 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:40:00 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:40:02 : INFO  - Started LegalAppApplication in 2.402 seconds (JVM running for 2256.183)
+2018-12-18 14:40:02 : INFO  - Main program running
+2018-12-18 14:40:14 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:40:14 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:40:16 : INFO  - Started LegalAppApplication in 1.808 seconds (JVM running for 2270.06)
+2018-12-18 14:40:16 : INFO  - Main program running
+2018-12-18 14:44:32 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:44:32 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:44:34 : INFO  - Started LegalAppApplication in 1.988 seconds (JVM running for 2527.529)
+2018-12-18 14:44:34 : INFO  - Main program running
+2018-12-18 14:44:41 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:44:41 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:44:43 : INFO  - Started LegalAppApplication in 1.851 seconds (JVM running for 2536.439)
+2018-12-18 14:44:43 : INFO  - Main program running
+2018-12-18 14:44:51 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:44:51 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:44:53 : INFO  - Started LegalAppApplication in 1.962 seconds (JVM running for 2546.64)
+2018-12-18 14:44:53 : INFO  - Main program running
+2018-12-18 14:45:19 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:45:19 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:45:21 : INFO  - Started LegalAppApplication in 1.878 seconds (JVM running for 2575.188)
+2018-12-18 14:45:21 : INFO  - Main program running
+2018-12-18 14:45:26 : INFO  - Logged in by: null
+2018-12-18 14:45:40 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:45:40 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:45:41 : INFO  - Started LegalAppApplication in 1.81 seconds (JVM running for 2595.195)
+2018-12-18 14:45:41 : INFO  - Main program running
+2018-12-18 14:46:10 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 14:46:10 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 14:46:12 : INFO  - Started LegalAppApplication in 2.193 seconds (JVM running for 2626.189)
+2018-12-18 14:46:12 : INFO  - Main program running
+2018-12-18 14:46:41 : INFO  - Logged in by: null
+2018-12-18 15:01:08 : INFO  - Logged in by: null
+2018-12-18 15:28:25 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 15:28:25 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 15:28:27 : INFO  - Started LegalAppApplication in 1.979 seconds (JVM running for 5160.67)
+2018-12-18 15:28:27 : INFO  - Main program running
+2018-12-18 15:29:20 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 4428 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 15:29:20 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 15:29:22 : INFO  - Started LegalAppApplication in 2.019 seconds (JVM running for 5216.086)
+2018-12-18 15:29:22 : INFO  - Main program running
+2018-12-18 16:18:18 : INFO  - Logged in by: null
+2018-12-18 16:18:19 : INFO  - Logged in by: null
+2018-12-18 16:30:49 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 15688 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 16:30:49 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 16:31:02 : INFO  - Started LegalAppApplication in 12.687 seconds (JVM running for 14.009)
+2018-12-18 16:31:02 : INFO  - Main program running
+2018-12-18 16:37:03 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 15688 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 16:37:03 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 16:37:07 : INFO  - Started LegalAppApplication in 4.237 seconds (JVM running for 379.622)
+2018-12-18 16:37:07 : INFO  - Main program running
+2018-12-18 16:38:08 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 15688 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 16:38:08 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 16:38:11 : INFO  - Started LegalAppApplication in 3.454 seconds (JVM running for 443.694)
+2018-12-18 16:38:11 : INFO  - Main program running
+2018-12-18 16:39:09 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 15688 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 16:39:09 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 16:39:12 : INFO  - Started LegalAppApplication in 3.498 seconds (JVM running for 504.692)
+2018-12-18 16:39:12 : INFO  - Main program running
+2018-12-18 16:44:29 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 15688 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 16:44:29 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 16:44:32 : INFO  - Started LegalAppApplication in 3.205 seconds (JVM running for 823.959)
+2018-12-18 16:44:32 : INFO  - Main program running
+2018-12-18 16:44:34 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 15688 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 16:44:34 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 16:44:37 : INFO  - Started LegalAppApplication in 3.294 seconds (JVM running for 829.379)
+2018-12-18 16:44:37 : INFO  - Main program running
+2018-12-18 16:48:32 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 15688 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 16:48:32 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 16:48:35 : INFO  - Started LegalAppApplication in 3.038 seconds (JVM running for 1066.808)
+2018-12-18 16:48:35 : INFO  - Main program running
+2018-12-18 16:51:37 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 15688 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 16:51:37 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 16:51:40 : INFO  - Started LegalAppApplication in 3.137 seconds (JVM running for 1252.213)
+2018-12-18 16:51:40 : INFO  - Main program running
+2018-12-18 16:52:49 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 16:52:49 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 16:52:59 : INFO  - Started LegalAppApplication in 10.852 seconds (JVM running for 12.208)
+2018-12-18 16:52:59 : INFO  - Main program running
+2018-12-18 17:02:44 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 13720 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:02:44 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:14:20 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:14:20 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:14:24 : INFO  - Started LegalAppApplication in 3.959 seconds (JVM running for 1296.709)
+2018-12-18 17:14:24 : INFO  - Main program running
+2018-12-18 17:15:51 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:15:51 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:15:54 : INFO  - Started LegalAppApplication in 3.419 seconds (JVM running for 1386.982)
+2018-12-18 17:15:54 : INFO  - Main program running
+2018-12-18 17:20:50 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:20:50 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:20:53 : INFO  - Started LegalAppApplication in 3.406 seconds (JVM running for 1686.613)
+2018-12-18 17:20:53 : INFO  - Main program running
+2018-12-18 17:23:45 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:23:45 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:23:48 : INFO  - Started LegalAppApplication in 3.328 seconds (JVM running for 1861.403)
+2018-12-18 17:23:48 : INFO  - Main program running
+2018-12-18 17:24:43 : INFO  - Logged out!
+2018-12-18 17:24:51 : INFO  - Logged in by: Viku
+2018-12-18 17:25:55 : INFO  - Event: New Case Added by Viku
+2018-12-18 17:27:45 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:27:45 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:27:48 : INFO  - Started LegalAppApplication in 2.976 seconds (JVM running for 2100.782)
+2018-12-18 17:27:48 : INFO  - Main program running
+2018-12-18 17:27:55 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:27:55 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:27:58 : INFO  - Started LegalAppApplication in 3.274 seconds (JVM running for 2110.963)
+2018-12-18 17:27:58 : INFO  - Main program running
+2018-12-18 17:30:00 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:30:00 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:30:03 : INFO  - Started LegalAppApplication in 3.417 seconds (JVM running for 2236.285)
+2018-12-18 17:30:03 : INFO  - Main program running
+2018-12-18 17:31:05 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:31:05 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:31:08 : INFO  - Started LegalAppApplication in 3.151 seconds (JVM running for 2301.5)
+2018-12-18 17:31:08 : INFO  - Main program running
+2018-12-18 17:31:45 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:31:45 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:31:48 : INFO  - Started LegalAppApplication in 3.09 seconds (JVM running for 2341.535)
+2018-12-18 17:31:48 : INFO  - Main program running
+2018-12-18 17:40:55 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:40:55 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:40:58 : INFO  - Started LegalAppApplication in 3.229 seconds (JVM running for 2890.868)
+2018-12-18 17:40:58 : INFO  - Main program running
+2018-12-18 17:41:05 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:41:05 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:41:08 : INFO  - Started LegalAppApplication in 3.108 seconds (JVM running for 2900.79)
+2018-12-18 17:41:08 : INFO  - Main program running
+2018-12-18 17:41:16 : INFO  - Logged in by: null
+2018-12-18 17:41:25 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:41:25 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:41:29 : INFO  - Started LegalAppApplication in 3.44 seconds (JVM running for 2921.949)
+2018-12-18 17:41:29 : INFO  - Main program running
+2018-12-18 17:42:18 : INFO  - Event: New Case Added by null
+2018-12-18 17:44:49 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:44:49 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:45:01 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:45:01 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:45:31 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:45:31 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:45:45 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:45:45 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:46:56 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:46:56 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:47:01 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5216 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:47:01 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:47:31 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 5112 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:47:31 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:47:51 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 14564 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:47:51 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:48:10 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 17584 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:48:10 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:48:49 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 3016 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:48:49 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:50:14 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 10176 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:50:14 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:50:24 : INFO  - Started LegalAppApplication in 10.232 seconds (JVM running for 11.925)
+2018-12-18 17:50:24 : INFO  - Main program running
+2018-12-18 17:50:30 : INFO  - Logged in by: null
+2018-12-18 17:51:18 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 10176 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:51:18 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:51:21 : INFO  - Started LegalAppApplication in 3.237 seconds (JVM running for 69.025)
+2018-12-18 17:51:21 : INFO  - Main program running
+2018-12-18 17:51:33 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 10176 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:51:33 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:51:37 : INFO  - Started LegalAppApplication in 3.381 seconds (JVM running for 84.872)
+2018-12-18 17:51:37 : INFO  - Main program running
+2018-12-18 17:52:31 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 11016 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:52:31 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:52:41 : INFO  - Started LegalAppApplication in 9.898 seconds (JVM running for 11.218)
+2018-12-18 17:52:41 : INFO  - Main program running
+2018-12-18 17:52:50 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 11016 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:52:50 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:52:54 : INFO  - Started LegalAppApplication in 3.642 seconds (JVM running for 23.979)
+2018-12-18 17:52:54 : INFO  - Main program running
+2018-12-18 17:53:11 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 11016 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:53:11 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:53:14 : INFO  - Started LegalAppApplication in 3.919 seconds (JVM running for 44.924)
+2018-12-18 17:53:15 : INFO  - Main program running
+2018-12-18 17:53:19 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 11016 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:53:19 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:53:23 : INFO  - Started LegalAppApplication in 4.115 seconds (JVM running for 53.162)
+2018-12-18 17:53:23 : INFO  - Main program running
+2018-12-18 17:53:25 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 11016 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 17:53:25 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 17:53:28 : INFO  - Started LegalAppApplication in 3.239 seconds (JVM running for 58.426)
+2018-12-18 17:53:28 : INFO  - Main program running
+2018-12-18 17:54:01 : INFO  - Logged out!
+2018-12-18 17:54:07 : INFO  - Logged in by: Vikash Kumar
+2018-12-18 18:04:11 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 11016 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 18:04:11 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 18:04:14 : INFO  - Started LegalAppApplication in 3.43 seconds (JVM running for 704.86)
+2018-12-18 18:04:14 : INFO  - Main program running
+2018-12-18 18:04:56 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 11016 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2018-12-18 18:04:56 : INFO  - No active profile set, falling back to default profiles: default
+2018-12-18 18:04:59 : INFO  - Started LegalAppApplication in 3.294 seconds (JVM running for 749.487)
+2018-12-18 18:04:59 : INFO  - Main program running

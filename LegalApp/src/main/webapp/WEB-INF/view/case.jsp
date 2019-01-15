@@ -87,8 +87,7 @@
 										<th>Last Date of Hearing</th>
 										<th>Next Date of Hearing</th>
 										<th>Current Status</th>
-										<th>File No</th>		
-										
+										<th>File No</th>												
 									</tr>
 								</thead>
 								
@@ -166,7 +165,7 @@
 													<label for="ccnumber">Case Number</label> <input
 														type="text" class="form-control" id="caseno"
 														name="caseno" placeholder="Eg: ABC-00-2018
-														value="${c.caseno }">
+														value="${c.caseno }" required>
 												</div>
 											</div>
 											<div class="col-sm-6">
@@ -333,7 +332,7 @@
 										<div class="form-group">
 											<label for="company">Name<span style="color:  red; font-weight:  bolder;">*</span></label> <select
 												class="form-control multiselect-ui form-control"
-												id="ccmonth" name="advocate">
+												id="ccmonth" name="advocate" required>
 												<option>--SELECT--</option>
 												<c:forEach var="l" items="${l}">
 													<option>${l}</option>
@@ -482,15 +481,16 @@
 												<label  for="textarea-input">Last
 													 Hearing :</label>
 												<div >
-													<input type="date" class="form-control" id="lasthearing"
+													<input type="text" class="form-control" id="lasthearing" placeholder="DD-MM-YYYY"
 														name="lasthearing" value="${updatecase.lasthearing }">
+														
 												</div>
 											</div>
 											<div class="col-md-4">
 												<label  for="textarea-input">Next
 													Hearing :</label>
 												<div >
-													<input type="date" class="form-control" id="ccnumber"
+													<input type="text" class="form-control" id="ccnumber" placeholder="DD-MM-YYYY"
 														name="nexthearing" value="${updatecase.nexthearing }">
 												</div>
 											</div>
@@ -1274,7 +1274,7 @@
 													<option>Court-Fillings</option>
 													<option>Meetings</option>
 													<option>Hearings</option>
-													<option>Miscellanous</option>
+													<option>Miscellaneous</option>
 													<option>Other</option>
 												</select>
 														</div>
@@ -1444,6 +1444,11 @@
 										<div class="form-group row">
 										  <input type="hidden" class="form-control" id="ccnumber"
 													name="updateid" value="${c.updatecase.updateid }">
+													<input type="hidden" class="form-control" id="ccnumber"
+													name="caseno" value="${c.caseno }" readonly>
+													<input type="hidden" class="form-control" id="ccnumber"
+													name="title" value="${c.title }">
+													
 												
 											<div class="col-sm-12">
 												<div class="form-group">

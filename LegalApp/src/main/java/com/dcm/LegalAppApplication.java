@@ -1,5 +1,9 @@
 package com.dcm;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import javax.mail.MessagingException;
 
 import org.slf4j.Logger;
@@ -11,37 +15,68 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
+
 import com.dcm.mail.EmailServiceImpl;
 import com.dcm.service.UserService;
 
 @SpringBootApplication
 @EnableScheduling
-public class LegalAppApplication extends SpringBootServletInitializer{
-	
+public class LegalAppApplication extends SpringBootServletInitializer {
+
 	private static final Logger LOGGER = LoggerFactory.getLogger(LegalAppApplication.class);
 	@Autowired
 	private EmailServiceImpl emailService;
 	@Autowired
 	private UserService userservice;
-	
-	
-	
+
 	@Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(LegalAppApplication.class);       
-    }
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(LegalAppApplication.class);
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(LegalAppApplication.class, args);
 		LOGGER.info("Main program running");
 	}
-		
 
-	@Scheduled(cron = "0 0 9,16 * * *")
-	public void scheduleFixedRateTask() throws MessagingException {
-	    String[] to = userservice.getEmail();
-		emailService.sendMailWithAttachement(to);
-		LOGGER.info("Reminder Time");		
+	@Scheduled(cron = "0 0 10 * * *")
+	public void HearingReminder() throws MessagingException {
+		String[] to = userservice.getEmail();
+		emailService.hearingReminder(to);
+		LOGGER.info("Hearing Reminder Executed");
+		
+		String date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+
+		File f = new File("DB_backup\\");
+		if (!f.exists()) {
+			if (f.mkdir()) {
+				LOGGER.info("Directory created");
+			}
+		}
+		String path = f.getAbsolutePath();
+		path = path.replace('\\', '/');
+		path = path + "_" + date + ".sql";
+
+		Process p = null;
+		try {
+			Runtime runtime = Runtime.getRuntime();
+			p = runtime.exec("C:/Program Files (x86)/MySQL/MySQL Server 5.5/bin/mysqldump.exe -uroot -pdcm --add-drop-database -B legal -r"+ path);
+			int processComplete = p.waitFor();
+			if (processComplete == 0) {
+				LOGGER.info("Backup Created Success at : " +path);
+			} else {
+				LOGGER.info("Can't Create backup");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
-	
-	
+
+	@Scheduled(fixedRate = 60000)
+	public void DateTimeReminder() throws MessagingException {
+		String[] to = userservice.getEmail();
+		emailService.sendMailWithAttachement(to);
+
+	}
+
 }

@@ -82,10 +82,9 @@
 									<th scope="col" width="5%">#Id</th>
 									<th scope="col" width="10%">Date</th>
 									<th scope="col" width="10%">Time</th>
-									<th scope="col" width="65%">Brief Description about the
-										Activities</th>
-									<th scope="col" width="15%">Case</th>
-									<th scope="col" width="15%">Type</th>
+									<th scope="col" width="55%">Brief Description about the	Reminder</th>
+									<th scope="col" width="10%">Case No.</th>
+									<th scope="col" width="10%">Type</th>
 								</tr>
 							</thead>
 
@@ -109,8 +108,8 @@
 									<th>#Id</th>
 									<th>Date</th>
 									<th>Time</th>
-									<th>Brief</th>
-									<th>Case</th>
+									<th>Brief Description about the	Reminder</th>
+									<th>Case No.</th>
 									<th>Type</th>
 								</tr>
 							</tfoot>
@@ -123,7 +122,7 @@
 						<div class="col-md-6">
 							<div class="card">
 								<div class="card-header">
-									<strong>Add Reminder</strong> Details
+									<strong>Set Reminder</strong> Details
 								</div>
 								<div class="card-body">
 									<form action="save-reminder" method="POST"
@@ -147,13 +146,12 @@
 											<label class="col-md-3 col-form-label" for="text-input">Type
 												Of Reminder</label>
 											<div class="form-group col-sm-9">
-												<select class="form-control" id="ccyear" name="type"
-													value="${reminder.type }">
+												<select class="form-control" id="ccyear" name="type" value="${reminder.type }">
 													<option>--SELECT--</option>
 													<option>Court-Fillings</option>
-													<option>Meetings</option>
+													<option>Meetings</option>													
 													<option>Hearings</option>
-													<option>Miscellanous</option>
+													<option>Miscellaneous</option>
 													<option>Other</option>
 												</select>
 											</div>
@@ -174,16 +172,16 @@
 										<div class="row">
 											<div class="col-sm-6">
 												<div class="form-group">
-													<label for="date">Date of Event</label> <input
+													<label for="date">Date</label> <input
 														type="text" class="form-control" id="ccnumber" name="date" placeholder="DD-MM-YYYY"
-														value="${reminder.date }">
+														value="${reminder.date }" required>
 												</div>
 											</div>
 											<div class="col-sm-6">
 												<div class="form-group">
-													<label for="time">Time of Event</label> <input type="time"
+													<label for="time">Time</label> <input type="time"
 														class="form-control" id="ccnumber" name="time"
-														value="${reminder.time }">
+														value="${reminder.time }" required>
 												</div>
 											</div>
 										</div>
@@ -193,7 +191,7 @@
 										<div class="card-footer">
 											<button type="submit" class="btn btn-sm btn-primary"
 												data-toggle="modal" data-target="#exampleModal">
-												<i class="fa fa-dot-circle-o"></i> Submit
+												<i class="fa fa-dot-circle-o"></i> Set
 											</button>
 											<button type="reset" class="btn btn-sm btn-danger">
 												<i class="fa fa-ban"></i> Reset

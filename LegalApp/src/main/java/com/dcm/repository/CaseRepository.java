@@ -18,6 +18,10 @@ public interface CaseRepository extends CrudRepository<Case, Integer>{
 	public List<String> findCaseno();
 
 	Case findByCaseno(String caseno);
-	
 
+	public Iterable<Case> findByNexthearing(String d);
+
+	@Query(value = "select * from cases;", nativeQuery = true)
+	public List<Case> countBycategory();
+	
 }

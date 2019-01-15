@@ -156,7 +156,7 @@
 											</label>
 											<div class="col-md-9">
 												<input type="file" id="file-input" name="file"
-													class="form-control" value="${document.file}"></input>
+													class="form-control" value="${document.file}" required></input>
 											</div>
 										</div>
 

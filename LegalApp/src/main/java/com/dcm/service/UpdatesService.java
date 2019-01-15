@@ -29,6 +29,8 @@ public class UpdatesService{
 		updatesRepository.findAll().forEach(updates :: add);
 		return updates;
 	}
+	
+	
 
 	
 

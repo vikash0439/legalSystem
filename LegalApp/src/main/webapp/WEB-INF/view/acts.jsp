@@ -73,8 +73,9 @@
 						<div class="row">
 							<div class="col-sm-6 col-md-12">
 								<div class="card">
-									<div class="card-header"><b>${act.name }</b></div>
-									<div class="card-body">${act.rules }										
+									<div class="card-header"><b>${act.name }</b><br>Section: ${act.section}</div>
+									<div class="card-body">${act.rules }	<br><br>	
+									<a href ="${act.url }" target ="_blank">${act.url }</a>								
 									</div>
 								</div>
 							</div>
@@ -99,7 +100,7 @@
 										<div class="col-md-9">
 											<input type="text" id="text-input" name="name"
 												class="form-control" placeholder="Enter Act Name"
-												value="${act.name }">
+												value="${act.name }" required>
 
 										</div>
 									</div>
@@ -111,6 +112,24 @@
 											<textarea id="textarea-input" name="rules" rows="9"
 												class="form-control" placeholder="Brief about this act..."
 												value="${act.rules }"></textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-md-3 col-form-label" for="text-input">Section</label>
+										<div class="col-md-9">
+											<input type="text" id="text-input" name="section"
+												class="form-control" placeholder="Enter Sections"
+												value="${act.section }">
+
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-md-3 col-form-label" for="text-input">URL</label>
+										<div class="col-md-9">
+											<input type="url" id="text-input" name="url"
+												class="form-control" placeholder="Enter URL (just copy and paste link here)"
+												value="${act.url }">
+
 										</div>
 									</div>
 

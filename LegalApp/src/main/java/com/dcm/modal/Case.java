@@ -26,6 +26,7 @@ public class Case{
 	private String description;	
 	private String judgename;
 	private String designation;
+	private String court;
 	private String state;
 	private String counter;
 	private String address;
@@ -38,6 +39,8 @@ public class Case{
 	@OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "paymentid")
 	private Payment payment;
+	
+	
 	@JsonIgnore 
 	@OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "updateid")
@@ -56,12 +59,13 @@ public class Case{
 	}
 	
 	public Case(int id, String caseno, String fileno, String dateinstitution, String datesummon, String title, String act,
-			String versus, String description, String judgename, String designation, String state,
+			String versus, String description, String judgename, String designation, String state,String court,
 			String counter, String address,String status, Payment payment, Lawyer lawyer, UpdateCase updatecase) {
 		super();
 		this.id = id;
 		this.caseno = caseno;
 		this.fileno = fileno;
+		this.court = court;
 		this.dateinstitution = dateinstitution;
 		this.datesummon = datesummon;
 		this.title = title;
@@ -226,6 +230,14 @@ public class Case{
 	public String toString() {
 //		return "<a href=\"/view-cases?caseno=" + caseno + "\">" + caseno+", Title=" + title +" ";
 		return caseno;
+	}
+
+	public String getCourt() {
+		return court;
+	}
+
+	public void setCourt(String court) {
+		this.court = court;
 	}
 
 	

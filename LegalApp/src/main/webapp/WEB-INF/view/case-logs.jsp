@@ -201,7 +201,7 @@
 												</label>
 											 <div class="form-group col-sm-12">
 												<input	type="text" class="form-control"  name="date" placeholder="DD-MM-YYYY"
-														value="${logs.date }">
+														value="${logs.date }" required>
 											 </div>
 										   </div>			
 										  </div>
