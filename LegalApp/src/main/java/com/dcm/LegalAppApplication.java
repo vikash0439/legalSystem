@@ -39,6 +39,7 @@ public class LegalAppApplication extends SpringBootServletInitializer {
 		LOGGER.info("Main program running");
 	}
 
+	// Scheduled for hearing dates and back up 10AM everyday
 	@Scheduled(cron = "0 0 10 * * *")
 	public void HearingReminder() throws MessagingException {
 		String[] to = userservice.getEmail();
@@ -74,6 +75,7 @@ public class LegalAppApplication extends SpringBootServletInitializer {
 		}
 	}
 
+	// Reminder 1 min interval
 	@Scheduled(fixedRate = 60000)
 	public void DateTimeReminder() throws MessagingException {
 		String[] to = userservice.getEmail();

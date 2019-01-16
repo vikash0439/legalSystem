@@ -151,3 +151,14 @@
 2019-01-15 13:04:00 : INFO  - Main program running
 2019-01-15 13:04:09 : INFO  - Login error!
 2019-01-15 13:04:13 : INFO  - Logged in by: Vikash Kumar
+2019-01-16 10:37:05 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 16556 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2019-01-16 10:37:05 : INFO  - No active profile set, falling back to default profiles: default
+2019-01-16 10:37:12 : INFO  - Started LegalAppApplication in 6.68 seconds (JVM running for 7.717)
+2019-01-16 10:37:12 : INFO  - Main program running
+2019-01-16 10:38:46 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 16556 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2019-01-16 10:38:46 : INFO  - No active profile set, falling back to default profiles: default
+2019-01-16 10:38:48 : INFO  - Started LegalAppApplication in 2.506 seconds (JVM running for 104.129)
+2019-01-16 10:38:48 : INFO  - Main program running
+2019-01-16 10:39:01 : INFO  - Logged in by: Vikash Kumar
+2019-01-16 10:39:18 : INFO  - Logged out!
+2019-01-16 10:39:24 : INFO  - Logged in by: Viku
