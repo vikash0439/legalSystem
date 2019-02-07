@@ -6605,3 +6605,50 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 2019-02-07 12:54:46 [http-nio-8080-exec-5] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@ebe34dd
 2019-02-07 12:54:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select username from user where active = 1;
 2019-02-07 12:54:49 [pool-2-thread-1] DEBUG org.hibernate.SQL - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=? and reminder0_.time=?
+2019-02-07 12:55:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select username from user where active = 1;
+2019-02-07 12:55:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=? and reminder0_.time=?
+2019-02-07 12:56:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select username from user where active = 1;
+2019-02-07 12:56:49 [pool-2-thread-1] DEBUG org.hibernate.SQL - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=? and reminder0_.time=?
+2019-02-07 12:57:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select username from user where active = 1;
+2019-02-07 12:57:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=? and reminder0_.time=?
+2019-02-07 12:58:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select username from user where active = 1;
+2019-02-07 12:58:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=? and reminder0_.time=?
+2019-02-07 12:59:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select username from user where active = 1;
+2019-02-07 12:59:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=? and reminder0_.time=?
+2019-02-07 13:00:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select username from user where active = 1;
+2019-02-07 13:00:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=? and reminder0_.time=?
+2019-02-07 13:01:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select username from user where active = 1;
+2019-02-07 13:01:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=? and reminder0_.time=?
+2019-02-07 13:02:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select username from user where active = 1;
+2019-02-07 13:02:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=? and reminder0_.time=?
+2019-02-07 13:03:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select username from user where active = 1;
+2019-02-07 13:03:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=? and reminder0_.time=?
+2019-02-07 13:04:48 [pool-2-thread-1] DEBUG org.hibernate.SQL - select username from user where active = 1;
+2019-02-07 13:04:49 [pool-2-thread-1] DEBUG org.hibernate.SQL - select reminder0_.reminderid as reminder1_8_, reminder0_.brief as brief2_8_, reminder0_.caseno as caseno3_8_, reminder0_.date as date4_8_, reminder0_.time as time5_8_, reminder0_.type as type6_8_ from reminder reminder0_ where reminder0_.date=? and reminder0_.time=?
+2019-02-07 13:05:03 [http-nio-8080-exec-3] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@ebe34dd
+2019-02-07 13:05:03 [http-nio-8080-exec-3] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@ebe34dd
+2019-02-07 13:05:03 [http-nio-8080-exec-2] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@ebe34dd
+2019-02-07 13:05:03 [http-nio-8080-exec-2] DEBUG o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Looking up handler method for path /login
+2019-02-07 13:05:03 [http-nio-8080-exec-2] DEBUG o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Did not find handler method for [/login]
+2019-02-07 13:05:03 [http-nio-8080-exec-2] DEBUG o.s.b.a.e.w.s.ControllerEndpointHandlerMapping - Looking up handler method for path /login
+2019-02-07 13:05:03 [http-nio-8080-exec-2] DEBUG o.s.b.a.e.w.s.ControllerEndpointHandlerMapping - Did not find handler method for [/login]
+2019-02-07 13:05:03 [http-nio-8080-exec-2] DEBUG o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Looking up handler method for path /login
+2019-02-07 13:05:03 [http-nio-8080-exec-2] DEBUG o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Did not find handler method for [/login]
+2019-02-07 13:05:03 [http-nio-8080-exec-2] DEBUG o.s.b.a.e.w.s.ControllerEndpointHandlerMapping - Looking up handler method for path /login
+2019-02-07 13:05:03 [http-nio-8080-exec-2] DEBUG o.s.b.a.e.w.s.ControllerEndpointHandlerMapping - Did not find handler method for [/login]
+2019-02-07 13:05:03 [http-nio-8080-exec-2] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@ebe34dd
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64f26528: startup date [Thu Feb 07 12:33:49 IST 2019]; root of context hierarchy
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Auditevents' from the JMX domain
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Beans' from the JMX domain
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Health' from the JMX domain
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Conditions' from the JMX domain
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Configprops' from the JMX domain
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Env' from the JMX domain
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Info' from the JMX domain
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Loggers' from the JMX domain
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Threaddump' from the JMX domain
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Metrics' from the JMX domain
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Scheduledtasks' from the JMX domain
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Httptrace' from the JMX domain
+2019-02-07 13:05:29 [RMI TCP Connection(43)-127.0.0.1] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Mappings' from the JMX domain
