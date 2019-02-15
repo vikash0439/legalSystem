@@ -96,7 +96,7 @@
 										<tr>
 											<td>${cases.id }</td>
 											<td>${cases.cateogry }</td>
-											<td>${cases.state }</td>
+											<td>${cases.court }</td>
 											<td><a href="${pageContext.request.contextPath}/view-cases?caseno=${cases.caseno }">${cases.caseno }</a></td>
 											
 											
@@ -174,6 +174,15 @@
 														class="form-control" id="fileno"
 														placeholder="Eg: DCM-2015" name="fileno"
 														value="${ c.fileno}">
+												</div>
+											</div>
+											
+											<div class="col-sm-6">
+												<div class="form-group">
+													<label for="ccnumber">State</label> <input type="text"
+														class="form-control" id="state"
+														placeholder="Eg: Haryana" name="state"
+														value="${ c.state}">
 												</div>
 											</div>
 										</div>
@@ -310,9 +319,9 @@
 											<div class="col-sm-6">
 												<div class="form-group">
 													<label for="time">Court </label> <input type="text"
-														class="form-control" id="state" name="state"
+														class="form-control" id="court" name="court"
 														placeholder="Enter the court "
-														value="${c.state }">
+														value="${c.court }">
 												</div>
 											</div>
 										</div>
@@ -1442,12 +1451,14 @@
 									<form id="case-update" action="case-update" method="POST">
 										<div class="modal-body">
 										<div class="form-group row">
-										  <input type="hidden" class="form-control" id="ccnumber"
+										  <input type="hidden" class="form-control"
 													name="updateid" value="${c.updatecase.updateid }">
-													<input type="hidden" class="form-control" id="ccnumber"
+													<input type="hidden" class="form-control" 
 													name="caseno" value="${c.caseno }" readonly>
-													<input type="hidden" class="form-control" id="ccnumber"
+													<input type="hidden" class="form-control" 
 													name="title" value="${c.title }">
+													<input type="hidden" class="form-control" 
+													name="court" value="${c.court }">
 													
 												
 											<div class="col-sm-12">
@@ -1729,6 +1740,33 @@
 				$("#bal").val(c);
 			});
 		});
+	</script>
+	<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"
+	type="text/javascript"></script>
+	<script>
+		var options = {
+			url : "${pageContext.request.contextPath}/state",
+			getValue : "state",
+			list : {
+				match : {
+					enabled : true
+				}
+			}
+		};
+		$("#state").easyAutocomplete(options);
+	</script>
+	<script>
+		var options = {
+			url : "${pageContext.request.contextPath}/court",
+			getValue : "court",
+			list : {
+				match : {
+					enabled : true
+				}
+			}
+		};
+		$("#court").easyAutocomplete(options);
 	</script>
 
 </body>

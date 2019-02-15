@@ -211,7 +211,16 @@ public class MainController {
 	public @ResponseBody List<com.dcm.modal.Case> id() {
 		return caseService.AllCases();
 	}
-
+	@RequestMapping(value = "/state", method = RequestMethod.GET)
+	public @ResponseBody List<com.dcm.modal.Case> State() {
+		return caseService.AllCases();
+	}
+	@RequestMapping(value = "/court", method = RequestMethod.GET)
+	public @ResponseBody List<com.dcm.modal.Case> Court() {
+		return caseService.AllCases();
+	}
+	
+	
 	@RequestMapping(value = "/field1", method = RequestMethod.GET)
 	public @ResponseBody List<Test> field1() {
 		return testService.showAllTest();

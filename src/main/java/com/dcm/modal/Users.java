@@ -20,6 +20,9 @@ public class Users {
     @Column(name = "name")
     private String name;
     
+    @Column(name = "dob")
+    private String dob;
+    
     @Column(name = "active")
     private boolean active;
     
@@ -37,6 +40,7 @@ public class Users {
         this.name = users.getName();
         this.id = users.getId();
         this.password = users.getPassword();
+        this.dob = users.getDob();
     }
 
     public int getId() {
@@ -86,4 +90,13 @@ public class Users {
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
+
+	public String getDob() {
+		return dob;
+	}
+
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
+    
 }

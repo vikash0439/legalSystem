@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@taglib prefix="security"	uri="http://www.springframework.org/security/tags"%>
+<%@taglib prefix="security"
+	uri="http://www.springframework.org/security/tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -92,6 +93,7 @@
 								<tr style="text-align: center;">
 									<th scope="col">#Id</th>
 									<th scope="col">Name</th>
+									<th scope="col">Date-of-Birth</th>
 									<th scope="col">Email-ID</th>
 									<security:authorize access="hasAnyRole('SYSTEM')">
 										<th scope="col">Password</th>
@@ -112,6 +114,7 @@
 											</security:authorize>${user.name }<security:authorize access="hasAnyRole('ADMIN')">
 												</a>
 											</security:authorize></td>
+										<td>${user.dob }</td>
 										<td>${user.email }</td>
 										<security:authorize access="hasAnyRole('SYSTEM')">
 											<td>${user.password }</td>
@@ -126,6 +129,7 @@
 								<tr style="text-align: center;">
 									<th scope="col">#Id</th>
 									<th scope="col">Name</th>
+									<th scope="col">Date-of-Birth</th>
 									<th scope="col">Email-ID</th>
 									<security:authorize access="hasAnyRole('SYSTEM')">
 										<th scope="col">Password</th>
@@ -158,6 +162,14 @@
 											</div>
 										</div>
 										<div class="form-group row">
+											<label class="col-md-3 col-form-label" for="text-input">Date-of-Birth:
+											</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="dob" name="dob"
+													placeholder = "DD/MM/YYYY" value="${user.dob}" required>
+											</div>
+										</div>
+										<div class="form-group row">
 											<label class="col-md-3 col-form-label" for="text-input">Email-Id/Username:
 											</label>
 											<div class="col-md-9">
@@ -165,6 +177,7 @@
 													name="email" value="${user.email}" required>
 											</div>
 										</div>
+										
 										<div class="form-group row">
 											<label class="col-md-3 col-form-label" for="text-input">Password:
 											</label>
@@ -191,7 +204,7 @@
 												<div>
 													<select class="form-control" id="role" name="role">
 														<option>--SELECT--</option>
-                                                        <option>SYSTEM</option>
+														<option>SYSTEM</option>
 														<option>ADMIN</option>
 														<option>USER</option>
 
@@ -247,6 +260,14 @@
 											</div>
 										</div>
 										<div class="form-group row">
+											<label class="col-md-3 col-form-label" for="text-input">Date-of-Birth:
+											</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="dob" name="dob"
+													value="${user.dob}">
+											</div>
+										</div>
+										<div class="form-group row">
 											<label class="col-md-3 col-form-label" for="text-input">Email-Id/Username:
 											</label>
 											<div class="col-md-9">
@@ -278,7 +299,7 @@
 											<div class="form-group form-group col-sm-6">
 
 
-<!-- 												<label for="date">Role</label> -->
+												<!-- 												<label for="date">Role</label> -->
 												<!-- 												<div> -->
 												<!-- 													<select class="form-control" id="ccyear" name="type"> -->
 												<!-- 														<option>--SELECT--</option> -->
@@ -310,28 +331,29 @@
 						</div>
 						<!--/.row-->
 						<div class="col-md-6">
-						 <center>
-							<div class="card">
-								<div class="card-header">
-									<strong> User Photo</strong> 
+							<center>
+								<div class="card">
+									<div class="card-header">
+										<strong> User Photo</strong>
+									</div>
+									<div class="card-body">
+										<form action="" method="POST" class="form-horizontal">
+
+											<img class="img-circle"
+												src="<c:url value='${pageContext.request.contextPath}../../static/profile/1.png'/>"
+												alt="Profile picture" style="height: 200px;"> <br>
+											<br>
+
+											<div class="card-footer">
+												<button type="submit" class="btn btn-sm btn-primary">
+													<i class="fa fa-dot-circle-o"></i> Upload
+												</button>
+
+											</div>
+										</form>
+									</div>
 								</div>
-								<div class="card-body">
-									<form action="" method="POST" class="form-horizontal">
-                                   
-                                     <img class="img-circle" src="<c:url value='${pageContext.request.contextPath}../../static/profile/1.png'/>" alt="Profile picture" style = "height: 200px;">										
-
-                                   <br><br>
-
-										<div class="card-footer">
-											<button type="submit" class="btn btn-sm btn-primary">
-												<i class="fa fa-dot-circle-o"></i> Upload
-											</button>
-
-										</div>
-									</form>
-								</div>
-							</div>
-							 </center>
+							</center>
 							<!--/.col-->
 						</div>
 						<!--/.row-->

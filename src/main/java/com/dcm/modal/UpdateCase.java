@@ -19,13 +19,14 @@ public class UpdateCase {
 	private String nexthearing;
 	private String status;
 	private String title;
+	private String court;
 	
 	public UpdateCase() {
 		
 	}
 	
 	public UpdateCase(int updateid, String caseno, String connected, String cavet, String lasthearing,
-			String nexthearing, String status) {
+			String nexthearing, String status, String court) {
 		super();
 		this.updateid = updateid;
 		this.caseno = caseno;
@@ -34,6 +35,7 @@ public class UpdateCase {
 		this.lasthearing = lasthearing;
 		this.nexthearing = nexthearing;
 		this.status = status;
+		this.court = court;
 	}
 	public int getUpdateid() {
 		return updateid;
@@ -85,6 +87,14 @@ public class UpdateCase {
 
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public String getCourt() {
+		return court;
+	}
+
+	public void setCourt(String court) {
+		this.court = court;
 	}
 
 }

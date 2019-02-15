@@ -3,6 +3,7 @@ package com.dcm;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import javax.mail.MessagingException;
 
@@ -17,6 +18,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 
 import com.dcm.mail.EmailServiceImpl;
+import com.dcm.modal.Users;
 import com.dcm.service.UserService;
 
 @SpringBootApplication
@@ -81,6 +83,16 @@ public class LegalAppApplication extends SpringBootServletInitializer {
 		String[] to = userservice.getEmail();
 		emailService.sendMailWithAttachement(to);
 
+	}
+	
+	@Scheduled(cron = "0 15 1 * * *")
+	public void Birthday() throws MessagingException {
+		
+		List<Users> bday = userservice.TodayBirthday();	
+		String[] bcc = userservice.getEmail();
+		emailService.BirthdayReminder(bday, bcc);
+		bcc = null;
+		LOGGER.info("Birthday Reminder Executed");
 	}
 
 }
