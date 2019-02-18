@@ -86,8 +86,7 @@ public class LegalAppApplication extends SpringBootServletInitializer {
 	}
 	
 	@Scheduled(cron = "0 15 1 * * *")
-	public void Birthday() throws MessagingException {
-		
+	public void Birthday() throws MessagingException {		
 		List<Users> bday = userservice.TodayBirthday();	
 		String[] bcc = userservice.getEmail();
 		emailService.BirthdayReminder(bday, bcc);

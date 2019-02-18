@@ -95,6 +95,7 @@
 									<th scope="col">Name</th>
 									<th scope="col">Date-of-Birth</th>
 									<th scope="col">Email-ID</th>
+									<th scope="col">Mobile</th>
 									<security:authorize access="hasAnyRole('SYSTEM')">
 										<th scope="col">Password</th>
 									</security:authorize>
@@ -116,6 +117,7 @@
 											</security:authorize></td>
 										<td>${user.dob }</td>
 										<td>${user.email }</td>
+										<td>${user.mobile }</td>
 										<security:authorize access="hasAnyRole('SYSTEM')">
 											<td>${user.password }</td>
 										</security:authorize>
@@ -131,6 +133,7 @@
 									<th scope="col">Name</th>
 									<th scope="col">Date-of-Birth</th>
 									<th scope="col">Email-ID</th>
+									<td>${user.email }</td>
 									<security:authorize access="hasAnyRole('SYSTEM')">
 										<th scope="col">Password</th>
 									</security:authorize>
@@ -167,6 +170,14 @@
 											<div class="col-md-9">
 												<input type="text" class="form-control" id="dob" name="dob"
 													placeholder = "DD/MM/YYYY" value="${user.dob}" required>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-md-3 col-form-label" for="text-input">Mobile No:
+											</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="mobile" name="mobile"
+													placeholder = "Enter 10 digit mobile number" value="${user.mobile}" required>
 											</div>
 										</div>
 										<div class="form-group row">
@@ -265,6 +276,14 @@
 											<div class="col-md-9">
 												<input type="text" class="form-control" id="dob" name="dob"
 													value="${user.dob}">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-md-3 col-form-label" for="text-input">Mobile No:
+											</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="mobile" name="mobile"
+													value="${user.mobile}">
 											</div>
 										</div>
 										<div class="form-group row">

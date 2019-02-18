@@ -23,6 +23,9 @@ public class Users {
     @Column(name = "dob")
     private String dob;
     
+    @Column(name = "mobile")
+    private String mobile;
+    
     @Column(name = "active")
     private boolean active;
     
@@ -41,6 +44,7 @@ public class Users {
         this.id = users.getId();
         this.password = users.getPassword();
         this.dob = users.getDob();
+        this.mobile = users.getMobile();
     }
 
     public int getId() {
@@ -98,5 +102,14 @@ public class Users {
 	public void setDob(String dob) {
 		this.dob = dob;
 	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+	
     
 }
