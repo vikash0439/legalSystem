@@ -273,7 +273,7 @@ public class MainController {
 		String stateArray[] = new String[chart.size()];
 
 		for (int i = 0; i < chart.size(); i++) {
-			String state = chart.get(i).getState();
+			String state = chart.get(i).getCourt();
 			stateArray[i] = state;
 			System.out.print("State Array  : " + stateArray[i]);
 		}

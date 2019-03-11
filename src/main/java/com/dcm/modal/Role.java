@@ -2,6 +2,8 @@ package com.dcm.modal;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "role")
 public class Role {
@@ -14,7 +16,9 @@ public class Role {
     @Column(name = "role")
     private String role;
     
-    
+    @JsonIgnore 
+	@ManyToOne(cascade = CascadeType.ALL)
+    private Users user;
 
     public Role() {
     }
@@ -35,4 +39,15 @@ public class Role {
     public void setRole(String role) {
         this.role = role;
     }
+
+
+	public Users getUser() {
+		return user;
+	}
+
+
+	public void setUser(Users user) {
+		this.user = user;
+	}
+    
 }

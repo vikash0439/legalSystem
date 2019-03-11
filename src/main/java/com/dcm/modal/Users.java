@@ -29,8 +29,7 @@ public class Users {
     @Column(name = "active")
     private boolean active;
     
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+    @OneToMany(cascade = CascadeType.ALL , mappedBy = "role")
     private Set<Role> roles;
 
     public Users() {
@@ -111,5 +110,4 @@ public class Users {
 		this.mobile = mobile;
 	}
 	
-    
 }

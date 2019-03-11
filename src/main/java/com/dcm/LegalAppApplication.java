@@ -69,12 +69,12 @@ public class LegalAppApplication extends SpringBootServletInitializer {
 			int processComplete = p.waitFor();
 			if (processComplete == 0) {
 				LOGGER.info("Backup Created Success at : " +path);
-			} else {
-				LOGGER.info("Can't Create backup");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
+			LOGGER.info("Can't Create backup");
 		}
+		LOGGER.info("Database Backup Executed");
 	}
 
 	// Reminder 1 min interval
@@ -85,13 +85,13 @@ public class LegalAppApplication extends SpringBootServletInitializer {
 
 	}
 	
-	@Scheduled(cron = "0 15 1 * * *")
+	@Scheduled(cron = "0 1 0 * * *")
 	public void Birthday() throws MessagingException {		
 		List<Users> bday = userservice.TodayBirthday();	
 		String[] bcc = userservice.getEmail();
 		emailService.BirthdayReminder(bday, bcc);
 		bcc = null;
-		LOGGER.info("Birthday Reminder Executed");
+		LOGGER.info("Birthday Module Executed");
 	}
 
 }

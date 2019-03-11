@@ -238,8 +238,5 @@ public class Case{
 
 	public void setCourt(String court) {
 		this.court = court;
-	}
-
-	
-	
+	}	
 }

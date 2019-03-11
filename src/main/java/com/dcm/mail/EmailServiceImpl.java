@@ -1,11 +1,10 @@
 package com.dcm.mail;
 
 import java.util.List;
+import java.util.SortedSet;
 
 import javax.mail.MessagingException;
-import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMessage.RecipientType;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -104,7 +103,7 @@ public class EmailServiceImpl {
 
 		MimeMessage message = emailSender.createMimeMessage();
 
-		List<UpdateCase> caseReminder = updatecaseService.HearingReminder();
+		SortedSet<UpdateCase> caseReminder = updatecaseService.HearingReminder();
 
 		if (caseReminder.isEmpty()) {
 			System.out.println("No reminders");
@@ -117,12 +116,10 @@ public class EmailServiceImpl {
 					"    text-align:  center;     border: 1px solid #ddd; font-family: arial, sans-serif; border-collapse: collapse;\r\n"
 					+ "\">\r\n"
 					+ "                      <thead style=\" background-color: #007bff; color: #fff;\" class=\"thead-light\">\r\n"
-					+ "                            <th style=\" border: 1px solid #ddd; padding: 15px;\" width=\"20%\">NDOH</th>\r\n"
+					+ "                            <th style=\" border: 1px solid #ddd; padding: 15px;\" width=\"15%\">NDOH</th>\r\n"
 					+ "							<th style=\" border: 1px solid #ddd; padding: 15px;\" width=\"25%\">Case No</th>\r\n"
-					+ "							<th  style=\" border: 1px solid #ddd; padding: 15px;\" width=\"55%\">Title</th>\r\n"
-					+ "							<th  style=\" border: 1px solid #ddd; padding: 15px;\" width=\"55%\">Court</th>\r\n"
-					+ "							<th  style=\" border: 1px solid #ddd; padding: 15px;\" width=\"55%\">LDOH</th>\r\n"
-					+ "							<th  style=\" border: 1px solid #ddd; padding: 15px;\" width=\"55%\">Status</th>\r\n"
+					+ "							<th  style=\" border: 1px solid #ddd; padding: 15px;\" width=\"30%\">Title</th>\r\n"
+					+ "							<th  style=\" border: 1px solid #ddd; padding: 15px;\" width=\"30%\">Court</th>\r\n"
 					+ "                          \r\n" + "                        </tr>\r\n"
 					+ "                      </thead>" + "<tbody>\r\n";
 			for (UpdateCase ndoh : caseReminder) {
@@ -135,11 +132,7 @@ public class EmailServiceImpl {
 						+ "							<td style=\" border: 1px solid #ddd; padding: 15px; color: #212529;\">"
 						+ ndoh.getTitle() + "</td>\r\n"
 						+ "							<td style=\" border: 1px solid #ddd; padding: 15px; color: #212529;\">"
-						+ ndoh.getCourt() + "</td>\r\n"
-						+ "							<td style=\" border: 1px solid #ddd; padding: 15px; color: #212529;\">"
-						+ ndoh.getLasthearing() + "</td>\r\n"
-						+ "							<td style=\" border: 1px solid #ddd; padding: 15px; color: #212529;\">"
-						+ ndoh.getStatus() + "</td>\r\n" + "						</tr>						\r\n";
+						+ ndoh.getCourt() + "</td>\r\n" + "						</tr>						\r\n";
 			}
 
 			rem = rem + "					</tbody>\r\n" +

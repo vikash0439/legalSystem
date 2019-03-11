@@ -49,7 +49,7 @@ public class UserService{
 	public List<Users> TodayBirthday() {
 		
 		LocalDate date= java.time.LocalDate.now();
-		 DateTimeFormatter formatters = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+		 DateTimeFormatter formatters = DateTimeFormatter.ofPattern("dd-MM");
 		String d = date.format(formatters);
 		
         System.out.println("Birthday reminder for date "+d );

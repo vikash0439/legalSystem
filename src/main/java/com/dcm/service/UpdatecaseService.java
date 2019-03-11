@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 import javax.transaction.Transactional;
 
@@ -41,7 +43,8 @@ private final UpdatecaseRepository updatecaseRepository;
 		return caseDOH;
 	}
 	
-	public List<UpdateCase> HearingReminder() {
+	public SortedSet<UpdateCase> HearingReminder() {
+		
 		LocalDate date= java.time.LocalDate.now().plusDays(2);
 		LocalDate date2= java.time.LocalDate.now().plusDays(1);
 		 DateTimeFormatter formatters = DateTimeFormatter.ofPattern("dd-MM-yyyy");
@@ -50,7 +53,7 @@ private final UpdatecaseRepository updatecaseRepository;
 		
         System.out.println("Hearing reminder for date "+d+ " & "+d2);
         
-		List<UpdateCase> caseNDOH = new ArrayList<UpdateCase>();
+        SortedSet<UpdateCase> caseNDOH = new TreeSet<UpdateCase>();
 		updatecaseRepository.findHearings(d2, d).forEach(caseNDOH::add);
 		d= null;	
 		return caseNDOH;
