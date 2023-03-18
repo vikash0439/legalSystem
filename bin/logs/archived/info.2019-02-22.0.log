@@ -1,0 +1,50 @@
+2019-02-22 12:12:07 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 2040 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2019-02-22 12:12:07 : INFO  - No active profile set, falling back to default profiles: default
+2019-02-22 12:12:16 : INFO  - Started LegalAppApplication in 10.135 seconds (JVM running for 12.053)
+2019-02-22 12:12:16 : INFO  - Main program running
+2019-02-22 12:12:43 : INFO  - Logged in by: Viku
+2019-02-22 12:13:10 : INFO  - Event: Case Status Updated
+2019-02-22 12:13:26 : INFO  - Event: Case Status Updated
+2019-02-22 12:13:42 : INFO  - Logged out!
+2019-02-22 12:13:47 : INFO  - Logged in by: Vikash Kumar
+2019-02-22 12:14:58 : INFO  - Logged out!
+2019-02-22 12:15:08 : INFO  - Logged in by: aaaaaaaa
+2019-02-22 12:15:22 : INFO  - Event: New User Added by aaaaaaaa
+2019-02-22 12:16:00 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 2040 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2019-02-22 12:16:00 : INFO  - No active profile set, falling back to default profiles: default
+2019-02-22 12:16:03 : INFO  - Started LegalAppApplication in 3.934 seconds (JVM running for 239.269)
+2019-02-22 12:16:03 : INFO  - Main program running
+2019-02-22 12:16:03 : INFO  - Reminders sent today
+2019-02-22 12:17:00 : INFO  - Hearing Reminder Executed
+2019-02-22 12:17:01 : INFO  - Backup Created Success at : E:\Software\LegalApp\V1\LegalApp\DB_backup/22-02-2019.sql
+2019-02-22 12:17:01 : INFO  - Database Backup Executed
+2019-02-22 12:17:03 : INFO  - Reminders sent today
+2019-02-22 12:17:10 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 2040 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2019-02-22 12:17:10 : INFO  - No active profile set, falling back to default profiles: default
+2019-02-22 12:17:13 : INFO  - Started LegalAppApplication in 2.91 seconds (JVM running for 309.03)
+2019-02-22 12:17:13 : INFO  - Main program running
+2019-02-22 12:17:56 : INFO  - Hearing Reminder Executed
+2019-02-22 12:17:56 : INFO  - Database Backup Executed
+2019-02-22 12:20:26 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 2040 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2019-02-22 12:20:26 : INFO  - No active profile set, falling back to default profiles: default
+2019-02-22 12:20:28 : INFO  - Started LegalAppApplication in 1.975 seconds (JVM running for 504.038)
+2019-02-22 12:20:28 : INFO  - Main program running
+2019-02-22 12:20:31 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 2040 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2019-02-22 12:20:31 : INFO  - No active profile set, falling back to default profiles: default
+2019-02-22 12:20:33 : INFO  - Started LegalAppApplication in 1.896 seconds (JVM running for 508.74)
+2019-02-22 12:20:33 : INFO  - Main program running
+2019-02-22 12:20:39 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 2040 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2019-02-22 12:20:39 : INFO  - No active profile set, falling back to default profiles: default
+2019-02-22 12:20:41 : INFO  - Started LegalAppApplication in 2.014 seconds (JVM running for 516.535)
+2019-02-22 12:20:41 : INFO  - Main program running
+2019-02-22 12:20:41 : INFO  - Reminders sent today
+2019-02-22 12:21:15 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 2040 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2019-02-22 12:21:15 : INFO  - No active profile set, falling back to default profiles: default
+2019-02-22 12:21:17 : INFO  - Started LegalAppApplication in 1.953 seconds (JVM running for 553.082)
+2019-02-22 12:21:17 : INFO  - Main program running
+2019-02-22 12:21:34 : INFO  - Hearing Reminder Executed
+2019-02-22 12:21:34 : INFO  - Database Backup Executed
+2019-02-22 12:21:39 : INFO  - Starting LegalAppApplication on LAPTOP-B4A9F2KG with PID 2040 (E:\Software\LegalApp\V1\LegalApp\target\classes started by DCM in E:\Software\LegalApp\V1\LegalApp)
+2019-02-22 12:21:39 : INFO  - No active profile set, falling back to default profiles: default
+2019-02-22 12:21:41 : INFO  - Started LegalAppApplication in 1.933 seconds (JVM running for 577.122)
+2019-02-22 12:21:41 : INFO  - Main program running
